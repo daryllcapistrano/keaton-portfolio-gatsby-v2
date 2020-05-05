@@ -7,21 +7,21 @@ import Typography from '@material-ui/core/Typography';
 import Toolbar from '@material-ui/core/Toolbar';
 
 const StyledAppBar = styled(AppBar)`
-  z-index: 32;
-  padding: 16px;
-  font-size: 14px;
-  line-height: 1.5;
-  color: hsla(0,0%,100%,.7);
-  background-color: #24292e;
+	z-index: 32;
+	padding: 16px;
+	font-size: 14px;
+	line-height: 1.5;
+	color: hsla(0,0%,100%,.7);
+	background-color: #24292e;
 `;
 
 const NavLink = styled(Link)`
-  color: rgb(109, 182, 91);
-  margin: 0 0 10px;
-  padding: 10px;
-  display: flex;
-  align-items: center;
-  flex-wrap: nowrap;
+	color: rgb(109, 182, 91);
+	margin: 0 0 10px;
+	padding: 10px;
+	display: flex;
+	align-items: center;
+	flex-wrap: nowrap;
 `;
 
 const Header = ({ siteTitle }) => (
