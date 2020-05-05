@@ -1,6 +1,46 @@
 [
 	{
-		"title": "title",
+		"title": "wornpath",
+		"src": "../images/video-thumbnails/wornpath.jpg"
+	},
+	{
+		"title": "manifest farm",
+		"src": "../images/video-thumbnails/pranamanifestfarm.png"
+	},
+	{
+		"title": "bittersland",
+		"src": "../images/video-thumbnails/bittersland.png"
+	},
+	{
+		"title": "oj wheels cruising through the leaves",
+		"src": "../images/video-thumbnails/ojcruisingthroughtheleaves.jpg"
+	},
+	{
+		"title": "slimeballs",
+		"src": "../images/video-thumbnails/slimeballs.jpg"
+	},
+	{
+		"title": "oj wheels cruising in the rain",
+		"src": "../images/video-thumbnails/ojcruisingintherain.png"
+	},
+	{
+		"title": "chrome",
+		"src": "../images/video-thumbnails/chromeindustries.png"
+	},
+	{
+		"title": "green dream",
+		"src": "../images/video-thumbnails/greendream.png"
+	},
+	{
+		"title": "jack graydon",
+		"src": "../images/video-thumbnails/jackgraydon.png"
+	},
+	{
+		"title": "alpental",
 		"src": "../images/video-thumbnails/alpental.png"
+	},
+	{
+		"title": "summit at snoqualmie",
+		"src": "../images/video-thumbnails/summitatsnoqualmie.png"
 	}
 ]
