@@ -1,7 +1,20 @@
-import React, { Component } from 'react';
+import React from 'react';
+import Container from '@material-ui/core/Container';
 
-export default class Footer extends Component {
-	render() {
-		return <footer>© {new Date().getFullYear()}</footer>;
-	}
-}
+const Footer = () => (
+	<Container>
+		<div>
+			© {new Date().getFullYear()}{' '}
+			<a
+				href="https://www.instagram.com/keatonrodgers"
+				style={{
+					color: '#000000'
+				}}
+			>
+				KR Media
+			</a>
+		</div>
+	</Container>
+);
+
+export default Footer;
