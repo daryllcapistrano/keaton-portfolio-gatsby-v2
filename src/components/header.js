@@ -13,9 +13,9 @@ const Header = ({ siteTitle }) => (
 					{siteTitle}
 				</Typography>
 				<div>
-					<Link href="#">Video</Link>
-					<Link href="#">Photos</Link>
-					<Link href="#">Contact</Link>
+					<Link to="/">Video</Link>
+					<Link to="/photos">Photos</Link>
+					<Link to="/contact">Contact</Link>
 				</div>
 			</Toolbar>
 		</AppBar>
