@@ -2,7 +2,21 @@ module.exports = {
 	siteMetadata: {
 		title: `Keaton Rodgers`,
 		description: `Keaton Rodgers Media`,
-		author: `dvapistrano.dev`
+		author: `dcapistrano.dev`,
+		menuLinks: [
+			{
+				name: `home`,
+				link: '/'
+			},
+			{
+				name: `photos`,
+				link: '/photos'
+			},
+			{
+				name: `contact`,
+				link: '/contact'
+			}
+		]
 	},
 	plugins: [
 		`gatsby-plugin-react-helmet`,
