@@ -11,6 +11,7 @@ export const VideoThumbnails = () => {
 		query {
 			allVideoThumbnailsJson {
 				nodes {
+					link
 					title
 					src {
 						childImageSharp {
@@ -29,7 +30,7 @@ export const VideoThumbnails = () => {
 			{data.allVideoThumbnailsJson.nodes.map((thumbnail) => (
 				<Grid item xs={12} sm={6} md={4} lg={4} xl={4}>
 					<Card style={{ position: `relative` }}>
-						<Link>
+						<Link to={thumbnail.link}>
 							<Img
 								fluid={thumbnail.src.childImageSharp.fluid}
 								style={{ width: `100%`, height: `400px`, objectFit: `fill` }}

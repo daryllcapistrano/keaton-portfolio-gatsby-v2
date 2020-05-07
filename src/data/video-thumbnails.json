@@ -1,46 +1,57 @@
 [
 	{
 		"title": "wornpath",
-		"src": "../images/video-thumbnails/wornpath.jpg"
+		"src": "../images/video-thumbnails/wornpath.jpg",
+		"link": "../videos/wornpath"
 	},
 	{
 		"title": "manifest farm",
-		"src": "../images/video-thumbnails/pranamanifestfarm.png"
+		"src": "../images/video-thumbnails/pranamanifestfarm.png",
+		"link": "../videos/manifest-farm"
 	},
 	{
 		"title": "bittersland",
-		"src": "../images/video-thumbnails/bittersland.png"
+		"src": "../images/video-thumbnails/bittersland.png",
+		"link": "../videos/bittersland"
 	},
 	{
 		"title": "oj wheels cruising through the leaves",
-		"src": "../images/video-thumbnails/ojcruisingthroughtheleaves.jpg"
+		"src": "../images/video-thumbnails/ojcruisingthroughtheleaves.jpg",
+		"link": "../videos/oj-wheels-leaves"
 	},
 	{
 		"title": "slimeballs",
-		"src": "../images/video-thumbnails/slimeballs.jpg"
+		"src": "../images/video-thumbnails/slimeballs.jpg",
+		"link": "../videos/oj-wheels-slimeballs"
 	},
 	{
 		"title": "oj wheels cruising in the rain",
-		"src": "../images/video-thumbnails/ojcruisingintherain.png"
+		"src": "../images/video-thumbnails/ojcruisingintherain.png",
+		"link": "../videos/oj-wheels-rain"
 	},
 	{
 		"title": "chrome",
-		"src": "../images/video-thumbnails/chromeindustries.png"
+		"src": "../images/video-thumbnails/chromeindustries.png",
+		"link": "../videos/chrome-industries"
 	},
 	{
 		"title": "green dream",
-		"src": "../images/video-thumbnails/greendream.png"
+		"src": "../images/video-thumbnails/greendream.png",
+		"link": "../videos/green-dream"
 	},
 	{
 		"title": "jack graydon",
-		"src": "../images/video-thumbnails/jackgraydon.png"
+		"src": "../images/video-thumbnails/jackgraydon.png",
+		"link": "../videos/jack-graydon"
 	},
 	{
 		"title": "alpental",
-		"src": "../images/video-thumbnails/alpental.png"
+		"src": "../images/video-thumbnails/alpental.png",
+		"link": "../videos/alpental"
 	},
 	{
 		"title": "summit at snoqualmie",
-		"src": "../images/video-thumbnails/summitatsnoqualmie.png"
+		"src": "../images/video-thumbnails/summitatsnoqualmie.png",
+		"link": "../videos/summit-at-snoqualmie"
 	}
 ]
