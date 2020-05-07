@@ -1,9 +1,9 @@
 {
-	"name": "gatsby-starter-default",
+	"name": "keaton-rodgers-portfolio",
 	"private": true,
-	"description": "A simple starter to get up and developing quickly with Gatsby",
+	"description": "Media Portfolio",
 	"version": "0.1.0",
-	"author": "Kyle Mathews <mathews.kyle@gmail.com>",
+	"author": "Daryll Capistrano <dcapistrano.dev@gmail.com>",
 	"dependencies": {
 		"@material-ui/core": "^4.9.13",
 		"gatsby": "^2.21.0",
@@ -26,9 +26,7 @@
 		"babel-plugin-styled-components": "^1.10.7",
 		"prettier": "2.0.5"
 	},
-	"keywords": [
-		"gatsby"
-	],
+	"keywords": [ "gatsby" ],
 	"license": "MIT",
 	"scripts": {
 		"build": "gatsby build",
@@ -41,9 +39,9 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/gatsbyjs/gatsby-starter-default"
+		"url": "https://github.com/daryllcapistrano/keaton-portfolio-gatsby-v2"
 	},
 	"bugs": {
-		"url": "https://github.com/gatsbyjs/gatsby/issues"
+		"url": "https://github.com/daryllcapistrano/keaton-portfolio-gatsby-v2/issues"
 	}
 }
