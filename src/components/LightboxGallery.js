@@ -4,12 +4,13 @@ import Gallery from 'react-photo-gallery';
 import Carousel, { Modal, ModalGateway } from 'react-images';
 import { photoSources } from '../data/photoSources';
 
-const customStyles = {
+const carouselStyles = {
 	view: () => ({
 		// none of react-images styles are passed to <View />
 		height: `100vh`,
 		width: `100%`,
 		textAlign: `center`
+		// backgroundColor: `white`
 	})
 };
 
@@ -28,20 +29,14 @@ function PhotoGallery() {
 	};
 
 	return (
-		<div>
-			<Gallery photos={photoSources} onClick={openLightbox} direction={'column'} margin={'4'} />
+		<div style={{ padding: `28px` }}>
+			{/* padding added above to match video page (div + img padding) */}
+			<Gallery photos={photoSources} onClick={openLightbox} direction={'column'} margin={'3'} />
 			<ModalGateway>
 				{viewerIsOpen ? (
-					<Modal
-						onClose={closeLightbox}
-						styles={{
-							height: `auto`,
-							maxHeight: `100vh`,
-							maxWidth: `100%`
-						}}
-					>
+					<Modal onClose={closeLightbox}>
 						<Carousel
-							styles={customStyles}
+							styles={carouselStyles}
 							currentIndex={currentImage}
 							views={photoSources.map((x) => ({
 								...x,
