@@ -31,7 +31,7 @@ function PhotoGallery() {
 	return (
 		<div style={{ padding: `28px` }}>
 			{/* padding added above to match video page (div + img padding) */}
-			<Gallery photos={photoSources} onClick={openLightbox} direction={'column'} margin={'3'} />
+			<Gallery photos={photoSources} onClick={openLightbox} direction={'row'} margin={3} />
 			<ModalGateway>
 				{viewerIsOpen ? (
 					<Modal onClose={closeLightbox}>
