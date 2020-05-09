@@ -43,6 +43,27 @@ const ChromeIndustriesPage = () => (
 					width: '100%',
 					height: '100%'
 				}}
+				src={`https://www.youtube.com/embed/WrBE1s6HSo4`}
+				frameBorder="0"
+				allowFullScreen="true"
+				title="chrome industries short shorts - u lock"
+			/>
+		</div>
+		<div
+			style={{
+				position: 'relative',
+				paddingBottom: '56.25%' /* 16:9 */,
+				paddingTop: 25
+			}}
+		>
+			<iframe
+				style={{
+					position: 'absolute',
+					top: 0,
+					left: 0,
+					width: '100%',
+					height: '100%'
+				}}
 				src={`https://www.youtube.com/embed/XmNUroFU0lc`}
 				frameBorder="0"
 				allowFullScreen="true"
@@ -68,27 +89,6 @@ const ChromeIndustriesPage = () => (
 				frameBorder="0"
 				allowFullScreen="true"
 				title="chrome industries short shorts - water resistance"
-			/>
-		</div>
-		<div
-			style={{
-				position: 'relative',
-				paddingBottom: '56.25%' /* 16:9 */,
-				paddingTop: 25
-			}}
-		>
-			<iframe
-				style={{
-					position: 'absolute',
-					top: 0,
-					left: 0,
-					width: '100%',
-					height: '100%'
-				}}
-				src={`https://www.youtube.com/embed/WrBE1s6HSo4`}
-				frameBorder="0"
-				allowFullScreen="true"
-				title="chrome industries short shorts - u lock"
 			/>
 		</div>
 	</Layout>
