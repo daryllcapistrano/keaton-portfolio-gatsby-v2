@@ -18,7 +18,7 @@ const BitterslandPage = () => (
 					Back
 				</Link>
 				<Link
-					to="videos/oj-wheels-leaves"
+					to="/videos/oj-wheels-leaves"
 					style={{
 						color: '#000000',
 						padding: '10px'
@@ -45,7 +45,7 @@ const BitterslandPage = () => (
 				}}
 				src={`https://www.youtube.com/embed/J-zFcJ0rMTM`}
 				frameBorder="0"
-				allowFullScreen="true"
+				allowFullScreen={true}
 				title="bittersland"
 			/>
 		</div>

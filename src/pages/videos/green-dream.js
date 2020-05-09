@@ -18,7 +18,7 @@ const GreenDreamPage = () => (
 					Back
 				</Link>
 				<Link
-					to="videos/jack-graydon"
+					to="/videos/jack-graydon"
 					style={{
 						color: '#000000',
 						padding: '10px'
@@ -45,7 +45,7 @@ const GreenDreamPage = () => (
 				}}
 				src={`https://www.youtube.com/embed/EYzWnZchDNg`}
 				frameBorder="0"
-				allowFullScreen="true"
+				allowFullScreen={true}
 				title="green dream promotional"
 			/>
 		</div>

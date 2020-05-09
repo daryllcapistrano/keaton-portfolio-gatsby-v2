@@ -18,7 +18,7 @@ const OJLeavesPage = () => (
 					Back
 				</Link>
 				<Link
-					to="videos/oj-wheels-slimeballs"
+					to="/videos/oj-wheels-slimeballs"
 					style={{
 						color: '#000000',
 						padding: '10px'
@@ -45,7 +45,7 @@ const OJLeavesPage = () => (
 				}}
 				src={`https://www.youtube.com/embed/djEnS6_MFyM`}
 				frameBorder="0"
-				allowFullScreen="true"
+				allowFullScreen={true}
 				title="oj wheels leaves"
 			/>
 		</div>

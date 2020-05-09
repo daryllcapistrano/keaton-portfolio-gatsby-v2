@@ -18,7 +18,7 @@ const WornpathPage = () => (
 					Back
 				</Link>
 				<Link
-					to="videos/manifest-farm"
+					to="/videos/manifest-farm"
 					style={{
 						color: '#000000',
 						padding: '10px'
@@ -45,7 +45,7 @@ const WornpathPage = () => (
 				}}
 				src={`https://www.youtube.com/embed/cpuSnsD_ZOg`}
 				frameBorder="0"
-				allowFullScreen="true"
+				allowFullScreen={true}
 				title="wornpath"
 			/>
 		</div>

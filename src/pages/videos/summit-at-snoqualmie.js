@@ -18,7 +18,7 @@ const SummitAtSnoqualmiePage = () => (
 					Back
 				</Link>
 				<Link
-					to="videos/wornpath"
+					to="/videos/wornpath"
 					style={{
 						color: '#000000',
 						padding: '10px'
@@ -45,7 +45,7 @@ const SummitAtSnoqualmiePage = () => (
 				}}
 				src={`https://www.youtube.com/embed/qrr7StlV-b8`}
 				frameBorder="0"
-				allowFullScreen="true"
+				allowFullScreen={true}
 				title="summit at snoqualmie"
 			/>
 		</div>

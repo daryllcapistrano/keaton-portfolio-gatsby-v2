@@ -18,7 +18,7 @@ const AlpentalPage = () => (
 					Back
 				</Link>
 				<Link
-					to="videos/summit-at-snoqualmie"
+					to="/videos/summit-at-snoqualmie"
 					style={{
 						color: '#000000',
 						padding: '10px'
@@ -45,7 +45,7 @@ const AlpentalPage = () => (
 				}}
 				src={`https://www.youtube.com/embed/J2WXVR8tbDc`}
 				frameBorder="0"
-				allowFullScreen="true"
+				allowFullScreen={true}
 				title="alpental"
 			/>
 		</div>

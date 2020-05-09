@@ -18,7 +18,7 @@ const OJSlimePage = () => (
 					Back
 				</Link>
 				<Link
-					to="videos/oj-wheels-rain"
+					to="/videos/oj-wheels-rain"
 					style={{
 						color: '#000000',
 						padding: '10px'
@@ -45,7 +45,7 @@ const OJSlimePage = () => (
 				}}
 				src={`https://www.youtube.com/embed/mo8VYHI6aes`}
 				frameBorder="0"
-				allowFullScreen="true"
+				allowFullScreen={true}
 				title="oj wheels slimeballs 1"
 			/>
 		</div>
@@ -66,7 +66,7 @@ const OJSlimePage = () => (
 				}}
 				src={`https://www.youtube.com/embed/q25eR8f1yro`}
 				frameBorder="0"
-				allowFullScreen="true"
+				allowFullScreen={true}
 				title="oj wheels slimeballs 2"
 			/>
 		</div>
@@ -87,7 +87,7 @@ const OJSlimePage = () => (
 				}}
 				src={`https://www.youtube.com/embed/m13QqtAeHxc`}
 				frameBorder="0"
-				allowFullScreen="true"
+				allowFullScreen={true}
 				title="oj wheels slimeballs 3"
 			/>
 		</div>
@@ -108,7 +108,7 @@ const OJSlimePage = () => (
 				}}
 				src={`https://www.youtube.com/embed/CjxfdhOvT4k`}
 				frameBorder="0"
-				allowFullScreen="true"
+				allowFullScreen={true}
 				title="oj wheels slimeballs 4"
 			/>
 		</div>
@@ -129,7 +129,7 @@ const OJSlimePage = () => (
 				}}
 				src={`https://www.youtube.com/embed/69BABGRWz0o`}
 				frameBorder="0"
-				allowFullScreen="true"
+				allowFullScreen={true}
 				title="oj wheels slimeballs 5"
 			/>
 		</div>
@@ -150,7 +150,7 @@ const OJSlimePage = () => (
 				}}
 				src={`https://www.youtube.com/embed/BYYeqrtZqCg`}
 				frameBorder="0"
-				allowFullScreen="true"
+				allowFullScreen={true}
 				title="oj wheels slimeballs 6"
 			/>
 		</div>
@@ -171,7 +171,7 @@ const OJSlimePage = () => (
 				}}
 				src={`https://www.youtube.com/embed/yK9CS95xQjA`}
 				frameBorder="0"
-				allowFullScreen="true"
+				allowFullScreen={true}
 				title="oj wheels slimeballs 7"
 			/>
 		</div>
@@ -192,7 +192,7 @@ const OJSlimePage = () => (
 				}}
 				src={`https://www.youtube.com/embed/R23jFPaaNLE`}
 				frameBorder="0"
-				allowFullScreen="true"
+				allowFullScreen={true}
 				title="oj wheels slimeballs 8"
 			/>
 		</div>
@@ -213,7 +213,7 @@ const OJSlimePage = () => (
 				}}
 				src={`https://www.youtube.com/embed/yjHIyzIhBUM`}
 				frameBorder="0"
-				allowFullScreen="true"
+				allowFullScreen={true}
 				title="oj wheels slimeballs 9"
 			/>
 		</div>

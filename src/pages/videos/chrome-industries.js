@@ -18,7 +18,7 @@ const ChromeIndustriesPage = () => (
 					Back
 				</Link>
 				<Link
-					to="videos/green-dream"
+					to="/videos/green-dream"
 					style={{
 						color: '#000000',
 						padding: '10px'
@@ -45,7 +45,7 @@ const ChromeIndustriesPage = () => (
 				}}
 				src={`https://www.youtube.com/embed/WrBE1s6HSo4`}
 				frameBorder="0"
-				allowFullScreen="true"
+				allowFullScreen={true}
 				title="chrome industries short shorts - u lock"
 			/>
 		</div>
@@ -66,7 +66,7 @@ const ChromeIndustriesPage = () => (
 				}}
 				src={`https://www.youtube.com/embed/XmNUroFU0lc`}
 				frameBorder="0"
-				allowFullScreen="true"
+				allowFullScreen={true}
 				title="chrome industries short shorts - pocket"
 			/>
 		</div>
@@ -87,7 +87,7 @@ const ChromeIndustriesPage = () => (
 				}}
 				src={`https://www.youtube.com/embed/8WCbwy9DpII`}
 				frameBorder="0"
-				allowFullScreen="true"
+				allowFullScreen={true}
 				title="chrome industries short shorts - water resistance"
 			/>
 		</div>

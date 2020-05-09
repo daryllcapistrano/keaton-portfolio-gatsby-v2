@@ -18,7 +18,7 @@ const ManifestFarmPage = () => (
 					Back
 				</Link>
 				<Link
-					to="videos/bittersland"
+					to="/videos/bittersland"
 					style={{
 						color: '#000000',
 						padding: '10px'
@@ -45,7 +45,7 @@ const ManifestFarmPage = () => (
 				}}
 				src={`https://www.youtube.com/embed/fXV8AEs1IdQ`}
 				frameBorder="0"
-				allowFullScreen="true"
+				allowFullScreen={true}
 				title="manifest farm"
 			/>
 		</div>

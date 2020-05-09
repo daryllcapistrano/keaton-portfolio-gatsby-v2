@@ -18,7 +18,7 @@ const OJRainPage = () => (
 					Back
 				</Link>
 				<Link
-					to="videos/chrome-industries"
+					to="/videos/chrome-industries"
 					style={{
 						color: '#000000',
 						padding: '10px'
@@ -45,7 +45,7 @@ const OJRainPage = () => (
 				}}
 				src={`https://www.youtube.com/embed/fQgDbC9H9ag`}
 				frameBorder="0"
-				allowFullScreen="true"
+				allowFullScreen={true}
 				title="oj wheels rain"
 			/>
 		</div>

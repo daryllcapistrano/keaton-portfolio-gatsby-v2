@@ -18,7 +18,7 @@ const JackGraydonPage = () => (
 					Back
 				</Link>
 				<Link
-					to="videos/alpental"
+					to="/videos/alpental"
 					style={{
 						color: '#000000',
 						padding: '10px'
@@ -45,7 +45,7 @@ const JackGraydonPage = () => (
 				}}
 				src={`https://www.youtube.com/embed/ty0-Hu10jFk`}
 				frameBorder="0"
-				allowFullScreen="true"
+				allowFullScreen={true}
 				title="jack graydon"
 			/>
 		</div>
