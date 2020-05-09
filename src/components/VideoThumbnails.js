@@ -28,7 +28,7 @@ export const VideoThumbnails = () => {
 	return (
 		<Grid container spacing={2} direction="row" justify="center" align-items="center" style={{ padding: `20px` }}>
 			{data.allVideoThumbnailsJson.nodes.map((thumbnail, index) => (
-				<Grid item key={index} xs={12} sm={6} md={4} lg={4} xl={4}>
+				<Grid item key={index} xs={12} sm={6} md={6} lg={4} xl={4}>
 					<Card style={{ position: `relative` }}>
 						<Link to={thumbnail.link}>
 							<Img
