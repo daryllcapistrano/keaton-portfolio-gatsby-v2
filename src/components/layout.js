@@ -10,7 +10,10 @@ const Layout = ({ children }) => {
 		query SiteTitleQuery {
 			site {
 				siteMetadata {
-					title
+					menuLinks {
+						link
+						name
+					}
 				}
 			}
 		}
@@ -18,7 +21,8 @@ const Layout = ({ children }) => {
 
 	return (
 		<React.Fragment>
-			<Header siteTitle={data.site.siteMetadata.title} />
+			<Header siteTitle={data.site.siteMetadata.title} menuLinks={data.site.siteMetadata.menuLinks} />
+
 			<main>{children}</main>
 			<Footer />
 		</React.Fragment>
