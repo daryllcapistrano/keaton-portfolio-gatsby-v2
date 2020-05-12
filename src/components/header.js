@@ -7,15 +7,10 @@ import Toolbar from '@material-ui/core/Toolbar';
 
 const Header = ({ siteTitle }) => (
 	<React.Fragment>
-		<AppBar
-			position="static"
-			color="default"
-			elevation={0}
-			style={{ backgroundColor: `inherit`, justifyItems: `space-between` }}
-		>
+		<AppBar position="static" color="default" elevation={0} style={{ backgroundColor: `inherit` }}>
 			<Toolbar>
 				<Typography variant="h6" color="inherit" noWrap>
-					{siteTitle}
+					<Link to="/">{siteTitle}</Link>
 				</Typography>
 				<div>
 					<Link to="/">Video</Link>
