@@ -40,10 +40,10 @@ export const VideoThumbnails = () => {
 							style={{
 								color: `white`,
 								fontSize: `32px`,
-								fontWeight: `500`,
 								textShadow: `2px 2px 3px rgba(0,0,0,0.57)`,
-								width: `100%`,
+								width: `80%`,
 								position: `absolute`,
+								paddingBottom: `25px`,
 								top: `80%`,
 								left: `50%`,
 								transform: `translate(-50%, -50%)`,
