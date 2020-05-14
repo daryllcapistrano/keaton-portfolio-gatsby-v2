@@ -7,9 +7,11 @@ import { photoSources } from '../data/photoSources';
 const carouselStyles = {
 	view: () => ({
 		// none of react-images styles are passed to <View />
+		// fix to center image in modal on mobile
 		height: `100vh`,
 		width: `100%`,
 		textAlign: `center`
+		// paddingTop: `15vh`
 		// backgroundColor: `white`
 	})
 };
