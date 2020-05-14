@@ -15,7 +15,7 @@ const ContactPhoto = () => {
 		}
 	`);
 
-	return <Img fluid={data.file.childImageSharp.fluid} style={{ height: `400px`, margin: `auto` }} />;
+	return <Img fluid={data.file.childImageSharp.fluid} style={{ width: `100%`, height: `400px`, objectFit: `fill` }} />;
 };
 
 export default ContactPhoto;

@@ -28,12 +28,12 @@ export const VideoThumbnails = () => {
 	return (
 		<Grid container spacing={2} direction="row" justify="center" align-items="center" style={{ padding: `20px` }}>
 			{data.allVideoThumbnailsJson.nodes.map((thumbnail, index) => (
-				<Grid item key={index} xs={12} sm={6} md={6} lg={4} xl={4}>
-					<Card style={{ position: `relative` }}>
+				<Grid item key={index} xs={12} sm={6} md={4} lg={4} xl={4}>
+					<Card style={{ position: `relative`, borderRadius: `0` }}>
 						<Link to={thumbnail.link}>
 							<Img
 								fluid={thumbnail.src.childImageSharp.fluid}
-								style={{ width: `100%`, height: `400px`, objectFit: `fill` }}
+								style={{ width: `100%`, height: `100%`, objectFit: `contain`, paddingTop: `100%` }}
 							/>
 						</Link>
 						<div

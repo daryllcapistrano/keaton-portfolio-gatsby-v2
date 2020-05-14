@@ -29,7 +29,7 @@ function PhotoGallery() {
 	};
 
 	return (
-		<div style={{ padding: `28px` }}>
+		<div style={{ padding: `20px` }}>
 			{/* padding added above to match video page (div + img padding) */}
 			<Gallery photos={photoSources} onClick={openLightbox} direction={'row'} margin={3} />
 			<ModalGateway>
