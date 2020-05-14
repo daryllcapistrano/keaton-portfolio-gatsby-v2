@@ -13,25 +13,23 @@ const Header = ({ siteTitle, menuLinks }) => (
 				<Typography variant="h6" color="inherit" noWrap>
 					<Link to="/">Keaton Rodgers</Link>
 				</Typography>
-				<div>
-					<nav>
-						<ul style={{ display: 'flex', flex: `1` }}>
-							{menuLinks.map((link) => (
-								<li
-									key={link.name}
-									style={{
-										listStyleType: `none`,
-										padding: `1rem`
-									}}
-								>
-									<Link style={{ color: `black` }} to={link.link}>
-										{link.name}
-									</Link>
-								</li>
-							))}
-						</ul>
-					</nav>
-				</div>
+				<nav>
+					<ul style={{ display: 'flex', flex: `1` }}>
+						{menuLinks.map((link) => (
+							<li
+								key={link.name}
+								style={{
+									listStyleType: `none`,
+									padding: `1rem`
+								}}
+							>
+								<Link style={{ color: `black` }} to={link.link}>
+									{link.name}
+								</Link>
+							</li>
+						))}
+					</ul>
+				</nav>
 			</Toolbar>
 		</AppBar>
 	</React.Fragment>
