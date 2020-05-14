@@ -33,7 +33,7 @@ export const VideoThumbnails = () => {
 						<Link to={thumbnail.link}>
 							<Img
 								fluid={thumbnail.src.childImageSharp.fluid}
-								style={{ width: `100%`, height: `100%`, objectFit: `contain`, paddingTop: `100%` }}
+								style={{ width: `100%`, height: `100%`, paddingTop: `100%` }}
 							/>
 						</Link>
 						<div
