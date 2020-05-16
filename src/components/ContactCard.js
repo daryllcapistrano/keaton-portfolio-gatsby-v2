@@ -5,8 +5,18 @@ import Img from 'gatsby-image';
 import Card from '@material-ui/core/Card';
 import Container from '@material-ui/core/Container';
 import CardContent from '@material-ui/core/CardContent';
-import Typography from '@material-ui/core/Typography';
+// import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
+// import List from '@material-ui/core/List';
+// import ListItem from '@material-ui/core/ListItem';
+// import ListItemIcon from '@material-ui/core/ListItemIcon';
+// import ListItemText from '@material-ui/core/ListItemText';
+// // icons
+// import PhoneIphoneIcon from '@material-ui/icons/PhoneIphone';
+// import AlternateEmailIcon from '@material-ui/icons/AlternateEmail';
+// import InstagramIcon from '@material-ui/icons/Instagram';
+
+import ContactForm from '../components/ContactForm';
 
 export default function ContactCard() {
 	const data = useStaticQuery(graphql`
@@ -29,12 +39,35 @@ export default function ContactCard() {
 						<CardContent>
 							{/* <Typography gutterBottom variant="h5" component="h2">
 								Contact Me
-							</Typography> */}
-							<Typography variant="body2" color="textSecondary" component="p">
-								<li>Keaton Rodgers</li>
-								<li>keatonrodgersmedia@gmail.com</li>
-								<li>@keatonrodgers</li>
 							</Typography>
+
+							<List aria-label="contacts">
+								<ListItem>
+									<ListItemIcon>
+										<PhoneIphoneIcon />
+									</ListItemIcon>
+									<ListItemText>
+										<a href="tel:971.347.6704">971.347.6704</a>
+									</ListItemText>
+								</ListItem>
+								<ListItem>
+									<ListItemIcon>
+										<AlternateEmailIcon />
+									</ListItemIcon>
+									<ListItemText>
+										<a href="mailto:keatonrodgersmedia@gmail.com">keatonrodgersmedia@gmail.com</a>
+									</ListItemText>
+								</ListItem>
+								<ListItem>
+									<ListItemIcon>
+										<InstagramIcon />
+									</ListItemIcon>
+									<ListItemText>
+										<a href="https://www.instagram.com/keatonrodgers">@keatonrodgers</a>
+									</ListItemText>
+								</ListItem>
+							</List> */}
+							<ContactForm />
 						</CardContent>
 					</Grid>
 					<Grid item xs={12} sm={6} md={6} lg={6} xl={6}>
