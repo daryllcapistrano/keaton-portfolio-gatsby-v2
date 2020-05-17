@@ -1,18 +1,15 @@
 import React, { useState, useCallback } from 'react';
-
 import Gallery from 'react-photo-gallery';
 import Carousel, { Modal, ModalGateway } from 'react-images';
 import { photoSources } from '../data/photoSources';
 
 const carouselStyles = {
 	view: () => ({
-		// none of react-images styles are passed to <View />
-		// fix to center image in modal on mobile
-		height: `100vh`,
+		height: `90vh`,
 		width: `100%`,
-		textAlign: `center`
-		// paddingTop: `15vh`
-		// backgroundColor: `white`
+		textAlign: `center`,
+		paddingTop: `5vh`,
+		paddingBottom: `5vh`
 	})
 };
 
