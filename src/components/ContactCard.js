@@ -36,10 +36,10 @@ export default function ContactCard() {
 			<Card style={{ borderRadius: `0` }}>
 				<Grid container>
 					<Grid item xs={12} sm={6} md={6} lg={6} xl={6}>
-						<Container style={{ padding: `24px` }}>
-							<Card elevation={2}>
-								<ContactForm />
-							</Card>
+						<Container>
+							{/* <Card elevation={2}> */}
+							<ContactForm />
+							{/* </Card> */}
 						</Container>
 					</Grid>
 					<Grid item xs={12} sm={6} md={6} lg={6} xl={6}>

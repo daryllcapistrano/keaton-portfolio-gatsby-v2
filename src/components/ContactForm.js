@@ -15,7 +15,15 @@ export default class MyForm extends React.Component {
 	render() {
 		const { status } = this.state;
 		return (
-			<Container style={{ padding: `20px` }}>
+			<Container
+				style={{
+					padding: `0`,
+					paddingTop: `24px`
+				}}
+			>
+				<Container>
+					<h3>Contact Me</h3>
+				</Container>
 				<form
 					onSubmit={this.submitForm}
 					action="https://formspree.io/mqkyekqz"
@@ -23,20 +31,37 @@ export default class MyForm extends React.Component {
 					autoComplete="off"
 					noValidate
 				>
-					{/* <!-- add your custom form HTML here --> */}
-					{/* <label htmlFor="email">Email:</label> */}
+					<Container style={{ padding: `0` }}>
+						<TextField
+							id="standard-basic-firstname"
+							type="text"
+							name="first-name"
+							label="First Name"
+							fullWidth
+							variant="outlined"
+							style={{ margin: `5px` }}
+						/>
+						<TextField
+							id="standard-basic-lastname"
+							type="text"
+							name="last-name"
+							label="Last Name"
+							fullWidth
+							variant="outlined"
+							style={{ margin: `5px` }}
+						/>
+					</Container>
+
 					<TextField
-						id="standard-basic-firstname"
-						type="text"
-						name="first-name"
-						label="First Name"
+						id="standard-basic-email"
+						type="email"
+						name="email"
+						label="Email"
+						fullWidth
 						variant="outlined"
+						style={{ margin: `5px` }}
 					/>
-					<TextField id="standard-basic-lastname" type="text" name="last-name" label="Last Name" variant="outlined" />
-					<TextField id="standard-basic-email" type="email" name="email" label="Email" fullWidth variant="outlined" />
-					{/* <input type="email" name="email" /> */}
-					{/* <label htmlFor="message">Message:</label> */}
-					{/* <input type="text" name="message" /> */}
+
 					<TextField
 						id="standard-basic-message"
 						type="text"
@@ -47,9 +72,10 @@ export default class MyForm extends React.Component {
 						rows={6}
 						variant="outlined"
 						data-shrink="false"
+						style={{ margin: `5px` }}
 					/>
-					{status === 'SUCCESS' ? <p>Thanks!</p> : <button>Submit</button>}
-					{status === 'ERROR' && <p>Enter valid Email</p>}
+					{status === 'SUCCESS' ? <p>Thanks! I'll contact you shortly</p> : <button>Submit</button>}
+					{status === 'ERROR' && <p>Please enter a message</p>}
 				</form>
 			</Container>
 		);
