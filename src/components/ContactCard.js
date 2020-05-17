@@ -4,7 +4,7 @@ import Img from 'gatsby-image';
 // import { makeStyles } from '@material-ui/core/styles'
 import Card from '@material-ui/core/Card';
 import Container from '@material-ui/core/Container';
-import CardContent from '@material-ui/core/CardContent';
+// import CardContent from '@material-ui/core/CardContent';
 // import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 // import List from '@material-ui/core/List';
@@ -36,39 +36,11 @@ export default function ContactCard() {
 			<Card style={{ borderRadius: `0` }}>
 				<Grid container>
 					<Grid item xs={12} sm={6} md={6} lg={6} xl={6}>
-						<CardContent>
-							{/* <Typography gutterBottom variant="h5" component="h2">
-								Contact Me
-							</Typography>
-
-							<List aria-label="contacts">
-								<ListItem>
-									<ListItemIcon>
-										<PhoneIphoneIcon />
-									</ListItemIcon>
-									<ListItemText>
-										<a href="tel:971.347.6704">971.347.6704</a>
-									</ListItemText>
-								</ListItem>
-								<ListItem>
-									<ListItemIcon>
-										<AlternateEmailIcon />
-									</ListItemIcon>
-									<ListItemText>
-										<a href="mailto:keatonrodgersmedia@gmail.com">keatonrodgersmedia@gmail.com</a>
-									</ListItemText>
-								</ListItem>
-								<ListItem>
-									<ListItemIcon>
-										<InstagramIcon />
-									</ListItemIcon>
-									<ListItemText>
-										<a href="https://www.instagram.com/keatonrodgers">@keatonrodgers</a>
-									</ListItemText>
-								</ListItem>
-							</List> */}
-							<ContactForm />
-						</CardContent>
+						<Container style={{ padding: `24px` }}>
+							<Card elevation={2}>
+								<ContactForm />
+							</Card>
+						</Container>
 					</Grid>
 					<Grid item xs={12} sm={6} md={6} lg={6} xl={6}>
 						<Container style={{ padding: `24px` }}>

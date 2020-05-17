@@ -1,5 +1,6 @@
 import React from 'react';
-import Card from '@material-ui/core/Card';
+
+import Container from '@material-ui/core/Container';
 import TextField from '@material-ui/core/TextField';
 
 export default class MyForm extends React.Component {
@@ -14,7 +15,7 @@ export default class MyForm extends React.Component {
 	render() {
 		const { status } = this.state;
 		return (
-			<Card>
+			<Container style={{ padding: `20px` }}>
 				<form
 					onSubmit={this.submitForm}
 					action="https://formspree.io/mqkyekqz"
@@ -23,16 +24,34 @@ export default class MyForm extends React.Component {
 					noValidate
 				>
 					{/* <!-- add your custom form HTML here --> */}
-					<label htmlFor="email">Email:</label>
-					<TextField id="standard-basic" type="email" name="email" />
+					{/* <label htmlFor="email">Email:</label> */}
+					<TextField
+						id="standard-basic-firstname"
+						type="text"
+						name="first-name"
+						label="First Name"
+						variant="outlined"
+					/>
+					<TextField id="standard-basic-lastname" type="text" name="last-name" label="Last Name" variant="outlined" />
+					<TextField id="standard-basic-email" type="email" name="email" label="Email" fullWidth variant="outlined" />
 					{/* <input type="email" name="email" /> */}
-					<label htmlFor="message">Message:</label>
+					{/* <label htmlFor="message">Message:</label> */}
 					{/* <input type="text" name="message" /> */}
-					<TextField id="standard-basic" type="text" name="message" />
+					<TextField
+						id="standard-basic-message"
+						type="text"
+						name="message"
+						label="Send me a message"
+						fullWidth
+						multiline
+						rows={6}
+						variant="outlined"
+						data-shrink="false"
+					/>
 					{status === 'SUCCESS' ? <p>Thanks!</p> : <button>Submit</button>}
-					{status === 'ERROR' && <p>Ooops! There was an error.</p>}
+					{status === 'ERROR' && <p>Enter valid Email</p>}
 				</form>
-			</Card>
+			</Container>
 		);
 	}
 
