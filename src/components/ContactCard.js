@@ -11,7 +11,6 @@ import Grid from '@material-ui/core/Grid';
 // import ListItem from '@material-ui/core/ListItem';
 // import ListItemIcon from '@material-ui/core/ListItemIcon';
 // import ListItemText from '@material-ui/core/ListItemText';
-// // icons
 // import PhoneIphoneIcon from '@material-ui/icons/PhoneIphone';
 // import AlternateEmailIcon from '@material-ui/icons/AlternateEmail';
 // import InstagramIcon from '@material-ui/icons/Instagram';
@@ -37,9 +36,7 @@ export default function ContactCard() {
 				<Grid container>
 					<Grid item xs={12} sm={6} md={6} lg={6} xl={6}>
 						<Container>
-							{/* <Card elevation={2}> */}
 							<ContactForm />
-							{/* </Card> */}
 						</Container>
 					</Grid>
 					<Grid item xs={12} sm={6} md={6} lg={6} xl={6}>

@@ -9,8 +9,8 @@ import Toolbar from '@material-ui/core/Toolbar';
 const Header = ({ siteTitle, menuLinks }) => (
 	<React.Fragment>
 		<AppBar position="static" color="default" elevation={0} style={{ backgroundColor: `inherit` }}>
-			<Toolbar>
-				<Typography variant="h6" color="inherit" noWrap>
+			<Toolbar style={{ flexWrap: `wrap` }}>
+				<Typography variant="h6" color="inherit" noWrap style={{ flexGrow: `1` }}>
 					<Link to="/">Keaton Rodgers</Link>
 				</Typography>
 				<nav>
@@ -23,7 +23,7 @@ const Header = ({ siteTitle, menuLinks }) => (
 									padding: `1rem`
 								}}
 							>
-								<Link style={{ color: `black` }} to={link.link}>
+								<Link variant="button" color="textPrimary" style={{ color: `black` }} to={link.link}>
 									{link.name}
 								</Link>
 							</li>
