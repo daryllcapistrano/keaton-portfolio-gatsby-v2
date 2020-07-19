@@ -3,10 +3,10 @@
 @media screen and (max-width: 768px) {
   .bm-burger-button {
     position: fixed;
-    width: 36px;
-    height: 30px;
-    right: 36px;
-    top: 26px;
+    width: 26px;
+    height: 20px;
+    right: 24px;
+    top: 30px;
   }
 }
 /* hide on desktop */
@@ -48,7 +48,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 /* General sidebar styles */
 .bm-menu {
-  background: #373a47;
+  background: #fafafa;
   padding: 2.5em 1.5em 0;
   font-size: 1.15em;
 }

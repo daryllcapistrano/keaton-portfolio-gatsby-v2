@@ -72,6 +72,7 @@ const Header = ({ menuLinks }) => (
               style={{
                 padding: `.5rem`,
                 fontSize: `1rem`,
+                fontWeight: `500`,
                 textTransform: `uppercase`,
               }}
             >

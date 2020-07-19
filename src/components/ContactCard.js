@@ -35,15 +35,15 @@ export default function ContactCard() {
       <Card style={{ borderRadius: `0` }}>
         <Grid container>
           <Grid item xs={12} sm={6} md={6} lg={6} xl={6}>
-            <Container>
-              <ContactForm />
-            </Container>
-          </Grid>
-          <Grid item xs={12} sm={6} md={6} lg={6} xl={6}>
             <Container style={{ padding: `24px` }}>
               <Card elevation={2}>
                 <Img fluid={data.file.childImageSharp.fluid} />
               </Card>
+            </Container>
+          </Grid>
+          <Grid item xs={12} sm={6} md={6} lg={6} xl={6}>
+            <Container>
+              <ContactForm />
             </Container>
           </Grid>
         </Grid>

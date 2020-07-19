@@ -49,7 +49,7 @@ export const VideoThumbnails = () => {
                 color: `white`,
                 fontFamily: "Poppins, sans-serif",
                 fontWeight: 700,
-                fontSize: `32px`,
+                fontSize: `30px`,
                 textShadow: `2px 2px 3px rgba(0,0,0,0.57)`,
                 width: `80%`,
                 position: `absolute`,

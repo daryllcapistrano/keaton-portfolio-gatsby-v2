@@ -34,6 +34,7 @@ const OJSlimePage = () => (
         position: "relative",
         paddingBottom: "56.25%" /* 16:9 */,
         paddingTop: 25,
+        marginBottom: `.5rem`,
       }}
     >
       <iframe
@@ -55,6 +56,7 @@ const OJSlimePage = () => (
         position: "relative",
         paddingBottom: "56.25%" /* 16:9 */,
         paddingTop: 25,
+        marginBottom: `.5rem`,
       }}
     >
       <iframe
@@ -76,6 +78,7 @@ const OJSlimePage = () => (
         position: "relative",
         paddingBottom: "56.25%" /* 16:9 */,
         paddingTop: 25,
+        marginBottom: `.5rem`,
       }}
     >
       <iframe
@@ -98,6 +101,7 @@ const OJSlimePage = () => (
         position: "relative",
         paddingBottom: "56.25%" /* 16:9 */,
         paddingTop: 25,
+        marginBottom: `.5rem`,
       }}
     >
       <iframe

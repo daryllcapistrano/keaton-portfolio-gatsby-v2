@@ -1,8 +1,8 @@
 import React from "react"
-
 import Container from "@material-ui/core/Container"
 import TextField from "@material-ui/core/TextField"
-import Button from "@material-ui/core/Button"
+import { IconContext } from "react-icons"
+import { GrContactInfo, GrInstagram, GrSend, GrPhone } from "react-icons/gr"
 
 export default class MyForm extends React.Component {
   constructor(props) {
@@ -19,18 +19,103 @@ export default class MyForm extends React.Component {
       <Container
         style={{
           padding: `0`,
-          paddingTop: `24px`,
+          fontFamily: `Poppins, sans-serif`,
+          fontWeight: 400,
         }}
       >
         <Container>
-          <h3 style={{ textAlign: `center` }}>Contact Me </h3>
+          <h3 style={{ textAlign: `center`, fontSize: `1rem` }}>
+            <IconContext.Provider
+              value={{
+                className: "global-class-name",
+                size: "3em",
+              }}
+            >
+              <div>
+                <GrContactInfo />
+              </div>
+            </IconContext.Provider>
+            Contact Me
+          </h3>
         </Container>
+        <Container style={{ paddingLeft: `7px` }}>
+          <ul style={{ listStyleType: `none`, padding: `0` }}>
+            <li>
+              <a
+                class="button"
+                style={{
+                  textDecoration: `none`,
+                  color: `black`,
+                  fontWeight: 200,
+                  // cursor: `pointer`,
+                }}
+                href="tel:971.347.6704"
+              >
+                <IconContext.Provider
+                  value={{
+                    className: "global-class-name",
+                    size: "1rem",
+                  }}
+                >
+                  <GrPhone />
+                </IconContext.Provider>{" "}
+                <span>971.347.6704</span>
+              </a>
+            </li>
+            <br />
+            <li>
+              <a
+                class="button"
+                style={{
+                  textDecoration: `none`,
+                  color: `black`,
+                  fontWeight: 200,
+                }}
+                href="mailto:keatonrodgersmedia@gmail.com"
+              >
+                <IconContext.Provider
+                  value={{
+                    className: "global-class-name",
+                    size: "1rem",
+                  }}
+                >
+                  <GrSend />
+                </IconContext.Provider>{" "}
+                <span>keatonrodgersmedia@gmail.com</span>
+              </a>
+            </li>
+            <br />
+            <li>
+              <a
+                class="button"
+                style={{
+                  textDecoration: `none`,
+                  color: `black`,
+                  fontWeight: 200,
+                }}
+                href="https://www.instagram.com/keatonrodgers"
+              >
+                <IconContext.Provider
+                  value={{
+                    className: "global-class-name",
+                    size: "1rem",
+                  }}
+                >
+                  <GrInstagram />
+                </IconContext.Provider>{" "}
+                <span>@keatonrodgers</span>
+              </a>
+            </li>
+          </ul>
+        </Container>
+        {/* begin form */}
         <form
           onSubmit={this.submitForm}
           action="https://formspree.io/mqkyekqz"
           method="POST"
           autoComplete="off"
           noValidate
+          style={{ borderRadius: 0 }}
         >
           <Container style={{ padding: `0` }}>
             <TextField
@@ -76,13 +161,32 @@ export default class MyForm extends React.Component {
             style={{ margin: `5px` }}
           />
           {status === "SUCCESS" ? (
-            <p>Thanks! I'll contact you shortly</p>
+            <p style={{ textAlign: `center` }}>
+              Thanks! I'll contact you shortly
+            </p>
           ) : (
             <div style={{ textAlign: `center`, padding: `.5rem` }}>
-              <button>Submit</button>
+              <button
+                style={{
+                  backgroundColor: "#373a47",
+                  border: "none",
+                  color: "white",
+                  padding: "7px 18px",
+                  textAlign: "center",
+                  textDecoration: "none",
+                  display: "inline-block",
+                  fontSize: "16px",
+                  fontFamily: `Poppins, sans-serif`,
+                  fontWeight: 400,
+                }}
+              >
+                Submit
+              </button>
             </div>
           )}
-          {status === "ERROR" && <p>Please enter a message</p>}
+          {status === "ERROR" && (
+            <p style={{ textAlign: `center` }}>Please enter a message</p>
+          )}
         </form>
       </Container>
     )

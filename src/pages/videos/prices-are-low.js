@@ -9,7 +9,7 @@ const PricesAreLow = () => (
     <div>
       <div style={{ textAlign: "center", padding: `20px` }}>
         <Link
-          to="/videos/oj-wheels-rain"
+          to="/"
           style={{
             color: "#000000",
             padding: "10px",
@@ -33,8 +33,6 @@ const PricesAreLow = () => (
         position: "relative",
         paddingBottom: "56.25%" /* 16:9 */,
         paddingTop: 25,
-        maxWidth: `95%`,
-        margin: `auto`,
       }}
     >
       <iframe

@@ -5,7 +5,7 @@ module.exports = {
     author: `dcapistrano.dev`,
     menuLinks: [
       {
-        name: `home`,
+        name: `videos`,
         link: "/",
       },
       {

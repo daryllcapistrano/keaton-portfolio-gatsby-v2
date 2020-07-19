@@ -8,7 +8,7 @@ import Footer from "./Footer"
 
 import "./burgerStyles.css"
 
-const Layout = ({ children, menuLinks }) => {
+const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -24,7 +24,7 @@ const Layout = ({ children, menuLinks }) => {
 
   return (
     <React.Fragment>
-      <Menu pageWrapId={"page-wrap"}>
+      <Menu right pageWrapId={"page-wrap"}>
         <Link
           to="/"
           style={{
@@ -34,9 +34,10 @@ const Layout = ({ children, menuLinks }) => {
             fontFamily: `Poppins, sans-serif`,
             fontWeight: 700,
             fontSize: `1.5rem`,
+            margin: ".5rem",
           }}
         >
-          home
+          videos
         </Link>
         <Link
           to="/photos"
@@ -47,6 +48,7 @@ const Layout = ({ children, menuLinks }) => {
             fontFamily: `Poppins, sans-serif`,
             fontWeight: 700,
             fontSize: `1.5rem`,
+            margin: ".5rem",
           }}
         >
           photos
@@ -60,6 +62,7 @@ const Layout = ({ children, menuLinks }) => {
             fontFamily: `Poppins, sans-serif`,
             fontWeight: 700,
             fontSize: `1.5rem`,
+            margin: ".5rem",
           }}
         >
           clients
@@ -73,6 +76,7 @@ const Layout = ({ children, menuLinks }) => {
             fontFamily: `Poppins, sans-serif`,
             fontWeight: 700,
             fontSize: `1.5rem`,
+            margin: ".5rem",
           }}
         >
           contact
