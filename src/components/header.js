@@ -26,18 +26,21 @@ const ResponsiveLinks = styled.div`
   }
   display: inline-flex;
 `
-const MobileDrawer = styled.div`
-  @media screen and (max-width: 768px) {
-    display: block;
-  }
-  display: none;
-`
+// const MobileDrawer = styled.div`
+//   @media screen and (max-width: 768px) {
+//     display: inline-flex;
+//     font-weight: 400;
+//     font-size: 1rem;
+//     text-transform: uppercase;
+//   }
+//   display: none;
+// `
 
 const Header = ({ menuLinks }) => (
   <div
     style={{
       flexGrow: 1,
-      paddingTop: `.75rem`,
+      paddingTop: `1rem`,
       fontFamily: `Poppins, sans-serif`,
       fontWeight: 700,
       fontSize: `1.5rem`,
@@ -51,7 +54,14 @@ const Header = ({ menuLinks }) => (
     >
       <Toolbar variant="dense" style={{ justifyContent: `space-between` }}>
         <div>
-          <Link to="/" style={{ display: `inline-flex` }}>
+          <Link
+            to="/"
+            style={{
+              color: `black`,
+              textTransform: `uppercase`,
+              textDecoration: `none`,
+            }}
+          >
             Keaton Rodgers
           </Link>
         </div>
@@ -68,7 +78,7 @@ const Header = ({ menuLinks }) => (
               <Link
                 variant="button"
                 color="textPrimary"
-                style={{ color: `black` }}
+                style={{ color: `black`, textDecoration: `none` }}
                 to={link.link}
               >
                 {link.name}
@@ -76,7 +86,20 @@ const Header = ({ menuLinks }) => (
             </div>
           ))}
         </ResponsiveLinks>
-        <MobileDrawer>asdfasdfaadsaffa</MobileDrawer>
+        {/* <MobileDrawer>
+          {menuLinks.map(link => (
+            <div key={link.name}>
+              <Link
+                variant="button"
+                color="textPrimary"
+                style={{ color: `black`, textDecoration: `none` }}
+                to={link.link}
+              >
+                {link.name}
+              </Link>
+            </div>
+          ))}
+        </MobileDrawer> */}
       </Toolbar>
     </AppBar>
   </div>
