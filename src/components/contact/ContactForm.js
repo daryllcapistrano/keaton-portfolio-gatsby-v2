@@ -1,8 +1,36 @@
 import React from "react"
+import styled from "styled-components"
 import Container from "@material-ui/core/Container"
 import TextField from "@material-ui/core/TextField"
 import { IconContext } from "react-icons"
 import { GrContactInfo, GrInstagram, GrSend, GrPhone } from "react-icons/gr"
+
+const Wrapper = styled(Container)`
+  padding: 0;
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+`
+const ContactHeader = styled.h3`
+  text-align: center;
+  font-size: 1em;
+`
+const Link = styled.a`
+  text-decoration: none;
+  color: #000000;
+  font-weight: 200;
+`
+const FormButton = styled.button`
+  background-color: #373a47;
+  border: none;
+  color: #f0f0f0;
+  padding: 7px 18px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+`
 
 export default class MyForm extends React.Component {
   constructor(props) {
@@ -16,15 +44,9 @@ export default class MyForm extends React.Component {
   render() {
     const { status } = this.state
     return (
-      <Container
-        style={{
-          padding: `0`,
-          fontFamily: `Poppins, sans-serif`,
-          fontWeight: 400,
-        }}
-      >
+      <Wrapper>
         <Container>
-          <h3 style={{ textAlign: `center`, fontSize: `1rem` }}>
+          <ContactHeader>
             <IconContext.Provider
               value={{
                 className: "global-class-name",
@@ -36,21 +58,12 @@ export default class MyForm extends React.Component {
               </div>
             </IconContext.Provider>
             Contact Me
-          </h3>
+          </ContactHeader>
         </Container>
         <Container style={{ paddingLeft: `7px` }}>
           <ul style={{ listStyleType: `none`, padding: `0` }}>
             <li>
-              <a
-                class="button"
-                style={{
-                  textDecoration: `none`,
-                  color: `black`,
-                  fontWeight: 200,
-                  // cursor: `pointer`,
-                }}
-                href="tel:971.347.6704"
-              >
+              <Link class="button" href="tel:971.347.6704">
                 <IconContext.Provider
                   value={{
                     className: "global-class-name",
@@ -60,19 +73,11 @@ export default class MyForm extends React.Component {
                   <GrPhone />
                 </IconContext.Provider>{" "}
                 <span>971.347.6704</span>
-              </a>
+              </Link>
             </li>
             <br />
             <li>
-              <a
-                class="button"
-                style={{
-                  textDecoration: `none`,
-                  color: `black`,
-                  fontWeight: 200,
-                }}
-                href="mailto:keatonrodgersmedia@gmail.com"
-              >
+              <Link class="button" href="mailto:keatonrodgersmedia@gmail.com">
                 <IconContext.Provider
                   value={{
                     className: "global-class-name",
@@ -82,17 +87,12 @@ export default class MyForm extends React.Component {
                   <GrSend />
                 </IconContext.Provider>{" "}
                 <span>keatonrodgersmedia@gmail.com</span>
-              </a>
+              </Link>
             </li>
             <br />
             <li>
-              <a
+              <Link
                 class="button"
-                style={{
-                  textDecoration: `none`,
-                  color: `black`,
-                  fontWeight: 200,
-                }}
                 href="https://www.instagram.com/keatonrodgers"
               >
                 <IconContext.Provider
@@ -104,7 +104,7 @@ export default class MyForm extends React.Component {
                   <GrInstagram />
                 </IconContext.Provider>{" "}
                 <span>@keatonrodgers</span>
-              </a>
+              </Link>
             </li>
           </ul>
         </Container>
@@ -166,29 +166,14 @@ export default class MyForm extends React.Component {
             </p>
           ) : (
             <div style={{ textAlign: `center`, padding: `.5rem` }}>
-              <button
-                style={{
-                  backgroundColor: "#373a47",
-                  border: "none",
-                  color: "white",
-                  padding: "7px 18px",
-                  textAlign: "center",
-                  textDecoration: "none",
-                  display: "inline-block",
-                  fontSize: "16px",
-                  fontFamily: `Poppins, sans-serif`,
-                  fontWeight: 400,
-                }}
-              >
-                Submit
-              </button>
+              <FormButton>Submit</FormButton>
             </div>
           )}
           {status === "ERROR" && (
             <p style={{ textAlign: `center` }}>Please enter a message</p>
           )}
         </form>
-      </Container>
+      </Wrapper>
     )
   }
 

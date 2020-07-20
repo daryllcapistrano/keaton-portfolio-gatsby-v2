@@ -1,15 +1,15 @@
-import React from 'react';
+import React from "react"
 
-import Layout from '../components/layout';
-import SEO from '../components/seo';
+import Layout from "../components/common/layout"
+import SEO from "../components/seo"
 
-import ContactCard from '../components/ContactCard';
+import ContactCard from "../components/contact/ContactCard"
 
 const ContactPage = () => (
-	<Layout>
-		<SEO title="ContactPage" />
-		<ContactCard />
-	</Layout>
-);
+  <Layout>
+    <SEO title="ContactPage" />
+    <ContactCard />
+  </Layout>
+)
 
-export default ContactPage;
+export default ContactPage

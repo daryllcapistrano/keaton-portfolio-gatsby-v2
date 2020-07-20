@@ -5,7 +5,7 @@ import { photoSources } from "../data/photoSources"
 
 const carouselStyles = {
   view: () => ({
-    height: `90vh`,
+    height: `100vh`,
     width: `100%`,
     textAlign: `center`,
     paddingTop: `5vh`,
@@ -34,7 +34,8 @@ function PhotoGallery() {
         photos={photoSources}
         onClick={openLightbox}
         direction={"row"}
-        margin={3}
+        margin={2}
+        limitNodeSearch={3}
       />
       <ModalGateway>
         {viewerIsOpen ? (

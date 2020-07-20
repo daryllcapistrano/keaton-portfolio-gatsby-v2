@@ -1,15 +1,15 @@
-import React from 'react';
+import React from "react"
 
-import Layout from '../components/layout';
-import SEO from '../components/seo';
+import Layout from "../components/common/layout"
+import SEO from "../components/seo"
 
-import { VideoThumbnails } from '../components/VideoThumbnails';
+import { VideoThumbnails } from "../components/VideoThumbnails"
 
 const IndexPage = () => (
-	<Layout>
-		<SEO title="Home" />
-		<VideoThumbnails />
-	</Layout>
-);
+  <Layout>
+    <SEO title="Home" />
+    <VideoThumbnails />
+  </Layout>
+)
 
-export default IndexPage;
+export default IndexPage
