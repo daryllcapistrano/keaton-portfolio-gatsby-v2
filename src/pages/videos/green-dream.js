@@ -18,7 +18,7 @@ const GreenDreamPage = () => (
           Back
         </Link>
         <Link
-          to="/videos/jack-graydon"
+          to="/videos/creature-quarantine-sessions"
           style={{
             color: "#000000",
             padding: "10px",
