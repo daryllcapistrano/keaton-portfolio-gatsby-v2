@@ -3,8 +3,8 @@ import { useStaticQuery, graphql } from "gatsby"
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import styled from "styled-components"
-import Header from "../Header"
-import Footer from "../Footer"
+import Header from "./header"
+import Footer from "./footer"
 
 import { slide as Menu } from "react-burger-menu"
 import "./burgerStyles.css"
@@ -15,7 +15,6 @@ const Wrapper = styled.div`
   }
   padding: 0 5em;
 `
-
 const MenuLink = styled(Link)`
   color: #000000;
   text-transform: uppercase;
@@ -48,13 +47,11 @@ const Layout = ({ children }) => {
         <MenuLink to="/clients">clients</MenuLink>
         <MenuLink to="/contact">contact</MenuLink>
       </Menu>
-
       <Wrapper>
         <Header
           siteTitle={data.site.siteMetadata.title}
           menuLinks={data.site.siteMetadata.menuLinks}
         />
-
         <main id="page-wrap">{children}</main>
       </Wrapper>
       <Footer />

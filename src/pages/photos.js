@@ -1,13 +1,13 @@
 import React from "react"
 import Layout from "../components/common/layout"
-import SEO from "../components/seo"
+import SEO from "../components/common/seo"
 
-import Gallery from "../components/LightboxGallery"
+import LightboxGallery from "../components/photo/LightboxGallery"
 
 const PhotosPage = () => (
   <Layout>
     <SEO title="PhotosPage" />
-    <Gallery />
+    <LightboxGallery />
   </Layout>
 )
 

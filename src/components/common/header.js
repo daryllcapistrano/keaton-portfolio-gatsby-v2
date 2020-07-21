@@ -10,7 +10,6 @@ const ResponsiveLinks = styled.div`
   }
   display: inline-flex;
 `
-
 const Wrapper = styled.div`
   flex-grow: 1;
   padding-top: 1em;
@@ -21,27 +20,26 @@ const Wrapper = styled.div`
 const HeaderContainer = styled(AppBar)`
   background-color: inherit !important;
 `
-
 const StyledToolbar = styled(Toolbar)`
   justify-content: space-between;
 `
-
 const Brand = styled(Link)`
   color: #000000;
   text-transform: uppercase;
   text-decoration: none;
 `
-
 const LinkWrapper = styled.div`
   padding: 0.5em;
   font-size: 0.75em;
   font-weight: 400;
   text-transform: uppercase;
 `
-
 const HeaderLink = styled(Link)`
   color: #000000;
   text-decoration: none;
+  :hover {
+    color: #bdc3c7;
+  }
 `
 
 const Header = ({ menuLinks }) => (

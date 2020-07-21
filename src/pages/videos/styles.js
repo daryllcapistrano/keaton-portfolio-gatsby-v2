@@ -13,7 +13,11 @@ export const NavWrapper = styled.div`
 `
 export const NavLink = styled(Link)`
   color: #000000;
+  text-decoration: none;
   padding: 10px;
+  :hover {
+    color: #bdc3c7;
+  }
 `
 export const YoutubeVideo = styled.iframe`
   position: absolute;
