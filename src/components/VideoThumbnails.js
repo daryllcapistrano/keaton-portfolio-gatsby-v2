@@ -43,28 +43,28 @@ export const VideoThumbnails = () => {
                 fluid={thumbnail.src.childImageSharp.fluid}
                 style={{ width: `100%`, height: `100%`, paddingTop: `100%` }}
               />
+              <div
+                style={{
+                  color: `white`,
+                  fontFamily: "Poppins, sans-serif",
+                  fontWeight: 700,
+                  fontSize: `30px`,
+                  textShadow: `2px 2px 3px rgba(0,0,0,0.57)`,
+                  width: `80%`,
+                  position: `absolute`,
+                  paddingBottom: `25px`,
+                  top: `80%`,
+                  left: `50%`,
+                  transform: `translate(-50%, -50%)`,
+                  textTransform: `uppercase`,
+                  textAlign: `center`,
+                }}
+              >
+                {thumbnail.title}
+                <br />
+                {thumbnail.subtitle}
+              </div>
             </Link>
-            <div
-              style={{
-                color: `white`,
-                fontFamily: "Poppins, sans-serif",
-                fontWeight: 700,
-                fontSize: `30px`,
-                textShadow: `2px 2px 3px rgba(0,0,0,0.57)`,
-                width: `80%`,
-                position: `absolute`,
-                paddingBottom: `25px`,
-                top: `80%`,
-                left: `50%`,
-                transform: `translate(-50%, -50%)`,
-                textTransform: `uppercase`,
-                textAlign: `center`,
-              }}
-            >
-              {thumbnail.title}
-              <br />
-              {thumbnail.subtitle}
-            </div>
           </Card>
         </Grid>
       ))}

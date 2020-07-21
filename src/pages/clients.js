@@ -1,21 +1,21 @@
 import React from "react"
-
 import Layout from "../components/common/layout"
 import SEO from "../components/seo"
+import styled from "styled-components"
+
+const Wrapper = styled.div`
+  padding-top: 2em;
+  margin: auto;
+  text-align: center;
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+  font-size: 1.5em;
+`
 
 const ClientsPage = () => (
   <Layout>
     <SEO title="ClientsPage" />
-    <div
-      style={{
-        paddingTop: `2rem`,
-        margin: `auto`,
-        textAlign: `center`,
-        fontFamily: `Poppins, sans-serif`,
-        fontWeight: 400,
-        fontSize: `1.5rem`,
-      }}
-    >
+    <Wrapper>
       <div>Nike</div>
       <div>Adidas</div>
       <div>Prana</div>
@@ -36,7 +36,7 @@ const ClientsPage = () => (
       <div>Worn Path</div>
       <div>Bitters</div>
       <div>Green Dream</div>
-    </div>
+    </Wrapper>
   </Layout>
 )
 

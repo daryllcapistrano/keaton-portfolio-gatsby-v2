@@ -1,4 +1,5 @@
 import React, { useState, useCallback } from "react"
+import styled from "styled-components"
 import Gallery from "react-photo-gallery"
 import Carousel, { Modal, ModalGateway } from "react-images"
 import { photoSources } from "../data/photoSources"
@@ -12,6 +13,10 @@ const carouselStyles = {
     paddingBottom: `5vh`,
   }),
 }
+
+const Wrapper = styled.div`
+  padding: 20px;
+`
 
 function PhotoGallery() {
   const [currentImage, setCurrentImage] = useState(0)
@@ -28,8 +33,7 @@ function PhotoGallery() {
   }
 
   return (
-    <div style={{ padding: `20px` }}>
-      {/* padding added above to match video page (div + img padding) */}
+    <Wrapper>
       <Gallery
         photos={photoSources}
         onClick={openLightbox}
@@ -52,7 +56,7 @@ function PhotoGallery() {
           </Modal>
         ) : null}
       </ModalGateway>
-    </div>
+    </Wrapper>
   )
 }
 

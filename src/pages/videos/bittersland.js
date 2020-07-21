@@ -1,54 +1,24 @@
 import React from "react"
-import { Link } from "gatsby"
 import Layout from "../../components/common/layout"
 import SEO from "../../components/seo"
+import { VideoWrapper, NavWrapper, NavLink, YoutubeVideo } from "./styles"
 
 const BitterslandPage = () => (
   <Layout>
     <SEO title="BitterslandPage" />
-    <div>
-      <div style={{ textAlign: "center", padding: `20px` }}>
-        <Link
-          to="/"
-          style={{
-            color: "#000000",
-            padding: "10px",
-          }}
-        >
-          Back
-        </Link>
-        <Link
-          to="/videos/oj-wheels-leaves"
-          style={{
-            color: "#000000",
-            padding: "10px",
-          }}
-        >
-          Next
-        </Link>
-      </div>
-    </div>
-    <div
-      style={{
-        position: "relative",
-        paddingBottom: "56.25%" /* 16:9 */,
-        paddingTop: 25,
-      }}
-    >
-      <iframe
-        style={{
-          position: "absolute",
-          top: 0,
-          left: 0,
-          width: "100%",
-          height: "100%",
-        }}
+    <NavWrapper>
+      <NavLink to="/videos/manifest-farm">Back</NavLink>
+      <NavLink to="/">Home</NavLink>
+      <NavLink to="/videos/oj-wheels-leaves">Next</NavLink>
+    </NavWrapper>
+    <VideoWrapper>
+      <YoutubeVideo
         src={`https://www.youtube.com/embed/J-zFcJ0rMTM`}
         frameBorder="0"
         allowFullScreen={true}
         title="bittersland"
       />
-    </div>
+    </VideoWrapper>
   </Layout>
 )
 

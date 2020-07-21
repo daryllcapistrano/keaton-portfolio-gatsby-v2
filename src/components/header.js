@@ -11,60 +11,56 @@ const ResponsiveLinks = styled.div`
   display: inline-flex;
 `
 
+const Wrapper = styled.div`
+  flex-grow: 1;
+  padding-top: 1em;
+  font-family: Poppins, sans-serif;
+  font-weight: 700;
+  font-size: 1.75em;
+`
+const HeaderContainer = styled(AppBar)`
+  background-color: inherit !important;
+`
+
+const StyledToolbar = styled(Toolbar)`
+  justify-content: space-between;
+`
+
+const Brand = styled(Link)`
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
+`
+
+const LinkWrapper = styled.div`
+  padding: 0.5em;
+  font-size: 0.75em;
+  font-weight: 400;
+  text-transform: uppercase;
+`
+
+const HeaderLink = styled(Link)`
+  color: #000000;
+  text-decoration: none;
+`
+
 const Header = ({ menuLinks }) => (
-  <div
-    style={{
-      flexGrow: 1,
-      paddingTop: `1rem`,
-      fontFamily: `Poppins, sans-serif`,
-      fontWeight: 700,
-      fontSize: `1.5rem`,
-    }}
-  >
-    <AppBar
-      position="static"
-      color="default"
-      elevation={0}
-      style={{ backgroundColor: `inherit` }}
-    >
-      <Toolbar variant="dense" style={{ justifyContent: `space-between` }}>
-        <div>
-          <Link
-            to="/"
-            style={{
-              color: `black`,
-              textTransform: `uppercase`,
-              textDecoration: `none`,
-            }}
-          >
-            Keaton Rodgers
-          </Link>
-        </div>
+  <Wrapper>
+    <HeaderContainer position="static" color="default" elevation={0}>
+      <StyledToolbar variant="dense">
+        <Brand to="/">Keaton Rodgers</Brand>
         <ResponsiveLinks>
           {menuLinks.map(link => (
-            <div
-              key={link.name}
-              style={{
-                padding: `.5rem`,
-                fontSize: `1rem`,
-                fontWeight: `500`,
-                textTransform: `uppercase`,
-              }}
-            >
-              <Link
-                variant="button"
-                color="textPrimary"
-                style={{ color: `black`, textDecoration: `none` }}
-                to={link.link}
-              >
+            <LinkWrapper key={link.name}>
+              <HeaderLink variant="button" to={link.link}>
                 {link.name}
-              </Link>
-            </div>
+              </HeaderLink>
+            </LinkWrapper>
           ))}
         </ResponsiveLinks>
-      </Toolbar>
-    </AppBar>
-  </div>
+      </StyledToolbar>
+    </HeaderContainer>
+  </Wrapper>
 )
 
 export default Header
