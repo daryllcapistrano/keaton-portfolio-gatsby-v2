@@ -9,6 +9,7 @@
     top: 30px;
   }
 }
+
 /* hide on desktop */
 @media screen and (min-width: 768px) {
   .bm-burger-button {

@@ -1,8 +1,8 @@
 import React, { useState, useCallback } from "react"
-import styled from "styled-components"
 import Gallery from "react-photo-gallery"
 import Carousel, { Modal, ModalGateway } from "react-images"
 import { photoSources } from "../../data/photoSources"
+import { Wrapper } from "./styles"
 
 const carouselStyles = {
   view: () => ({
@@ -13,11 +13,6 @@ const carouselStyles = {
     paddingBottom: `5vh`,
   }),
 }
-
-const Wrapper = styled.div`
-  padding: 20px;
-`
-
 function PhotoGallery() {
   const [currentImage, setCurrentImage] = useState(0)
   const [viewerIsOpen, setViewerIsOpen] = useState(false)

@@ -1,36 +1,21 @@
 import React from "react"
-import styled from "styled-components"
 import Container from "@material-ui/core/Container"
-import TextField from "@material-ui/core/TextField"
 import { IconContext } from "react-icons"
 import { GrContactInfo, GrInstagram, GrSend, GrPhone } from "react-icons/gr"
-
-const Wrapper = styled(Container)`
-  padding: 0;
-  font-family: Poppins, sans-serif;
-  font-weight: 400;
-`
-const ContactHeader = styled.h3`
-  text-align: center;
-  font-size: 1em;
-`
-const Link = styled.a`
-  text-decoration: none;
-  color: #000000;
-  font-weight: 200;
-`
-const FormButton = styled.button`
-  background-color: #373a47;
-  border: none;
-  color: #f0f0f0;
-  padding: 7px 18px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  font-family: Poppins, sans-serif;
-  font-weight: 400;
-`
+import {
+  Wrapper,
+  ContactHeader,
+  Link,
+  InfoContainer,
+  ContactList,
+  ListItem,
+  FormWrapper,
+  ButtonWrapper,
+  FormButton,
+  TextFieldWrapper,
+  StyledTextField,
+  Response,
+} from "./styles"
 
 export default class MyForm extends React.Component {
   constructor(props) {
@@ -53,16 +38,16 @@ export default class MyForm extends React.Component {
                 size: "3em",
               }}
             >
-              <div>
+              <Container>
                 <GrContactInfo />
-              </div>
+              </Container>
             </IconContext.Provider>
             Contact Me
           </ContactHeader>
         </Container>
-        <Container style={{ paddingLeft: `7px` }}>
-          <ul style={{ listStyleType: `none`, padding: `0` }}>
-            <li>
+        <InfoContainer>
+          <ContactList>
+            <ListItem>
               <Link class="button" href="tel:971.347.6704">
                 <IconContext.Provider
                   value={{
@@ -74,9 +59,9 @@ export default class MyForm extends React.Component {
                 </IconContext.Provider>{" "}
                 <span>971.347.6704</span>
               </Link>
-            </li>
-            <br />
-            <li>
+            </ListItem>
+            <hr />
+            <ListItem>
               <Link class="button" href="mailto:keatonrodgersmedia@gmail.com">
                 <IconContext.Provider
                   value={{
@@ -88,9 +73,9 @@ export default class MyForm extends React.Component {
                 </IconContext.Provider>{" "}
                 <span>keatonrodgersmedia@gmail.com</span>
               </Link>
-            </li>
-            <br />
-            <li>
+            </ListItem>
+            <hr />
+            <ListItem>
               <Link
                 class="button"
                 href="https://www.instagram.com/keatonrodgers"
@@ -105,74 +90,65 @@ export default class MyForm extends React.Component {
                 </IconContext.Provider>{" "}
                 <span>@keatonrodgers</span>
               </Link>
-            </li>
-          </ul>
-        </Container>
+            </ListItem>
+          </ContactList>
+        </InfoContainer>
         {/* begin form */}
-        <form
+        <FormWrapper
           onSubmit={this.submitForm}
           action="https://formspree.io/mqkyekqz"
           method="POST"
           autoComplete="off"
           noValidate
-          style={{ borderRadius: 0 }}
         >
-          <Container style={{ padding: `0` }}>
-            <TextField
+          <TextFieldWrapper>
+            <StyledTextField
               id="standard-basic-firstname"
               type="text"
               name="first-name"
               label="First Name"
               fullWidth
               variant="outlined"
-              style={{ margin: `5px` }}
             />
-            <TextField
+            <StyledTextField
               id="standard-basic-lastname"
               type="text"
               name="last-name"
               label="Last Name"
               fullWidth
               variant="outlined"
-              style={{ margin: `5px` }}
             />
-          </Container>
 
-          <TextField
-            id="standard-basic-email"
-            type="email"
-            name="email"
-            label="Email"
-            fullWidth
-            variant="outlined"
-            style={{ margin: `5px` }}
-          />
+            <StyledTextField
+              id="standard-basic-email"
+              type="email"
+              name="email"
+              label="Email"
+              fullWidth
+              variant="outlined"
+            />
 
-          <TextField
-            id="standard-basic-message"
-            type="text"
-            name="message"
-            label="Send me a message"
-            fullWidth
-            multiline
-            rows={6}
-            variant="outlined"
-            data-shrink="false"
-            style={{ margin: `5px` }}
-          />
+            <StyledTextField
+              id="standard-basic-message"
+              type="text"
+              name="message"
+              label="Send me a message"
+              fullWidth
+              multiline
+              rows={8}
+              variant="outlined"
+              data-shrink="false"
+            />
+          </TextFieldWrapper>
           {status === "SUCCESS" ? (
-            <p style={{ textAlign: `center` }}>
-              Thanks! I'll contact you shortly
-            </p>
+            <Response>Thanks! I'll contact you shortly</Response>
           ) : (
-            <div style={{ textAlign: `center`, padding: `.5rem` }}>
+            <ButtonWrapper>
               <FormButton>Submit</FormButton>
-            </div>
+            </ButtonWrapper>
           )}
-          {status === "ERROR" && (
-            <p style={{ textAlign: `center` }}>Please enter a message</p>
-          )}
-        </form>
+          {status === "ERROR" && <Response>Please enter a message</Response>}
+        </FormWrapper>
       </Wrapper>
     )
   }
