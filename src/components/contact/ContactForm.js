@@ -48,7 +48,7 @@ export default class MyForm extends React.Component {
         <InfoContainer>
           <ContactList>
             <ListItem>
-              <Link class="button" href="tel:971.347.6704">
+              <Link className="button" href="tel:971.347.6704">
                 <IconContext.Provider
                   value={{
                     className: "global-class-name",
@@ -62,7 +62,10 @@ export default class MyForm extends React.Component {
             </ListItem>
             <hr />
             <ListItem>
-              <Link class="button" href="mailto:keatonrodgersmedia@gmail.com">
+              <Link
+                className="button"
+                href="mailto:keatonrodgersmedia@gmail.com"
+              >
                 <IconContext.Provider
                   value={{
                     className: "global-class-name",
@@ -77,7 +80,7 @@ export default class MyForm extends React.Component {
             <hr />
             <ListItem>
               <Link
-                class="button"
+                className="button"
                 href="https://www.instagram.com/keatonrodgers"
               >
                 <IconContext.Provider
