@@ -8,7 +8,7 @@ export const StyledGrid = styled(Grid)`
 `
 export const StyledCard = styled(Card)`
   position: relative;
-  border-radius: 0;
+  border-radius: 0 !important;
 `
 export const StyledImg = styled(Img)`
   width: 100%;

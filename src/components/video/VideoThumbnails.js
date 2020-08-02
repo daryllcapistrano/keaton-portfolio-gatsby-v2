@@ -28,7 +28,7 @@ export const VideoThumbnails = () => {
   return (
     <StyledGrid
       container
-      spacing={5}
+      spacing={4}
       direction="row"
       justify="center"
       align-items="center"

@@ -2,19 +2,19 @@ import React from "react"
 import Typography from "@material-ui/core/Typography"
 import Container from "@material-ui/core/Container"
 import Link from "@material-ui/core/Link"
-import CssBaseline from "@material-ui/core/CssBaseline"
+// import CssBaseline from "@material-ui/core/CssBaseline"
 import { makeStyles } from "@material-ui/core/styles"
 
 const useStyles = makeStyles(theme => ({
-  root: {
-    display: "flex",
-    flexDirection: "column",
-    minHeight: "55vh",
-  },
-  main: {
-    marginTop: theme.spacing(8),
-    marginBottom: theme.spacing(2),
-  },
+  // root: {
+  //   display: "flex",
+  //   flexDirection: "column",
+  //   minHeight: "55vh",
+  // },
+  // main: {
+  //   marginTop: theme.spacing(8),
+  //   marginBottom: theme.spacing(2),
+  // },
   footer: {
     padding: theme.spacing(3, 2),
     textAlign: `center`,
@@ -41,7 +41,7 @@ export default function StickyFooter() {
 
   return (
     <div className={classes.root}>
-      <CssBaseline />
+      {/* <CssBaseline /> */}
       <footer className={classes.footer}>
         <Container maxWidth="sm">
           <Copyright />

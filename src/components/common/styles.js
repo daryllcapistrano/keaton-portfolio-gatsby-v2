@@ -1,4 +1,3 @@
-import { Link } from "gatsby"
 import styled from "styled-components"
 
 export const Wrapper = styled.div`
@@ -6,13 +5,4 @@ export const Wrapper = styled.div`
     padding: 0 20px;
   }
   padding: 0 167px;
-`
-export const MenuLink = styled(Link)`
-  color: #000000;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-family: Poppins, sans-serif;
-  font-weight: 700;
-  font-size: 1.5em;
-  margin: 0.5em;
 `

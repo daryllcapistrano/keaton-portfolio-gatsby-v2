@@ -1,12 +1,12 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
 import PropTypes from "prop-types"
+import { useStaticQuery, graphql } from "gatsby"
+import BurgerMenu from "./BurgerMenu/BurgerMenu"
 import Header from "../Header/header"
 import Footer from "../Footer/footer"
 
-import { slide as Menu } from "react-burger-menu"
-import "./burgerStyles.css"
-import { MenuLink, Wrapper } from "./styles"
+import GlobalStyle from "./globalStyles"
+import { Wrapper } from "./styles"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -24,12 +24,8 @@ const Layout = ({ children }) => {
 
   return (
     <React.Fragment>
-      <Menu right pageWrapId={"page-wrap"}>
-        <MenuLink to="/">videos</MenuLink>
-        <MenuLink to="/photos">photos</MenuLink>
-        <MenuLink to="/clients">clients</MenuLink>
-        <MenuLink to="/contact">contact</MenuLink>
-      </Menu>
+      <GlobalStyle />
+      <BurgerMenu />
       <Wrapper>
         <Header
           siteTitle={data.site.siteMetadata.title}
