@@ -38,5 +38,6 @@ export const HeaderLink = styled(Link)`
   text-decoration: none;
   :hover {
     color: #bdc3c7;
+    border-bottom: 3px solid #bdc3c7;
   }
 `

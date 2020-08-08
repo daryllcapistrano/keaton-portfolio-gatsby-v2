@@ -9,7 +9,7 @@ export const VideoWrapper = styled.div`
 `
 export const NavWrapper = styled.div`
   text-align: center;
-  padding: 20px;
+  padding: 40px 20px;
 `
 export const NavLink = styled(Link)`
   color: #000000;

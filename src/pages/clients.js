@@ -26,6 +26,7 @@ const ClientsPage = () => (
       <div>Spy Optics</div>
       <div>Independent Trucks</div>
       <div>OJ Wheels</div>
+      <div>Creature Skateboards</div>
       <div>Bronson Bearings</div>
       <div>Mob Grip</div>
       <div>Slime Balls</div>
@@ -34,7 +35,6 @@ const ClientsPage = () => (
       <div>Bonfire Outerwear</div>
       <div>Worn Path</div>
       <div>Bitters</div>
-      <div>Green Dream</div>
     </Wrapper>
   </Layout>
 )

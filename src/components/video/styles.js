@@ -4,6 +4,9 @@ import Card from "@material-ui/core/Card"
 import styled from "styled-components"
 
 export const StyledGrid = styled(Grid)`
+  @media screen and (min-width: 2560px) {
+    padding-top: 80px;
+  }
   padding: 40px 20px;
 `
 export const StyledCard = styled(Card)`

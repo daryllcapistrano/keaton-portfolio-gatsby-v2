@@ -42,15 +42,21 @@
     "link": "/videos/prices-are-low/"
   },
   {
-    "title": "green dream",
-    "subtitle": null,
-    "src": "../images/video-thumbnails/greendream.png",
-    "link": "/videos/green-dream/"
-  },
-  {
     "title": "creature",
     "subtitle": "quarantine sessions",
     "src": "../images/video-thumbnails/creaturequarantinesessions.png",
     "link": "/videos/creature-quarantine-sessions/"
+  },
+  {
+    "title": "black lives matter /",
+    "subtitle": "this is a zine",
+    "src": "../images/video-thumbnails/BLM_website_thumbnail.png",
+    "link": "/videos/blm-this-is-a-zine/"
+  },
+  {
+    "title": "demo reel",
+    "subtitle": null,
+    "src": "../images/video-thumbnails/Reel_web_thumb.png",
+    "link": "/videos/demo-reel/"
   }
 ]
