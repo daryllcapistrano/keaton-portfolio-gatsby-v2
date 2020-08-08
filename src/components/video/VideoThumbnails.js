@@ -34,7 +34,7 @@ export const VideoThumbnails = () => {
       align-items="center"
     >
       {data.allVideoThumbnailsJson.nodes.map((thumbnail, index) => (
-        <Grid item key={index} xs={6} sm={6} md={4} lg={4} xl={4}>
+        <Grid item key={index} xs={6} sm={6} md={6} lg={4} xl={4}>
           <StyledCard>
             <Link to={thumbnail.link}>
               <StyledImg fluid={thumbnail.src.childImageSharp.fluid} />

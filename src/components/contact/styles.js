@@ -5,9 +5,7 @@ import TextField from "@material-ui/core/TextField"
 
 // Contact Form Styles
 export const Wrapper = styled(Container)`
-  padding: 0;
-  font-family: Poppins, sans-serif;
-  font-weight: 400;
+  padding: 40px 20px;
 `
 export const ContactHeader = styled.h3`
   text-align: center;
@@ -43,8 +41,6 @@ export const FormButton = styled.button`
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  font-family: Poppins, sans-serif;
-  font-weight: 400;
 `
 export const TextFieldWrapper = styled(Container)`
   padding: 0 !important;

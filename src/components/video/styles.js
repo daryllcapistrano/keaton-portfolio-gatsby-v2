@@ -4,7 +4,7 @@ import Card from "@material-ui/core/Card"
 import styled from "styled-components"
 
 export const StyledGrid = styled(Grid)`
-  padding: 20px;
+  padding: 40px 20px;
 `
 export const StyledCard = styled(Card)`
   position: relative;
@@ -16,7 +16,7 @@ export const StyledImg = styled(Img)`
   padding-top: 100%;
 `
 export const Text = styled.div`
-  color: white;
+  color: #ffffff;
   font-family: Poppins, sans-serif;
   font-weight: 700;
   font-size: 30px;
@@ -29,4 +29,18 @@ export const Text = styled.div`
   transform: translate(-50%, -50%);
   text-transform: uppercase;
   text-align: center;
+  ${"" /* @media screen and (max-width: 1280px) {
+    font-size: 20px;
+    padding-bottom: 15px;
+  } */}
+  @media screen and (max-width: 960px) {
+    font-size: 16px;
+    text-shadow: 1px 1px 1.5px rgba(0, 0, 0, 0.57);
+    padding-bottom: 10px;
+  }
+  @media screen and (max-width: 600px) {
+    font-size: 12px;
+    text-shadow: 1px 1px 1.5px rgba(0, 0, 0, 0.57);
+    padding-bottom: 10px;
+  }
 `

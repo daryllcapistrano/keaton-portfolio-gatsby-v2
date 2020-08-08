@@ -4,10 +4,9 @@ import SEO from "../components/common/seo"
 import styled from "styled-components"
 
 const Wrapper = styled.div`
-  padding-top: 2em;
+  padding: 40px 20px;
   margin: auto;
   text-align: center;
-  font-family: Poppins, sans-serif;
   font-weight: 400;
   font-size: 1.5em;
 `
