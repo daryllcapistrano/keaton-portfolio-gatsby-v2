@@ -1,7 +1,12 @@
 import React from "react"
 import Layout from "../../components/common/layout"
 import SEO from "../../components/common/seo"
-import { VideoWrapper, NavWrapper, NavLink, YoutubeVideo } from "./styles"
+import {
+  VideoWrapper,
+  NavWrapper,
+  NavLink,
+  YoutubeVideo,
+} from "../../videoStyles/styles"
 
 const PricesAreLow = () => (
   <Layout>
