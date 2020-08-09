@@ -7,7 +7,7 @@ const ManifestFarmPage = () => (
   <Layout>
     <SEO title="ManifestFarmPage" />
     <NavWrapper>
-      <NavLink to="/videos/wornpath">Back</NavLink>
+      <NavLink to="/videos/blm-this-is-a-zine">Back</NavLink>
       <NavLink to="/">Home</NavLink>
       <NavLink to="/videos/bittersland">Next</NavLink>
     </NavWrapper>

@@ -7,9 +7,9 @@ const CreatureQuarantineSessions = () => (
   <Layout>
     <SEO title="CreatureQuarantineSessions" />
     <NavWrapper>
-      <NavLink to="/videos/green-dream">Back</NavLink>
+      <NavLink to="/videos/prices-are-low">Back</NavLink>
       <NavLink to="/">Home</NavLink>
-      <NavLink to="/videos/wornpath">Next</NavLink>
+      <NavLink to="/videos/demo-reel">Next</NavLink>
     </NavWrapper>
     <VideoWrapper>
       <YoutubeVideo

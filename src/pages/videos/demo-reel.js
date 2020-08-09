@@ -7,7 +7,7 @@ const DemoReel = () => (
   <Layout>
     <SEO title="Demo Reel" />
     <NavWrapper>
-      <NavLink to="/videos/blm-this-is-a-zine">Back</NavLink>
+      <NavLink to="/videos/creature-quarantine-sessions">Back</NavLink>
       <NavLink to="/">Home</NavLink>
       <NavLink to="/videos/wornpath">Next</NavLink>
     </NavWrapper>

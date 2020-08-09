@@ -7,9 +7,9 @@ const BlackLivesMatter = () => (
   <Layout>
     <SEO title="Black Lives Matter / This is a Zine" />
     <NavWrapper>
-      <NavLink to="/videos/creature-quarantine-sessions">Back</NavLink>
+      <NavLink to="/videos/wornpath">Back</NavLink>
       <NavLink to="/">Home</NavLink>
-      <NavLink to="/videos/demo-reel">Next</NavLink>
+      <NavLink to="/videos/manifest-farm">Next</NavLink>
     </NavWrapper>
     <VideoWrapper>
       <YoutubeVideo

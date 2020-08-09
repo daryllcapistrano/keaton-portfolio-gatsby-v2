@@ -7,9 +7,9 @@ const WornpathPage = () => (
   <Layout>
     <SEO title="WornpathPage" />
     <NavWrapper>
-      <NavLink to="/videos/creature-quarantine-sessions">Back</NavLink>
+      <NavLink to="/videos/demo-reel">Back</NavLink>
       <NavLink to="/">Home</NavLink>
-      <NavLink to="/videos/manifest-farm">Next</NavLink>
+      <NavLink to="/videos/blm-this-is-a-zine">Next</NavLink>
     </NavWrapper>
     <VideoWrapper>
       <YoutubeVideo

@@ -1,9 +1,21 @@
 [
   {
+    "title": "demo reel",
+    "subtitle": null,
+    "src": "../images/video-thumbnails/Reel_web_thumb.png",
+    "link": "/videos/demo-reel/"
+  },
+  {
     "title": "wornpath",
     "subtitle": null,
     "src": "../images/video-thumbnails/wornpath.jpg",
     "link": "/videos/wornpath/"
+  },
+  {
+    "title": "black lives matter /",
+    "subtitle": "this is a zine",
+    "src": "../images/video-thumbnails/BLM_website_thumbnail.png",
+    "link": "/videos/blm-this-is-a-zine/"
   },
   {
     "title": "prana",
@@ -46,17 +58,5 @@
     "subtitle": "quarantine sessions",
     "src": "../images/video-thumbnails/creaturequarantinesessions.png",
     "link": "/videos/creature-quarantine-sessions/"
-  },
-  {
-    "title": "black lives matter /",
-    "subtitle": "this is a zine",
-    "src": "../images/video-thumbnails/BLM_website_thumbnail.png",
-    "link": "/videos/blm-this-is-a-zine/"
-  },
-  {
-    "title": "demo reel",
-    "subtitle": null,
-    "src": "../images/video-thumbnails/Reel_web_thumb.png",
-    "link": "/videos/demo-reel/"
   }
 ]

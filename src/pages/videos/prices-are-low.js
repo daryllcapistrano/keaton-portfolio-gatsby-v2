@@ -9,7 +9,7 @@ const PricesAreLow = () => (
     <NavWrapper>
       <NavLink to="/videos/oj-wheels-rain">Back</NavLink>
       <NavLink to="/">Home</NavLink>
-      <NavLink to="/videos/green-dream">Next</NavLink>
+      <NavLink to="/videos/creature-quarantine-sessions">Next</NavLink>
     </NavWrapper>
     <VideoWrapper>
       <YoutubeVideo
