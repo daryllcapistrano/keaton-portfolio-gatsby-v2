@@ -27,7 +27,11 @@ const Header = ({ menuLinks }) => {
               <ResponsiveLinks>
                 {menuLinks.map(link => (
                   <LinkWrapper key={link.name}>
-                    <HeaderLink variant="button" to={link.link}>
+                    <HeaderLink
+                      variant="button"
+                      to={link.link}
+                      activeStyle={{ color: `#bdc3c7` }}
+                    >
                       {link.name}
                     </HeaderLink>
                   </LinkWrapper>
