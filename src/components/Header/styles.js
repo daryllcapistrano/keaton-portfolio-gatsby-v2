@@ -10,6 +10,9 @@ export const ResponsiveLinks = styled.div`
   display: inline-flex;
 `
 export const Wrapper = styled.div`
+  @media screen and (min-width: 2560px) {
+    font-size: 2em;
+  }
   flex-grow: 1;
   padding-top: 1em;
   font-family: Poppins, sans-serif;
@@ -21,6 +24,7 @@ export const HeaderContainer = styled(AppBar)`
 `
 export const StyledToolbar = styled(Toolbar)`
   justify-content: space-between;
+  margin-top: 0.5em;
 `
 export const Brand = styled(Link)`
   color: #000000;
@@ -40,4 +44,18 @@ export const HeaderLink = styled(Link)`
     color: #bdc3c7;
     border-bottom: 3px solid #bdc3c7;
   }
+`
+
+// Logo styles
+export const LogoWrapper = styled.div`
+  @media screen and (max-width: 768px) {
+    text-align: center;
+  }
+`
+
+export const GifLogo = styled.img`
+  @media screen and (max-width: 768px) {
+    width: 50%;
+  }
+  width: 33%;
 `

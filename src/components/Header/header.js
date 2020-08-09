@@ -1,4 +1,5 @@
 import React from "react"
+import Logo from "./Logo"
 import {
   Wrapper,
   HeaderContainer,
@@ -14,7 +15,9 @@ const Header = ({ menuLinks }) => {
     <Wrapper>
       <HeaderContainer position="static" color="default" elevation={0}>
         <StyledToolbar variant="dense">
-          <Brand to="/">Keaton Rodgers</Brand>
+          <Brand to="/">
+            <Logo />
+          </Brand>
           <ResponsiveLinks>
             {menuLinks.map(link => (
               <LinkWrapper key={link.name}>

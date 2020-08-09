@@ -1,7 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-import BurgerMenu from "./BurgerMenu/BurgerMenu"
+import BurgerMenu from "../Header/BurgerMenu/BurgerMenu"
 import Header from "../Header/header"
 import Footer from "../Footer/footer"
 
