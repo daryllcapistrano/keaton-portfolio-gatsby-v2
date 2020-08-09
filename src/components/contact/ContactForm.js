@@ -57,7 +57,7 @@ export default class MyForm extends React.Component {
                 >
                   <GrPhone />
                 </IconContext.Provider>{" "}
-                <span>971.347.6704</span>
+                <p>971.347.6704</p>
               </Link>
             </ListItem>
             <hr />
@@ -74,7 +74,7 @@ export default class MyForm extends React.Component {
                 >
                   <GrSend />
                 </IconContext.Provider>{" "}
-                <span>keatonrodgersmedia@gmail.com</span>
+                <p>keatonrodgersmedia@gmail.com</p>
               </Link>
             </ListItem>
             <hr />
@@ -91,7 +91,7 @@ export default class MyForm extends React.Component {
                 >
                   <GrInstagram />
                 </IconContext.Provider>{" "}
-                <span>@keatonrodgers</span>
+                <p>@keatonrodgers</p>
               </Link>
             </ListItem>
           </ContactList>

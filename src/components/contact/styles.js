@@ -17,7 +17,8 @@ export const Link = styled.a`
   font-weight: 200;
 `
 export const InfoContainer = styled(Container)`
-  padding-left: 7px;
+  padding: 0 !important;
+  width: 100%;
 `
 export const ContactList = styled.ul`
   list-style-type: none;
