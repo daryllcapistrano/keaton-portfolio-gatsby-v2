@@ -1,7 +1,11 @@
-import AppBar from "@material-ui/core/AppBar"
-import Toolbar from "@material-ui/core/Toolbar"
 import { Link } from "gatsby"
 import styled from "styled-components"
+import { Grid, AppBar, Toolbar } from "@material-ui/core"
+
+export const StyledGrid = styled(Grid)`
+  width: 100%;
+  text-align: center;
+`
 
 export const ResponsiveLinks = styled.div`
   @media screen and (max-width: 768px) {
@@ -13,7 +17,6 @@ export const Wrapper = styled.div`
   @media screen and (min-width: 2560px) {
     font-size: 2em;
   }
-  flex-grow: 1;
   padding-top: 1em;
   font-family: Poppins, sans-serif;
   font-weight: 700;
@@ -21,9 +24,9 @@ export const Wrapper = styled.div`
 `
 export const HeaderContainer = styled(AppBar)`
   background-color: inherit !important;
+  text-align: center;
 `
 export const StyledToolbar = styled(Toolbar)`
-  justify-content: space-between;
   margin-top: 0.5em;
 `
 export const Brand = styled(Link)`
@@ -42,7 +45,7 @@ export const HeaderLink = styled(Link)`
   text-decoration: none;
   :hover {
     color: #bdc3c7;
-    border-bottom: 3px solid #bdc3c7;
+    border-bottom: 2px solid #bdc3c7;
   }
 `
 
