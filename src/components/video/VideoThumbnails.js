@@ -15,8 +15,8 @@ export const VideoThumbnails = () => {
           subtitle
           src {
             childImageSharp {
-              fluid {
-                src
+              fluid(maxWidth: 300, maxHeight: 300, quality: 100) {
+                ...GatsbyImageSharpFluid
               }
             }
           }
