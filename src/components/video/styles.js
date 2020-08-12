@@ -7,7 +7,7 @@ export const StyledGrid = styled(Grid)`
   @media screen and (min-width: 2560px) {
     padding-top: 80px;
   }
-  padding: 40px 20px;
+  padding: 40px 10px;
 `
 export const StyledCard = styled(Card)`
   position: relative;

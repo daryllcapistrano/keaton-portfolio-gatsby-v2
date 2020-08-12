@@ -1,5 +1,5 @@
 import React from "react"
-import logo from "../../images/gifs/logo_1.gif"
+import logo from "../../images/gifs/keaton_Logo-blend.gif"
 import { LogoWrapper, GifLogo } from "./styles"
 
 const Logo = () => {
