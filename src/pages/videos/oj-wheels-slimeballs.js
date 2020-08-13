@@ -27,19 +27,19 @@ const OJSlimePage = () => (
     <hr />
     <VideoWrapper>
       <YoutubeVideo
-        src={`https://www.youtube.com/embed/69BABGRWz0o`}
+        src={`https://www.youtube.com/embed/-Amo7LoszWw`}
         frameBorder="0"
         allowFullScreen={true}
-        title="oj wheels slimeballs 5"
+        title="oj wheels slimeballs 2020 promotional"
       />
     </VideoWrapper>
     <hr />
     <VideoWrapper>
       <YoutubeVideo
-        src={`https://www.youtube.com/embed/-Amo7LoszWw`}
+        src={`https://www.youtube.com/embed/69BABGRWz0o`}
         frameBorder="0"
         allowFullScreen={true}
-        title="oj wheels slimeballs 2020 promotional"
+        title="oj wheels slimeballs 5"
       />
     </VideoWrapper>
     <hr />

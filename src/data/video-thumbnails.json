@@ -12,16 +12,22 @@
     "link": "/videos/wornpath/"
   },
   {
-    "title": "black lives matter /",
-    "subtitle": "this is a zine",
-    "src": "../images/video-thumbnails/BLM_website_thumbnail.png",
-    "link": "/videos/blm-this-is-a-zine/"
-  },
-  {
     "title": "prana",
     "subtitle": "manifest farm",
     "src": "../images/video-thumbnails/pranamanifestfarm.png",
     "link": "/videos/manifest-farm/"
+  },
+  {
+    "title": "slimeballs",
+    "subtitle": null,
+    "src": "../images/video-thumbnails/slimeballs.jpg",
+    "link": "/videos/oj-wheels-slimeballs/"
+  },
+  {
+    "title": "black lives matter /",
+    "subtitle": "this is a zine",
+    "src": "../images/video-thumbnails/BLM_website_thumbnail.png",
+    "link": "/videos/blm-this-is-a-zine/"
   },
   {
     "title": "bitters",
@@ -36,10 +42,10 @@
     "link": "/videos/oj-wheels-leaves/"
   },
   {
-    "title": "slimeballs",
-    "subtitle": null,
-    "src": "../images/video-thumbnails/slimeballs.jpg",
-    "link": "/videos/oj-wheels-slimeballs/"
+    "title": "creature",
+    "subtitle": "quarantine sessions",
+    "src": "../images/video-thumbnails/creaturequarantinesessions.png",
+    "link": "/videos/creature-quarantine-sessions/"
   },
   {
     "title": "cruising",
@@ -52,11 +58,5 @@
     "subtitle": null,
     "src": "../images/video-thumbnails/pricesthumbnail.png",
     "link": "/videos/prices-are-low/"
-  },
-  {
-    "title": "creature",
-    "subtitle": "quarantine sessions",
-    "src": "../images/video-thumbnails/creaturequarantinesessions.png",
-    "link": "/videos/creature-quarantine-sessions/"
   }
 ]

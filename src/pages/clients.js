@@ -8,7 +8,7 @@ const Wrapper = styled.div`
   margin: auto;
   text-align: center;
   font-weight: 400;
-  font-size: 1.5em;
+  font-size: 0.75em;
 `
 
 const ClientsPage = () => (

@@ -26,7 +26,7 @@ export default function ContactCard() {
         <Grid container>
           <Grid item xs={12} sm={6} md={6} lg={6} xl={6}>
             <ImageWrapper>
-              <Card elevation={2}>
+              <Card elevation={0}>
                 <Img fluid={data.file.childImageSharp.fluid} />
               </Card>
             </ImageWrapper>

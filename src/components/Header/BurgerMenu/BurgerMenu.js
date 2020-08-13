@@ -9,13 +9,13 @@ const BurgerMenu = () => {
       <MenuLink to="/" activeStyle={{ color: `#bdc3c7` }}>
         videos
       </MenuLink>
-      <MenuLink to="/photos" activeStyle={{ color: `#bdc3c7` }}>
+      <MenuLink to="/photos/" activeStyle={{ color: `#bdc3c7` }}>
         photos
       </MenuLink>
-      <MenuLink to="/clients" activeStyle={{ color: `#bdc3c7` }}>
+      <MenuLink to="/clients/" activeStyle={{ color: `#bdc3c7` }}>
         clients
       </MenuLink>
-      <MenuLink to="/contact" activeStyle={{ color: `#bdc3c7` }}>
+      <MenuLink to="/contact/" activeStyle={{ color: `#bdc3c7` }}>
         contact
       </MenuLink>
     </Menu>
