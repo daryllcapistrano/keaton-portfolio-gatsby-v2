@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../../components/common/layout"
-import SEO from "../../components/common/seo"
+import SEO from "../../components/SEO/"
 import {
   VideoWrapper,
   NavWrapper,
@@ -10,7 +10,7 @@ import {
 
 const ManifestFarmPage = () => (
   <Layout>
-    <SEO title="ManifestFarmPage" />
+    <SEO title="Manifest Farm" />
     <NavWrapper>
       <NavLink to="/videos/blm-this-is-a-zine">Back</NavLink>
       <NavLink to="/">Home</NavLink>

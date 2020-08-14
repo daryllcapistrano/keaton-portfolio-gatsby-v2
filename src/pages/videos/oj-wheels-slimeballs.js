@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../../components/common/layout"
-import SEO from "../../components/common/seo"
+import SEO from "../../components/SEO/"
 import {
   VideoWrapper,
   NavWrapper,
@@ -10,7 +10,7 @@ import {
 
 const OJSlimePage = () => (
   <Layout>
-    <SEO title="OJSlimePage" />
+    <SEO title="OJ Wheels Slimeballs" />
     <NavWrapper>
       <NavLink to="/videos/oj-wheels-leaves">Back</NavLink>
       <NavLink to="/">Home</NavLink>

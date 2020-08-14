@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../components/common/layout"
-import SEO from "../components/common/seo"
+import SEO from "../components/SEO"
 import styled from "styled-components"
 
 const Wrapper = styled.div`
@@ -13,7 +13,7 @@ const Wrapper = styled.div`
 
 const ClientsPage = () => (
   <Layout>
-    <SEO title="ClientsPage" />
+    <SEO title="Clients" />
     <Wrapper>
       <div>Nike</div>
       <hr />

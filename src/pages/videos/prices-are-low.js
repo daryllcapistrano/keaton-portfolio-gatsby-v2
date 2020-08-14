@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../../components/common/layout"
-import SEO from "../../components/common/seo"
+import SEO from "../../components/SEO/"
 import {
   VideoWrapper,
   NavWrapper,
@@ -10,7 +10,7 @@ import {
 
 const PricesAreLow = () => (
   <Layout>
-    <SEO title="PricesAreLow" />
+    <SEO title="Prices Are Low" />
     <NavWrapper>
       <NavLink to="/videos/oj-wheels-rain">Back</NavLink>
       <NavLink to="/">Home</NavLink>
