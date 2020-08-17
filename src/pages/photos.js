@@ -1,8 +1,8 @@
 import React from "react"
 import { Layout } from "../components/common/"
-import SEO from "../components/SEO"
+import { SEO } from "../components/SEO"
 
-import LightboxGallery from "../components/photo/LightboxGallery"
+import { LightboxGallery } from "../components/photo/"
 
 const PhotosPage = () => (
   <Layout>

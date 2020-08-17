@@ -1,3 +1,3 @@
 import SEO from "./seo"
 
-export default SEO
+export { SEO }
