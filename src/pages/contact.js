@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../components/common/layout"
 import SEO from "../components/SEO"
 
-import ContactCard from "../components/contact/ContactCard"
+import { ContactCard } from "../components/contact"
 
 const ContactPage = () => (
   <Layout>

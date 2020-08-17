@@ -41,6 +41,13 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        name: `gifs`,
+        path: `${__dirname}/src/images/gifs`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
         name: `photoSources`,
         path: `${__dirname}/src/data/`,
       },

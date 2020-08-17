@@ -5,7 +5,7 @@ import BurgerMenu from "../Header/BurgerMenu/BurgerMenu"
 import Header from "../Header/header"
 import Footer from "../Footer/footer"
 
-import { GlobalStyle, Wrapper } from "./globalStyles"
+import { GlobalStyle, Wrapper } from "./styles"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`

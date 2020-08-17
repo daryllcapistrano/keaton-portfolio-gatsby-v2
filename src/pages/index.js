@@ -6,7 +6,7 @@ import { VideoThumbnails } from "../components/video/VideoThumbnails"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="Videos" />
     <VideoThumbnails />
   </Layout>
 )
