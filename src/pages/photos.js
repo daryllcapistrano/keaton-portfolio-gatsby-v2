@@ -1,5 +1,5 @@
 import React from "react"
-import Layout from "../components/common/layout"
+import { Layout } from "../components/common/"
 import SEO from "../components/SEO"
 
 import LightboxGallery from "../components/photo/LightboxGallery"
