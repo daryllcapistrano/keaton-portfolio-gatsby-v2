@@ -7,7 +7,7 @@ import useMediaQuery from "@material-ui/core/useMediaQuery"
 
 import { StyledGrid, StyledCard, StyledImg, Text } from "./styles"
 
-export const VideoThumbnails = () => {
+const VideoThumbnails = () => {
   const data = useStaticQuery(graphql`
     query {
       allVideoThumbnailsJson {
@@ -55,3 +55,5 @@ export const VideoThumbnails = () => {
     </StyledGrid>
   )
 }
+
+export default VideoThumbnails
