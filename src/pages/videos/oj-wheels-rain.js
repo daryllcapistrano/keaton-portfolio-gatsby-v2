@@ -6,7 +6,7 @@ import {
   NavWrapper,
   NavLink,
   YoutubeVideo,
-} from "../../videoStyles/styles"
+} from "../../components/video/styles"
 
 const OJRainPage = () => (
   <Layout>
