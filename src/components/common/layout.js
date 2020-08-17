@@ -1,9 +1,10 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-import BurgerMenu from "../Header/BurgerMenu/BurgerMenu"
-import Header from "../Header/header"
-import Footer from "../Footer/footer"
+
+import { BurgerMenu } from "../Header/BurgerMenu"
+import { Header } from "../Header"
+import { Footer } from "../Footer"
 
 import { GlobalStyle, Wrapper } from "./styles"
 

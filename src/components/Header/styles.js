@@ -17,7 +17,6 @@ export const Wrapper = styled.div`
   @media screen and (min-width: 2560px) {
     font-size: 2em;
   }
-  padding-top: 1em;
   font-family: Poppins, sans-serif;
   font-weight: 700;
   font-size: 1.75em;
@@ -27,7 +26,7 @@ export const HeaderContainer = styled(AppBar)`
   text-align: center;
 `
 export const StyledToolbar = styled(Toolbar)`
-  margin-top: 0.5em;
+  ${"" /* margin-bottom: 0.5em; */}
 `
 export const Brand = styled(Link)`
   color: #000000;
@@ -47,18 +46,4 @@ export const HeaderLink = styled(Link)`
     color: #bdc3c7;
     border-bottom: 2px solid #bdc3c7;
   }
-`
-
-// Logo styles
-export const LogoWrapper = styled.div`
-  @media screen and (max-width: 768px) {
-    text-align: center;
-  }
-`
-
-export const GifLogo = styled.img`
-  @media screen and (max-width: 768px) {
-    width: 50%;
-  }
-  width: 25%;
 `
