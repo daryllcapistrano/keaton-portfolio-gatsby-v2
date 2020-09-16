@@ -60,7 +60,7 @@ export const NavWrapper = styled.div`
   padding: 40px 20px;
 `
 export const NavLink = styled(Link)`
-  color: #000000;
+  color: #333333;
   text-decoration: none;
   padding: 10px;
   :hover {

@@ -8,7 +8,7 @@ export const ContactHeader = styled.h3`
   text-align: center;
   font-size: 1em;
   font-weight: 500;
-  padding-bottom: 2em;
+  padding-bottom: 1em;
   margin-top: 2em;
 `
 export const InfoContainer = styled(Container)`

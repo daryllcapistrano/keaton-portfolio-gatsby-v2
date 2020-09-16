@@ -28,10 +28,11 @@ export const HeaderContainer = styled(AppBar)`
 export const StyledToolbar = styled(Toolbar)`
   ${"" /* margin-bottom: 0.5em; */}
 `
+// style unneccessary when using gif logo
 export const Brand = styled(Link)`
-  color: #000000;
+  ${"" /* color: #333333;
   text-transform: uppercase;
-  text-decoration: none;
+  text-decoration: none; */}
 `
 export const LinkWrapper = styled.div`
   padding: 0.5em;
@@ -40,7 +41,7 @@ export const LinkWrapper = styled.div`
   text-transform: uppercase;
 `
 export const HeaderLink = styled(Link)`
-  color: #000000;
+  color: #333333;
   text-decoration: none;
   :hover {
     color: #bdc3c7;
