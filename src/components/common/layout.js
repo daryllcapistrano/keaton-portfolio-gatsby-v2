@@ -2,11 +2,10 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
-import { BurgerMenu } from "../Header/BurgerMenu"
-import { Header } from "../Header"
-import { Footer } from "../Footer"
+import Header from "../header"
+import Footer from "../footer"
 
-import { GlobalStyle, Wrapper } from "./styles"
+import { GlobalStyle } from "./styles"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -23,18 +22,15 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <React.Fragment>
+    <>
       <GlobalStyle />
-      <BurgerMenu />
-      <Wrapper>
-        <Header
-          siteTitle={data.site.siteMetadata.title}
-          menuLinks={data.site.siteMetadata.menuLinks}
-        />
-        <main id="page-wrap">{children}</main>
-      </Wrapper>
+      <Header
+        siteTitle={data.site.siteMetadata.title}
+        menuLinks={data.site.siteMetadata.menuLinks}
+      />
+      <main id="page-wrap">{children}</main>
       <Footer />
-    </React.Fragment>
+    </>
   )
 }
 

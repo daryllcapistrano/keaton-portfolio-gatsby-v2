@@ -48,17 +48,17 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `photoSources`,
-        path: `${__dirname}/src/data/`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `photos`,
+        name: `photo`,
         path: `${__dirname}/src/images/photos`,
       },
     },
+    // {
+    //   resolve: `gatsby-source-filesystem`,
+    //   options: {
+    //     name: `photoSources`,
+    //     path: `${__dirname}/src/data/`,
+    //   },
+    // },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {

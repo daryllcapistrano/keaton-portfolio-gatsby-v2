@@ -1,3 +1,14 @@
-import Footer from "./footer"
+import React from "react"
+import { StyledFooter } from "./style"
 
-export { Footer }
+function Copyright() {
+  return <p> Copyright © {new Date().getFullYear()} Keaton Rodgers </p>
+}
+
+export default function StickyFooter() {
+  return (
+    <StyledFooter>
+      <Copyright />
+    </StyledFooter>
+  )
+}
