@@ -5,7 +5,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Header from "../header"
 import Footer from "../footer"
 
-import { GlobalStyle } from "./styles"
+import { GlobalStyle } from "./style"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -24,10 +24,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <GlobalStyle />
-      <Header
-        siteTitle={data.site.siteMetadata.title}
-        menuLinks={data.site.siteMetadata.menuLinks}
-      />
+      <Header menuLinks={data.site.siteMetadata.menuLinks} />
       <main id="page-wrap">{children}</main>
       <Footer />
     </>

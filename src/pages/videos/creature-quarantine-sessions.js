@@ -6,7 +6,7 @@ import {
   NavWrapper,
   NavLink,
   YoutubeVideo,
-} from "../../components/video/styles"
+} from "../../components/video/style"
 
 const CreatureQuarantineSessions = () => (
   <Layout>

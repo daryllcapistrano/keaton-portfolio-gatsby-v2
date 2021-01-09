@@ -10,10 +10,10 @@ export const LinkWrapper = styled.div`
   display: inline-flex;
   justify-content: space-evenly;
   width: 100%;
+  margin-top: 1em;
   a {
-    padding: 0.2em 0.5em;
-    border-radius: 30px;
+    color: black;
     text-decoration: none;
-    background-color: lightgrey;
+    text-transform: uppercase;
   }
 `
