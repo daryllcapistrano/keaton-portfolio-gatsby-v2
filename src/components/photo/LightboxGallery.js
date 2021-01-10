@@ -39,7 +39,7 @@ function PhotoGallery() {
     photos.push({ src, width, height })
   })
 
-  console.log(photos)
+  const newPhotos = console.log(photos)
 
   const [currentImage, setCurrentImage] = useState(0)
   const [viewerIsOpen, setViewerIsOpen] = useState(false)

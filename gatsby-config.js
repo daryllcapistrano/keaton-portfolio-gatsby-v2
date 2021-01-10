@@ -52,6 +52,13 @@ module.exports = {
         path: `${__dirname}/src/images/photos`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `photos-wide`,
+        path: `${__dirname}/src/images/photos-wide`,
+      },
+    },
     // {
     //   resolve: `gatsby-source-filesystem`,
     //   options: {
