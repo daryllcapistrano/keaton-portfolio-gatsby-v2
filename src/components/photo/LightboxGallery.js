@@ -15,9 +15,19 @@ const carouselStyles = {
 }
 
 function PhotoGallery() {
-  const data = useStaticQuery(graphql`
+  const Photos = useStaticQuery(graphql`
     query {
-      allFile(filter: { sourceInstanceName: { eq: "photos" } }) {
+      photos: allFile(filter: { sourceInstanceName: { eq: "photos" } }) {
+        edges {
+          node {
+            id
+            publicURL
+          }
+        }
+      }
+      photosWide: allFile(
+        filter: { sourceInstanceName: { eq: "photos-wide" } }
+      ) {
         edges {
           node {
             id
@@ -30,17 +40,31 @@ function PhotoGallery() {
 
   // create array to store photo objects
   const photos = []
-
+  console.log(Photos)
   // assign src from GraphQl
-  data.allFile.edges.forEach(image => {
+
+  Photos.photos.edges.forEach(image => {
     let src = image.node.publicURL
     let width = 2
     let height = 3
     photos.push({ src, width, height })
   })
 
-  const newPhotos = console.log(photos)
+  Photos.photosWide.edges.forEach(image => {
+    let src = image.node.publicURL
+    let width = 3
+    let height = 2
+    photos.push({ src, width, height })
+  })
 
+  // PhotosWide.allFile.edges.forEach(image => {
+  //   let src = image.node.publicURL
+  //   let width = 2
+  //   let height = 3
+  //   photos.push({ src, width, height })
+  // })
+
+  // * Gallery Lightbox
   const [currentImage, setCurrentImage] = useState(0)
   const [viewerIsOpen, setViewerIsOpen] = useState(false)
 
@@ -53,6 +77,7 @@ function PhotoGallery() {
     setCurrentImage(0)
     setViewerIsOpen(false)
   }
+  // * end
 
   return (
     <Wrapper>
