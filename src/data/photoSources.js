@@ -1,3 +1,44 @@
+// import React from "react"
+// import { useStaticQuery, graphql } from "gatsby"
+
+// const PhotoSources = () => {
+//   const data = useStaticQuery(graphql`
+//     query {
+//       allFile(filter: { sourceInstanceName: { eq: "contact-image" } }) {
+//         edges {
+//           node {
+//             id
+//             childrenImageSharp {
+//               fluid {
+//                 base64
+//                 tracedSVG
+//                 srcWebp
+//                 srcSetWebp
+//                 originalImg
+//                 originalName
+//                 presentationWidth
+//                 presentationHeight
+//               }
+//             }
+//           }
+//         }
+//       }
+//     }
+//   `)
+
+//   const photos = [];
+
+//   data.allFile.forEach(image => {
+//     let imgObj = {};
+
+//     imgObj.original=image.node.childrenImageSharp
+//   })
+
+//   return ()
+// }
+
+// export default PhotoSources
+
 export const photoSources = [
   {
     src: "/static/38f1e523c6196bfe0073a97fc5329157/Poler2- thumbnail.jpg",

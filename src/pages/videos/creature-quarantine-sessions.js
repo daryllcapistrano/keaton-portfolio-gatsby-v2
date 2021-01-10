@@ -1,28 +1,32 @@
 import React from "react"
+import { Link } from "gatsby"
 import { Layout } from "../../components/common"
-import { SEO } from "../../components/SEO/"
+import SEO from "../../components/SEO"
 import {
-  VideoWrapper,
   NavWrapper,
-  NavLink,
-  YoutubeVideo,
+  VideoWrapper,
+  InnerWrapper,
 } from "../../components/video/style"
 
 const CreatureQuarantineSessions = () => (
   <Layout>
     <SEO title="Creature Quarantine Sessions" />
     <NavWrapper>
-      <NavLink to="/videos/prices-are-low">Back</NavLink>
-      <NavLink to="/">Home</NavLink>
-      <NavLink to="/videos/demo-reel">Next</NavLink>
+      <Link to="/videos/prices-are-low">Back</Link>
+      <Link to="/">Home</Link>
+      <Link to="/videos/demo-reel">Next</Link>
     </NavWrapper>
     <VideoWrapper>
-      <YoutubeVideo
-        src={`https://www.youtube.com/embed/VNgghlJIKy4`}
-        frameBorder="0"
-        allowFullScreen={true}
-        title="creature quarantine sessions"
-      />
+      <InnerWrapper>
+        <iframe
+          src={`https://www.youtube.com/embed/VNgghlJIKy4`}
+          frameBorder="0"
+          allowFullScreen={true}
+          title="creature quarantine sessions"
+          width="560"
+          height="349"
+        />
+      </InnerWrapper>
     </VideoWrapper>
   </Layout>
 )

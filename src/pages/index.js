@@ -1,6 +1,6 @@
 import React from "react"
 import { Layout } from "../components/common/"
-import { SEO } from "../components/SEO"
+import SEO from "../components/SEO"
 import VideoThumbnails from "../components/video/"
 
 const IndexPage = () => (

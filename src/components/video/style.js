@@ -3,6 +3,7 @@ import styled from "styled-components"
 import { Link } from "gatsby"
 
 export const Grid = styled.div`
+  position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -26,16 +27,31 @@ export const TextWrapper = styled.div`
 `
 
 // Begin Video Page Styles
-export const VideoWrapper = styled.div`
-  position: relative;
-  padding-bottom: 56.25%;
-  max-width: 95%;
-  margin: auto;
-`
 export const NavWrapper = styled.div`
-  text-align: center;
-  padding: 40px 20px;
+  display: inline-flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 2em;
 `
+
+export const InnerWrapper = styled.div`
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+`
+
+export const VideoWrapper = styled.div`
+  margin: 2em 0;
+  padding: 1em;
+`
+
 export const NavLink = styled(Link)`
   color: #333333;
   text-decoration: none;
@@ -44,10 +60,7 @@ export const NavLink = styled(Link)`
     color: #bdc3c7;
   }
 `
+// remove
 export const YoutubeVideo = styled.iframe`
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  margin: auto;
 `

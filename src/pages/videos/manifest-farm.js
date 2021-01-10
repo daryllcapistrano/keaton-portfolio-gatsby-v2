@@ -1,28 +1,32 @@
 import React from "react"
+import { Link } from "gatsby"
 import { Layout } from "../../components/common"
-import { SEO } from "../../components/SEO/"
+import SEO from "../../components/SEO"
 import {
-  VideoWrapper,
   NavWrapper,
-  NavLink,
-  YoutubeVideo,
+  VideoWrapper,
+  InnerWrapper,
 } from "../../components/video/style"
 
 const ManifestFarmPage = () => (
   <Layout>
     <SEO title="Manifest Farm" />
     <NavWrapper>
-      <NavLink to="/videos/blm-this-is-a-zine">Back</NavLink>
-      <NavLink to="/">Home</NavLink>
-      <NavLink to="/videos/bittersland">Next</NavLink>
+      <Link to="/videos/blm-this-is-a-zine">Back</Link>
+      <Link to="/">Home</Link>
+      <Link to="/videos/bittersland">Next</Link>
     </NavWrapper>
     <VideoWrapper>
-      <YoutubeVideo
-        src={`https://www.youtube.com/embed/fXV8AEs1IdQ`}
-        frameBorder="0"
-        allowFullScreen={true}
-        title="manifest farm"
-      />
+      <InnerWrapper>
+        <iframe
+          src={`https://www.youtube.com/embed/fXV8AEs1IdQ`}
+          frameBorder="0"
+          allowFullScreen={true}
+          title="manifest farm"
+          width="560"
+          height="349"
+        />
+      </InnerWrapper>
     </VideoWrapper>
   </Layout>
 )

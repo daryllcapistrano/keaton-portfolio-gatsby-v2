@@ -1,28 +1,32 @@
 import React from "react"
+import { Link } from "gatsby"
 import { Layout } from "../../components/common"
-import { SEO } from "../../components/SEO/"
+import SEO from "../../components/SEO"
 import {
-  VideoWrapper,
   NavWrapper,
-  NavLink,
-  YoutubeVideo,
+  VideoWrapper,
+  InnerWrapper,
 } from "../../components/video/style"
 
 const WornpathPage = () => (
   <Layout>
     <SEO title="Wornpath" />
     <NavWrapper>
-      <NavLink to="/videos/demo-reel">Back</NavLink>
-      <NavLink to="/">Home</NavLink>
-      <NavLink to="/videos/blm-this-is-a-zine">Next</NavLink>
+      <Link to="/videos/demo-reel">Back</Link>
+      <Link to="/">Home</Link>
+      <Link to="/videos/blm-this-is-a-zine">Next</Link>
     </NavWrapper>
     <VideoWrapper>
-      <YoutubeVideo
-        src={`https://www.youtube.com/embed/cpuSnsD_ZOg`}
-        frameBorder="0"
-        allowFullScreen={true}
-        title="wornpath"
-      />
+      <InnerWrapper>
+        <iframe
+          src={`https://www.youtube.com/embed/cpuSnsD_ZOg`}
+          frameBorder="0"
+          allowFullScreen={true}
+          title="wornpath"
+          width="560"
+          height="349"
+        />
+      </InnerWrapper>
     </VideoWrapper>
   </Layout>
 )

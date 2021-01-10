@@ -1,28 +1,32 @@
 import React from "react"
+import { Link } from "gatsby"
 import { Layout } from "../../components/common"
-import { SEO } from "../../components/SEO/"
+import SEO from "../../components/SEO"
 import {
-  VideoWrapper,
   NavWrapper,
-  NavLink,
-  YoutubeVideo,
+  VideoWrapper,
+  InnerWrapper,
 } from "../../components/video/style"
 
 const OJLeavesPage = () => (
   <Layout>
     <SEO title="OJ Wheels Cruisin'" />
     <NavWrapper>
-      <NavLink to="/videos/bittersland">Back</NavLink>
-      <NavLink to="/">Home</NavLink>
-      <NavLink to="/videos/oj-wheels-slimeballs">Next</NavLink>
+      <Link to="/videos/bittersland">Back</Link>
+      <Link to="/">Home</Link>
+      <Link to="/videos/oj-wheels-slimeballs">Next</Link>
     </NavWrapper>
     <VideoWrapper>
-      <YoutubeVideo
-        src={`https://www.youtube.com/embed/djEnS6_MFyM`}
-        frameBorder="0"
-        allowFullScreen={true}
-        title="oj wheels leaves"
-      />
+      <InnerWrapper>
+        <iframe
+          src={`https://www.youtube.com/embed/djEnS6_MFyM`}
+          frameBorder="0"
+          allowFullScreen={true}
+          title="oj wheels leaves"
+          width="560"
+          height="349"
+        />
+      </InnerWrapper>
     </VideoWrapper>
   </Layout>
 )

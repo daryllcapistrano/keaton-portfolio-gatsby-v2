@@ -1,7 +1,7 @@
 import React, { useState, useCallback } from "react"
+import { useStaticQuery, graphql } from "gatsby"
 import Gallery from "react-photo-gallery"
 import Carousel, { Modal, ModalGateway } from "react-images"
-import { photoSources } from "../../data/photoSources"
 import { Wrapper } from "./styles"
 
 const carouselStyles = {
@@ -13,7 +13,34 @@ const carouselStyles = {
     paddingBottom: `5vh`,
   }),
 }
+
 function PhotoGallery() {
+  const data = useStaticQuery(graphql`
+    query {
+      allFile(filter: { sourceInstanceName: { eq: "photos" } }) {
+        edges {
+          node {
+            id
+            publicURL
+          }
+        }
+      }
+    }
+  `)
+
+  // create array to store photo objects
+  const photos = []
+
+  // assign src from GraphQl
+  data.allFile.edges.forEach(image => {
+    let src = image.node.publicURL
+    let width = 2
+    let height = 3
+    photos.push({ src, width, height })
+  })
+
+  console.log(photos)
+
   const [currentImage, setCurrentImage] = useState(0)
   const [viewerIsOpen, setViewerIsOpen] = useState(false)
 
@@ -30,7 +57,7 @@ function PhotoGallery() {
   return (
     <Wrapper>
       <Gallery
-        photos={photoSources}
+        photos={photos}
         onClick={openLightbox}
         direction={"row"}
         margin={2}
@@ -42,10 +69,9 @@ function PhotoGallery() {
             <Carousel
               styles={carouselStyles}
               currentIndex={currentImage}
-              views={photoSources.map(x => ({
+              views={photos.map(x => ({
                 ...x,
                 srcset: x.srcSet,
-                // caption: x.title
               }))}
             />
           </Modal>

@@ -1,5 +1,5 @@
 import React from "react"
-import { StyledFooter } from "./style"
+import { InnerWrapper } from "./style"
 
 function Copyright() {
   return <p> Copyright © {new Date().getFullYear()} Keaton Rodgers </p>
@@ -7,8 +7,10 @@ function Copyright() {
 
 export default function StickyFooter() {
   return (
-    <StyledFooter>
-      <Copyright />
-    </StyledFooter>
+    <footer style={{ height: `2.5em` }}>
+      <InnerWrapper>
+        <Copyright />
+      </InnerWrapper>
+    </footer>
   )
 }
