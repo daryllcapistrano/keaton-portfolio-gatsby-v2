@@ -2,12 +2,12 @@ import React from "react"
 import { Layout } from "../components/common/"
 import SEO from "../components/SEO"
 
-import { LightboxGallery } from "../components/photo/"
+import PhotoGallery from "../components/photo"
 
 const PhotosPage = () => (
   <Layout>
     <SEO title="Photos" />
-    <LightboxGallery />
+    <PhotoGallery />
   </Layout>
 )
 

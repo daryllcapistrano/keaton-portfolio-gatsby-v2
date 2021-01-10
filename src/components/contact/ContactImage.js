@@ -19,7 +19,7 @@ export default function ContactImage() {
 
   return (
     <ImageWrapper>
-      <Img fluid={data.file.childImageSharp.fluid} />
+      {/* <Img fluid={data.file.childImageSharp.fluid} /> */}
     </ImageWrapper>
   )
 }
