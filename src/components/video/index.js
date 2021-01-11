@@ -16,7 +16,7 @@ const VideoThumbnails = () => {
           src {
             childImageSharp {
               fluid(maxWidth: 300, maxHeight: 300, quality: 100) {
-                ...GatsbyImageSharpFluid_withWebp_noBase64
+                ...GatsbyImageSharpFluid_withWebp
               }
             }
           }

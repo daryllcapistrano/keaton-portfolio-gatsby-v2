@@ -13,9 +13,6 @@ export const Grid = styled.div`
 `
 export const Item = styled.div`
   position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 `
 
 export const TextWrapper = styled.div`
@@ -23,7 +20,20 @@ export const TextWrapper = styled.div`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
+  width: 100%;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 900;
+  transition: opacity 0.3s ease-out;
+  -moz-transition: opacity 0.3s ease-out;
+  -webkit-transition: opacity 0.3s ease-out;
+  -o-transition: opacity 0.3s ease-out;
+  -webkit-text-stroke: 1px black;
+
+  ${Item}:hover & {
+    opacity: 0;
+  }
 `
 
 // Begin Video Page Styles

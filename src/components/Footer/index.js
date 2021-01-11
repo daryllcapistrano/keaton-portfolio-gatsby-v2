@@ -1,16 +1,16 @@
 import React from "react"
-import { InnerWrapper } from "./style"
+import { StyledFooter, InnerWrapper } from "./style"
 
 function Copyright() {
   return <p> Copyright © {new Date().getFullYear()} Keaton Rodgers </p>
 }
 
-export default function StickyFooter() {
+export default function Footer() {
   return (
-    <footer style={{ height: `2.5em` }}>
+    <StyledFooter>
       <InnerWrapper>
         <Copyright />
       </InnerWrapper>
-    </footer>
+    </StyledFooter>
   )
 }
