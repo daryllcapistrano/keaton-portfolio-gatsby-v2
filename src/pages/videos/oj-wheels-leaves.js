@@ -11,11 +11,6 @@ import {
 const OJLeavesPage = () => (
   <Layout>
     <SEO title="OJ Wheels Cruisin'" />
-    <NavWrapper>
-      <Link to="/videos/bittersland">Back</Link>
-      <Link to="/">Home</Link>
-      <Link to="/videos/oj-wheels-slimeballs">Next</Link>
-    </NavWrapper>
     <VideoWrapper>
       <InnerWrapper>
         <iframe
@@ -28,6 +23,11 @@ const OJLeavesPage = () => (
         />
       </InnerWrapper>
     </VideoWrapper>
+    <NavWrapper>
+      <Link to="/videos/bittersland">Back</Link>
+      <Link to="/">Home</Link>
+      <Link to="/videos/oj-wheels-slimeballs">Next</Link>
+    </NavWrapper>
   </Layout>
 )
 

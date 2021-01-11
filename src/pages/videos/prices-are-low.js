@@ -11,11 +11,6 @@ import {
 const PricesAreLow = () => (
   <Layout>
     <SEO title="Prices Are Low" />
-    <NavWrapper>
-      <Link to="/videos/oj-wheels-rain">Back</Link>
-      <Link to="/">Home</Link>
-      <Link to="/videos/creature-quarantine-sessions">Next</Link>
-    </NavWrapper>
     <VideoWrapper>
       <InnerWrapper>
         <iframe
@@ -28,6 +23,11 @@ const PricesAreLow = () => (
         />
       </InnerWrapper>
     </VideoWrapper>
+    <NavWrapper>
+      <Link to="/videos/oj-wheels-rain">Back</Link>
+      <Link to="/">Home</Link>
+      <Link to="/videos/creature-quarantine-sessions">Next</Link>
+    </NavWrapper>
   </Layout>
 )
 

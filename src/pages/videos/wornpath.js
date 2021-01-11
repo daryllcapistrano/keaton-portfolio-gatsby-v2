@@ -11,11 +11,6 @@ import {
 const WornpathPage = () => (
   <Layout>
     <SEO title="Wornpath" />
-    <NavWrapper>
-      <Link to="/videos/demo-reel">Back</Link>
-      <Link to="/">Home</Link>
-      <Link to="/videos/blm-this-is-a-zine">Next</Link>
-    </NavWrapper>
     <VideoWrapper>
       <InnerWrapper>
         <iframe
@@ -28,6 +23,11 @@ const WornpathPage = () => (
         />
       </InnerWrapper>
     </VideoWrapper>
+    <NavWrapper>
+      <Link to="/videos/demo-reel">Back</Link>
+      <Link to="/">Home</Link>
+      <Link to="/videos/blm-this-is-a-zine">Next</Link>
+    </NavWrapper>
   </Layout>
 )
 

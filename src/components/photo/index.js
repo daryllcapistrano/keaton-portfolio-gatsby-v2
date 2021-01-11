@@ -24,7 +24,11 @@ function PhotoGallery() {
         edges {
           node {
             id
-            publicURL
+            childImageSharp {
+              fluid {
+                ...GatsbyImageSharpFluid_tracedSVG
+              }
+            }
           }
         }
       }
@@ -34,30 +38,38 @@ function PhotoGallery() {
         edges {
           node {
             id
-            publicURL
+            childImageSharp {
+              fluid {
+                ...GatsbyImageSharpFluid_tracedSVG
+              }
+            }
           }
         }
       }
     }
   `)
 
-  // * Push Query into seperate arrays
+  // * Push GraphQL query into seperate arrays
   const photosArr = []
   const photosWideArr = []
 
   Photos.photos.edges.forEach(image => {
-    let src = image.node.publicURL
+    let src = image.node.childImageSharp.fluid.src
+    let srcSet = image.node.childImageSharp.fluid.srcSet
     let width = 4
     let height = 6
-    photosArr.push({ src, width, height })
+    photosArr.push({ src, srcSet, width, height })
   })
 
   Photos.photosWide.edges.forEach(image => {
-    let src = image.node.publicURL
+    let src = image.node.childImageSharp.fluid.src
+    let srcSet = image.node.childImageSharp.fluid.srcSet
     let width = 6
     let height = 4
-    photosWideArr.push({ src, width, height })
+    photosWideArr.push({ src, srcSet, width, height })
   })
+
+  console.log(photosWideArr)
 
   // * Merge the two arrays alternatively into new array for use in Gallery
   const newPhotoSources = []

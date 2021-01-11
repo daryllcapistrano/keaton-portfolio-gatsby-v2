@@ -34,7 +34,7 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `contact-image`,
+        name: `contact-images`,
         path: `${__dirname}/src/images/contact-images`,
       },
     },

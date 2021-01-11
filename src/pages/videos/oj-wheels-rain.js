@@ -11,11 +11,6 @@ import {
 const OJRainPage = () => (
   <Layout>
     <SEO title="OJ Wheels Cruisin'" />
-    <NavWrapper>
-      <Link to="/videos/oj-wheels-slimeballs">Back</Link>
-      <Link to="/">Home</Link>
-      <Link to="/videos/prices-are-low">Next</Link>
-    </NavWrapper>
     <VideoWrapper>
       <InnerWrapper>
         <iframe
@@ -28,6 +23,11 @@ const OJRainPage = () => (
         />
       </InnerWrapper>
     </VideoWrapper>
+    <NavWrapper>
+      <Link to="/videos/oj-wheels-slimeballs">Back</Link>
+      <Link to="/">Home</Link>
+      <Link to="/videos/prices-are-low">Next</Link>
+    </NavWrapper>
   </Layout>
 )
 

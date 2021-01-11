@@ -11,11 +11,6 @@ import {
 const ManifestFarmPage = () => (
   <Layout>
     <SEO title="Manifest Farm" />
-    <NavWrapper>
-      <Link to="/videos/blm-this-is-a-zine">Back</Link>
-      <Link to="/">Home</Link>
-      <Link to="/videos/bittersland">Next</Link>
-    </NavWrapper>
     <VideoWrapper>
       <InnerWrapper>
         <iframe
@@ -28,6 +23,11 @@ const ManifestFarmPage = () => (
         />
       </InnerWrapper>
     </VideoWrapper>
+    <NavWrapper>
+      <Link to="/videos/blm-this-is-a-zine">Back</Link>
+      <Link to="/">Home</Link>
+      <Link to="/videos/bittersland">Next</Link>
+    </NavWrapper>
   </Layout>
 )
 

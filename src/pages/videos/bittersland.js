@@ -11,11 +11,6 @@ import {
 const BitterslandPage = () => (
   <Layout>
     <SEO title="Bitters" />
-    <NavWrapper>
-      <Link to="/videos/manifest-farm">Back</Link>
-      <Link to="/">Home</Link>
-      <Link to="/videos/oj-wheels-leaves">Next</Link>
-    </NavWrapper>
     <VideoWrapper>
       <InnerWrapper>
         <iframe
@@ -28,6 +23,11 @@ const BitterslandPage = () => (
         />
       </InnerWrapper>
     </VideoWrapper>
+    <NavWrapper>
+      <Link to="/videos/manifest-farm">Back</Link>
+      <Link to="/">Home</Link>
+      <Link to="/videos/oj-wheels-leaves">Next</Link>
+    </NavWrapper>
   </Layout>
 )
 
