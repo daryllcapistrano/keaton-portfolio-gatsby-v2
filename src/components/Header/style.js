@@ -20,9 +20,10 @@ export const LinkWrapper = styled.div`
   justify-content: space-evenly;
   width: 100%;
   margin-top: 1em;
+  padding: 0 1.5em;
   a {
-    font-weight: 900;
-    letter-spacing: 1.6px;
+    font-weight: 400;
+    font-size: 0.75em;
     color: black;
     text-decoration: none;
     text-transform: uppercase;

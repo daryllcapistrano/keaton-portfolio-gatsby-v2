@@ -10,7 +10,13 @@ export const InnerWrapper = styled.div`
   position: absolute;
   bottom: 0;
   width: 100%;
+  height: 2.5em;
   justify-content: center;
   font-size: small;
-  opacity: 0.2;
+  background-color: lightgrey;
+  p {
+    color: #ffffff;
+    align-self: center;
+    font-size: 50%;
+  }
 `
