@@ -34,7 +34,7 @@ function PhotoGallery() {
             id
             childImageSharp {
               fluid {
-                ...GatsbyImageSharpFluid_tracedSVG
+                ...GatsbyImageSharpFluid
               }
             }
           }
@@ -48,7 +48,7 @@ function PhotoGallery() {
             id
             childImageSharp {
               fluid {
-                ...GatsbyImageSharpFluid_tracedSVG
+                ...GatsbyImageSharpFluid
               }
             }
           }

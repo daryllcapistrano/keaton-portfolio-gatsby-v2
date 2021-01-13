@@ -15,8 +15,11 @@ const VideoThumbnails = () => {
           subtitle
           src {
             childImageSharp {
-              fluid(quality: 100) {
+              fluid(maxWidth: 300, maxHeight: 300, quality: 100) {
                 ...GatsbyImageSharpFluid_withWebp
+              }
+              sizes {
+                ...GatsbyImageSharpSizes_withWebp
               }
             }
           }
@@ -32,7 +35,9 @@ const VideoThumbnails = () => {
           <Link to={thumbnail.link}>
             <Img
               fluid={thumbnail.src.childImageSharp.fluid}
+              sizes={thumbnail.src.childImageSharp.sizes}
               backgroundColor={true}
+              style={{ height: `100%`, width: `100%` }}
             />
             <TextWrapper>
               {thumbnail.title}

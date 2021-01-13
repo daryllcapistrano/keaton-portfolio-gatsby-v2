@@ -7,6 +7,7 @@ export const Wrapper = styled.div`
   grid-template-rows: 1fr;
   margin: 1em 2em;
   @media (min-width: 688px) {
+    grid-template-columns: 1fr 1fr;
     margin: 1em 4em;
   }
   @media (min-width: 992px) {
@@ -17,7 +18,6 @@ export const Wrapper = styled.div`
   }
 `
 export const ImageWrapper = styled.div`
-  justify-self: center;
   width: 100%;
 `
 
@@ -25,6 +25,10 @@ export const LinkContainer = styled.div`
   display: flex;
   flex-direction: column;
   margin-top: 1em;
+  @media (min-width: 688px) {
+    margin-top: 0;
+    margin-left: 4em;
+  }
 `
 
 export const Button = styled.a`
@@ -43,6 +47,8 @@ export const Button = styled.a`
     transition: all 200ms;
   }
   p {
+    font-weight: 900;
+    letter-spacing: 2px;
     text-transform: uppercase;
     margin: 0 0 0 1em;
   }

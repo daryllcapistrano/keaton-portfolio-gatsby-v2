@@ -60,13 +60,12 @@ export const TextWrapper = styled.div`
   }
   @media (min-width: 992px) {
     font-size: 1.6em;
-    text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.4), 0px 4px 6px rgba(0, 0, 0, 0.1),
-      0px 9px 12px rgba(0, 0, 0, 0.1);
   }
   @media (min-width: 1312px) {
     font-size: 2em;
-    text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.4), 0px 4px 6px rgba(0, 0, 0, 0.1),
-      0px 9px 12px rgba(0, 0, 0, 0.1);
+  }
+  @media (min-width: 2560px) {
+    font-size: 5em;
   }
 `
 
@@ -77,10 +76,12 @@ export const NavWrapper = styled.div`
   width: 100%;
   margin: 2em 0 1.5em;
   a {
+    font-weight: 900;
+    font-size: 1.5em;
     text-decoration: none;
+    text-transform: uppercase;
     color: #333333;
     text-decoration: none;
-    padding: 10px;
     :hover {
       color: #bdc3c7;
     }

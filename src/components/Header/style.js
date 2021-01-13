@@ -41,7 +41,7 @@ export const LinkWrapper = styled.div`
   margin-top: 1em;
 
   a {
-    font-weight: 400;
+    font-weight: 900;
     font-size: 0.75em;
     color: black;
     text-decoration: none;
@@ -52,7 +52,10 @@ export const LinkWrapper = styled.div`
   }
   @media (min-width: 1312px) {
     justify-content: flex-end;
-
     margin: auto;
+    font-size: 1.5em;
+  }
+  @media (min-width: 2560px) {
+    font-size: 3em;
   }
 `

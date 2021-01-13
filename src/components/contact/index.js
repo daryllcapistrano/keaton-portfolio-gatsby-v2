@@ -27,7 +27,10 @@ function Contact() {
   return (
     <Wrapper>
       <ImageWrapper>
-        <Img fluid={Photo.allFile.nodes[0].childImageSharp.fluid} />
+        <Img
+          fluid={Photo.allFile.nodes[0].childImageSharp.fluid}
+          style={{ margin: `auto` }}
+        />
       </ImageWrapper>
       <LinkContainer>
         <Button href="tel:971.347.6704">

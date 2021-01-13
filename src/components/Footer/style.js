@@ -15,7 +15,7 @@ export const InnerWrapper = styled.div`
   font-size: small;
   background-color: lightgrey;
   p {
-    color: #ffffff;
+    color: #0f0e0e;
     align-self: center;
     font-size: 50%;
   }
