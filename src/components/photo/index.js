@@ -63,15 +63,15 @@ function PhotoGallery() {
 
   Photos.photos.edges.forEach(image => {
     let src = image.node.childImageSharp.fluid.src
-    let width = 2
-    let height = 3
+    let width = 4
+    let height = 6
     photosArr.push({ src, width, height })
   })
 
   Photos.photosWide.edges.forEach(image => {
     let src = image.node.childImageSharp.fluid.src
-    let width = 3
-    let height = 2
+    let width = 6
+    let height = 4
     photosWideArr.push({ src, width, height })
   })
 

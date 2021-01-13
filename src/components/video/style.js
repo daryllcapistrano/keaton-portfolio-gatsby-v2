@@ -33,17 +33,10 @@ export const Item = styled.div`
 export const TextWrapper = styled.div`
   position: absolute;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 100%;
-  color: #ffffff;
-  text-transform: uppercase;
-  text-align: center;
-  font-size: 1em;
-  font-weight: 900;
-  letter-spacing: 2px;
   transition: opacity 0.3s ease-out;
   -moz-transition: opacity 0.3s ease-out;
   -webkit-transition: opacity 0.3s ease-out;
@@ -66,6 +59,17 @@ export const TextWrapper = styled.div`
   }
   @media (min-width: 2560px) {
     font-size: 5em;
+  }
+
+  p {
+    margin: 0;
+    width: 100%;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1em;
+    font-weight: 900;
+    letter-spacing: 2px;
   }
 `
 
