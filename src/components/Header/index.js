@@ -1,23 +1,15 @@
 import React from "react"
 import { Link } from "gatsby"
-import RotatingLogo from "../../images/gifs/Logo.mp4"
+import RotatingLogo2 from "../../images/gifs/Rotating_Logo_WhiteBG.gif"
 
-import {
-  StyledHeader,
-  InnerWrapper,
-  LogoWrapper,
-  Video,
-  LinkWrapper,
-} from "./style"
+import { StyledHeader, InnerWrapper, LogoWrapper, LinkWrapper } from "./style"
 
 const Header = ({ menuLinks }) => {
   return (
     <StyledHeader>
       <InnerWrapper>
         <LogoWrapper>
-          <Video autoPlay loop preload="auto">
-            <source src={RotatingLogo} type="video/mp4" />
-          </Video>
+          <img src={RotatingLogo2} alt="rotating logo gif" />
         </LogoWrapper>
         <LinkWrapper>
           {menuLinks.map(link => (

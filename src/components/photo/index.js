@@ -63,18 +63,18 @@ function PhotoGallery() {
 
   Photos.photos.edges.forEach(image => {
     let src = image.node.childImageSharp.fluid.src
-    let srcSet = image.node.childImageSharp.fluid.srcSet
-    let width = 2
-    let height = 3
-    photosArr.push({ src, srcSet, width, height })
+    // let srcSet = image.node.childImageSharp.fluid.srcSet
+    let width = 4
+    let height = 6
+    photosArr.push({ src, width, height })
   })
 
   Photos.photosWide.edges.forEach(image => {
     let src = image.node.childImageSharp.fluid.src
-    let srcSet = image.node.childImageSharp.fluid.srcSet
-    let width = 3
-    let height = 2
-    photosWideArr.push({ src, srcSet, width, height })
+    // let srcSet = image.node.childImageSharp.fluid.srcSet
+    let width = 6
+    let height = 4
+    photosWideArr.push({ src, width, height })
   })
 
   // * Merge the two arrays alternatively into new array for use in Gallery
@@ -104,7 +104,7 @@ function PhotoGallery() {
               currentIndex={currentImage}
               views={newPhotoSources.map(x => ({
                 ...x,
-                srcset: x.srcSet,
+                // srcset: x.srcSet,
               }))}
             />
           </Modal>

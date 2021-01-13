@@ -19,19 +19,9 @@ export const InnerWrapper = styled.div`
 `
 
 export const LogoWrapper = styled.div`
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  @media (min-width: 1312px) {
-    justify-content: normal;
-  }
-`
-
-export const Video = styled.video`
-  width: 20%;
-  @media (min-width: 688px) {
-    width: 15%;
-  }
+  height: 100px;
+  width: 100px;
+  margin: auto;
 `
 
 export const LinkWrapper = styled.div`
