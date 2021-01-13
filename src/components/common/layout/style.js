@@ -7,7 +7,7 @@ export const GlobalStyle = createGlobalStyle`
     font-family: "Poppins", sans-serif;
   }
   main {
-    height:100%;
-    min-height:100vh;
+    height: 100%;
+    min-height: 100vh;
   }
 `
