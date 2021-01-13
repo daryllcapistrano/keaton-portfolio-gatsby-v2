@@ -3,7 +3,7 @@ import styled from "styled-components"
 export const Grid = styled.div`
   position: relative;
   display: grid;
-  margin: 1.5em 2em;
+  margin: 3em 2.75em;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 0.5em;
@@ -74,7 +74,7 @@ export const NavWrapper = styled.div`
   display: inline-flex;
   justify-content: space-around;
   width: 100%;
-  margin: 2em 0 1.5em;
+  margin-top: 2em;
   a {
     font-weight: 900;
     font-size: 1.5em;
@@ -86,12 +86,27 @@ export const NavWrapper = styled.div`
       color: #bdc3c7;
     }
   }
+  @media (min-width: 688px) {
+    margin-top: 4em;
+  }
+  @media (min-width: 992px) {
+    margin-top: 4em;
+  }
+  @media (min-width: 1312px) {
+    margin-top: 4em;
+  }
 `
 
 export const VideoWrapper = styled.div`
-  margin: 0 1em 1em;
+  margin: 1em 1em;
+  @media (min-width: 688px) {
+    margin: 1em 2em;
+  }
+  @media (min-width: 992px) {
+    margin: 2em 5em;
+  }
   @media (min-width: 1312px) {
-    margin: 0 12em 1em;
+    margin: 4em 8em;
   }
 `
 

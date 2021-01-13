@@ -1,10 +1,7 @@
-1. refactor to follow DRY
-2. query images to better performance
+- change icons to square image
 
-- render correct sizes
-
-3. change icons to square image
-
-refactor SEO to use only in layout component
+- refactor SEO to use only in layout component
 
 - correct video title to correct one that youtube uses
+
+- use http://react-responsive-carousel.js.org/

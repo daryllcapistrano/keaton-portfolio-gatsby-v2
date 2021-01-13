@@ -5,16 +5,16 @@ export const Wrapper = styled.div`
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
-  margin: 1em 2em;
+  margin: 3em 2.75em;
   @media (min-width: 688px) {
     grid-template-columns: 1fr 1fr;
-    margin: 1em 4em;
+    margin: 3em 4em;
   }
   @media (min-width: 992px) {
-    margin: 1em 8em;
+    margin: 3em 8em;
   }
   @media (min-width: 1312px) {
-    margin: 1em 12em;
+    margin: 6em 12em;
   }
 `
 export const ImageWrapper = styled.div`
