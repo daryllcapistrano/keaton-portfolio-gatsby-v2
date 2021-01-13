@@ -27,7 +27,7 @@ const CreatureQuarantineSessions = () => (
           src={`https://www.youtube.com/embed/VNgghlJIKy4`}
           frameBorder="0"
           allowFullScreen={true}
-          title="creature quarantine sessions"
+          title="Quarantine Sessions with David Gravette and Fiends!"
           width="560"
           height="349"
         />

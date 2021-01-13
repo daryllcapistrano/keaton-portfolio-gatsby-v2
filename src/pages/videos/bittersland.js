@@ -28,7 +28,7 @@ const BitterslandPage = () => (
           src={`https://www.youtube.com/embed/J-zFcJ0rMTM`}
           frameBorder="0"
           allowFullScreen={true}
-          title="bittersland"
+          title="Bittersland"
           width="560"
           height="349"
         />

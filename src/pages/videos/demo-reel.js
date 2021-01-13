@@ -27,7 +27,7 @@ const DemoReel = () => (
           src={`https://www.youtube.com/embed/1Wl-rT3rU94`}
           frameBorder="0"
           allowFullScreen={true}
-          title="demo reel"
+          title="Keaton Rodgers / Cinematography & Editing Reel"
           width="560"
           height="349"
         />

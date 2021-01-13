@@ -63,7 +63,6 @@ function PhotoGallery() {
 
   Photos.photos.edges.forEach(image => {
     let src = image.node.childImageSharp.fluid.src
-    // let srcSet = image.node.childImageSharp.fluid.srcSet
     let width = 2
     let height = 3
     photosArr.push({ src, width, height })
@@ -71,7 +70,6 @@ function PhotoGallery() {
 
   Photos.photosWide.edges.forEach(image => {
     let src = image.node.childImageSharp.fluid.src
-    // let srcSet = image.node.childImageSharp.fluid.srcSet
     let width = 3
     let height = 2
     photosWideArr.push({ src, width, height })
@@ -94,7 +92,6 @@ function PhotoGallery() {
         onClick={openLightbox}
         direction={"row"}
         margin={2}
-        // limitNodeSearch={2}
       />
       <ModalGateway>
         {viewerIsOpen ? (
@@ -104,7 +101,6 @@ function PhotoGallery() {
               currentIndex={currentImage}
               views={newPhotoSources.map(x => ({
                 ...x,
-                // srcset: x.srcSet,
               }))}
             />
           </Modal>

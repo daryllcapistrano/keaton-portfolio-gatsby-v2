@@ -27,7 +27,7 @@ const OJSlimePage = () => (
           src={`https://www.youtube.com/embed/jzNG1TSN7bs`}
           frameBorder="0"
           allowFullScreen={true}
-          title="oj wheels slimeballs 2020 promo"
+          title="Slime Balls 2020 Promo"
           width="560"
           height="349"
         />
@@ -40,7 +40,7 @@ const OJSlimePage = () => (
           src={`https://www.youtube.com/embed/-Amo7LoszWw`}
           frameBorder="0"
           allowFullScreen={true}
-          title="oj wheels slimeballs 2020 promotional"
+          title="Slime Balls 2020 Promotional"
           width="560"
           height="349"
         />
@@ -53,7 +53,7 @@ const OJSlimePage = () => (
           src={`https://www.youtube.com/embed/69BABGRWz0o`}
           frameBorder="0"
           allowFullScreen={true}
-          title="oj wheels slimeballs 5"
+          title="Slime Balls Promo 5"
           width="560"
           height="349"
         />
@@ -66,7 +66,7 @@ const OJSlimePage = () => (
           src={`https://www.youtube.com/embed/yjHIyzIhBUM`}
           frameBorder="0"
           allowFullScreen={true}
-          title="oj wheels slimeballs 9"
+          title="Slime Balls Promo 9"
           width="560"
           height="349"
         />

@@ -27,7 +27,7 @@ const ManifestFarmPage = () => (
           src={`https://www.youtube.com/embed/fXV8AEs1IdQ`}
           frameBorder="0"
           allowFullScreen={true}
-          title="manifest farm"
+          title="Manifest Farm"
           width="560"
           height="349"
         />

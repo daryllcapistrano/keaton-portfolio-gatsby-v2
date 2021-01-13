@@ -27,7 +27,7 @@ const BlackLivesMatter = () => (
           src={`https://www.youtube.com/embed/v0yaPXtcdCw`}
           frameBorder="0"
           allowFullScreen={true}
-          title="black lives matter / this is a zine"
+          title="Black Lives Matter / This is a Zine"
           width="560"
           height="349"
         />

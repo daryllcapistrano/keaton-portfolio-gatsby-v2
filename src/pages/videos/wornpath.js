@@ -27,7 +27,7 @@ const WornpathPage = () => (
           src={`https://www.youtube.com/embed/cpuSnsD_ZOg`}
           frameBorder="0"
           allowFullScreen={true}
-          title="wornpath"
+          title="Wornpath"
           width="560"
           height="349"
         />
