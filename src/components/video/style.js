@@ -1,11 +1,9 @@
-// import Img from "gatsby-image"
 import styled from "styled-components"
-import { Link } from "gatsby"
 
 export const Grid = styled.div`
   position: relative;
   display: grid;
-  margin: 2em 1em;
+  margin: 1.5em 2em;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 0.5em;
@@ -77,7 +75,23 @@ export const NavWrapper = styled.div`
   display: inline-flex;
   justify-content: space-around;
   width: 100%;
-  margin-top: 2em;
+  margin: 2em 0 1.5em;
+  a {
+    text-decoration: none;
+    color: #333333;
+    text-decoration: none;
+    padding: 10px;
+    :hover {
+      color: #bdc3c7;
+    }
+  }
+`
+
+export const VideoWrapper = styled.div`
+  margin: 0 1em 1em;
+  @media (min-width: 1312px) {
+    margin: 0 12em 1em;
+  }
 `
 
 export const InnerWrapper = styled.div`
@@ -91,22 +105,4 @@ export const InnerWrapper = styled.div`
     width: 100%;
     height: 100%;
   }
-`
-
-export const VideoWrapper = styled.div`
-  margin: 2em 0;
-  padding: 1em;
-`
-
-export const NavLink = styled(Link)`
-  color: #333333;
-  text-decoration: none;
-  padding: 10px;
-  :hover {
-    color: #bdc3c7;
-  }
-`
-// remove
-export const YoutubeVideo = styled.iframe`
-  margin: auto;
 `

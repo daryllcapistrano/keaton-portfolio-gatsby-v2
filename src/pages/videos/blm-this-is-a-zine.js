@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import Layout from "../../components/common/layout"
 import SEO from "../../components/SEO"
+import { GrPrevious, GrNext } from "react-icons/gr"
 import {
   NavWrapper,
   VideoWrapper,
@@ -11,6 +12,15 @@ import {
 const BlackLivesMatter = () => (
   <Layout>
     <SEO title="Black Lives Matter / This is a Zine" />
+    <NavWrapper>
+      <Link to="/videos/oj-wheels-slimeballs">
+        <GrPrevious />
+      </Link>
+      <Link to="/">Home</Link>
+      <Link to="/videos/bittersland">
+        <GrNext />
+      </Link>
+    </NavWrapper>
     <VideoWrapper>
       <InnerWrapper>
         <iframe
@@ -23,11 +33,6 @@ const BlackLivesMatter = () => (
         />
       </InnerWrapper>
     </VideoWrapper>
-    <NavWrapper>
-      <Link to="/videos/wornpath">Back</Link>
-      <Link to="/">Home</Link>
-      <Link to="/videos/manifest-farm">Next</Link>
-    </NavWrapper>
   </Layout>
 )
 

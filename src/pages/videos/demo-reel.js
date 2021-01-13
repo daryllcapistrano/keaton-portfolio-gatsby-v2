@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import Layout from "../../components/common/layout"
 import SEO from "../../components/SEO"
+import { GrPrevious, GrNext } from "react-icons/gr"
 import {
   NavWrapper,
   VideoWrapper,
@@ -11,6 +12,15 @@ import {
 const DemoReel = () => (
   <Layout>
     <SEO title="Demo Reel" />
+    <NavWrapper>
+      <Link to="/videos/prices-are-low">
+        <GrPrevious />
+      </Link>
+      <Link to="/">Home</Link>
+      <Link to="/videos/maple-xo">
+        <GrNext />
+      </Link>
+    </NavWrapper>
     <VideoWrapper>
       <InnerWrapper>
         <iframe
@@ -23,11 +33,6 @@ const DemoReel = () => (
         />
       </InnerWrapper>
     </VideoWrapper>
-    <NavWrapper>
-      <Link to="/videos/creature-quarantine-sessions">Back</Link>
-      <Link to="/">Home</Link>
-      <Link to="/videos/wornpath">Next</Link>
-    </NavWrapper>
   </Layout>
 )
 

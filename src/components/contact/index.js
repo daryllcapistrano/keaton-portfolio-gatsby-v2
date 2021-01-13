@@ -1,10 +1,12 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
-import { GrInstagram, GrSend, GrPhone } from "react-icons/gr"
-import { InfoContainer } from "./style"
+import { IconContext } from "react-icons"
+import { FaInstagram } from "react-icons/fa"
+import { BsAt } from "react-icons/bs"
+import { MdPhonelinkRing } from "react-icons/md"
 
-import { Wrapper, ImageWrapper } from "./style"
+import { Wrapper, ImageWrapper, LinkContainer, Button } from "./style"
 
 function Contact() {
   const Photo = useStaticQuery(graphql`
@@ -13,8 +15,8 @@ function Contact() {
         nodes {
           id
           childImageSharp {
-            fluid {
-              ...GatsbyImageSharpFluid
+            fluid(maxWidth: 400) {
+              ...GatsbyImageSharpFluid_noBase64
             }
           }
         }
@@ -27,20 +29,26 @@ function Contact() {
       <ImageWrapper>
         <Img fluid={Photo.allFile.nodes[0].childImageSharp.fluid} />
       </ImageWrapper>
-      <InfoContainer>
-        <a href="tel:971.347.6704">
-          <GrPhone />
-          <small>phone</small>
-        </a>
-        <a href="mailto:keatonrodgersmedia@gmail.com">
-          <GrSend />
-          <small>email</small>
-        </a>
-        <a href="https://www.instagram.com/keatonrodgers/">
-          <GrInstagram />
-          <small>instagram</small>
-        </a>
-      </InfoContainer>
+      <LinkContainer>
+        <Button href="tel:971.347.6704">
+          <IconContext.Provider value={{ size: `1.5em` }}>
+            <MdPhonelinkRing />
+          </IconContext.Provider>
+          <p>971.347.6704</p>
+        </Button>
+        <Button href="https://www.instagram.com/keatonrodgers/">
+          <IconContext.Provider value={{ size: `1.5em` }}>
+            <FaInstagram />
+          </IconContext.Provider>
+          <p>@keatonrodgers</p>
+        </Button>
+        <Button href="mailto:keatonrodgersmedia@gmail.com">
+          <IconContext.Provider value={{ size: `1.5em` }}>
+            <BsAt />
+          </IconContext.Provider>
+          <p>keatonrodgersmedia</p>
+        </Button>
+      </LinkContainer>
     </Wrapper>
   )
 }

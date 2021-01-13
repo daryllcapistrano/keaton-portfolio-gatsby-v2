@@ -6,6 +6,12 @@
     "link": "/videos/demo-reel/"
   },
   {
+    "title": "Maple XO",
+    "subtitle": "Farewell 2020",
+    "src": "../images/video-thumbnails/maple_thumbnail2.png",
+    "link": "/videos/maple-xo/"
+  },
+  {
     "title": "wornpath",
     "subtitle": null,
     "src": "../images/video-thumbnails/wornpath.jpg",
@@ -36,22 +42,28 @@
     "link": "/videos/bittersland/"
   },
   {
-    "title": "cruising",
-    "subtitle": "through the leaves",
-    "src": "../images/video-thumbnails/ojcruisingthroughtheleaves.jpg",
-    "link": "/videos/oj-wheels-leaves/"
+    "title": "Bronson",
+    "subtitle": "Bearings",
+    "src": "../images/video-thumbnails/bronson_thumbnail.png",
+    "link": "/videos/bronson-bearings/"
+  },
+  {
+    "title": "OJ",
+    "subtitle": "Cruising series",
+    "src": "../images/video-thumbnails/ojcruisingintherain.png",
+    "link": "/videos/oj-wheels-cruisin/"
+  },
+  {
+    "title": "Skatewild with",
+    "subtitle": "David Gravette",
+    "src": "../images/video-thumbnails/skatewild_thumbnail.png",
+    "link": "/videos/skate-wild/"
   },
   {
     "title": "creature",
     "subtitle": "quarantine sessions",
     "src": "../images/video-thumbnails/creaturequarantinesessions.png",
     "link": "/videos/creature-quarantine-sessions/"
-  },
-  {
-    "title": "cruising",
-    "subtitle": "in the rain",
-    "src": "../images/video-thumbnails/ojcruisingintherain.png",
-    "link": "/videos/oj-wheels-rain/"
   },
   {
     "title": "prices are low",

@@ -3,23 +3,47 @@ import styled from "styled-components"
 export const Wrapper = styled.div`
   position: relative;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  /* grid-template-rows: 1fr 1fr; */
-  gap: 0.5em;
-  margin: 1.5em 0;
-  padding: 0.5em;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  margin: 1em 2em;
+  @media (min-width: 688px) {
+    margin: 1em 4em;
+  }
+  @media (min-width: 992px) {
+    margin: 1em 8em;
+  }
+  @media (min-width: 1312px) {
+    margin: 1em 12em;
+  }
 `
 export const ImageWrapper = styled.div`
-  padding: 0;
+  justify-self: center;
+  width: 100%;
 `
-export const ContactHeader = styled.p`
-  text-align: center;
-  margin-top: 0;
-`
-export const InfoContainer = styled.div`
+
+export const LinkContainer = styled.div`
   display: flex;
   flex-direction: column;
-  width: 100%;
-  height: 100%;
-  justify-content: space-evenly;
+  margin-top: 1em;
+`
+
+export const Button = styled.a`
+  display: inline-flex;
+  justify-content: space-between;
+  text-decoration: none;
+  background-color: #000000;
+  background-clip: padding-box;
+  color: #ffffff;
+  margin-bottom: 0.5em;
+  padding: 10px 10px;
+  border-radius: 5px;
+  &:hover {
+    background-color: #ffffff;
+    color: #000000;
+    transition: all 200ms;
+  }
+  p {
+    text-transform: uppercase;
+    margin: 0 0 0 1em;
+  }
 `

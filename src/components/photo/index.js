@@ -8,6 +8,14 @@ function PhotoGallery() {
   const [currentImage, setCurrentImage] = useState(0)
   const [viewerIsOpen, setViewerIsOpen] = useState(false)
 
+  // * Style the carousel
+  const carouselStyles = {
+    view: () => ({
+      height: `100vh`,
+      width: `100%`,
+    }),
+  }
+
   const openLightbox = useCallback((event, { photo, index }) => {
     setCurrentImage(index)
     setViewerIsOpen(true)
@@ -69,8 +77,6 @@ function PhotoGallery() {
     photosWideArr.push({ src, srcSet, width, height })
   })
 
-  console.log(photosWideArr)
-
   // * Merge the two arrays alternatively into new array for use in Gallery
   const newPhotoSources = []
   let i,
@@ -81,21 +87,13 @@ function PhotoGallery() {
   }
   newPhotoSources.push(...photosArr.slice(l), ...photosWideArr.slice(l))
 
-  // * Style the carousel
-  const carouselStyles = {
-    view: () => ({
-      height: `100vh`,
-      width: `100%`,
-    }),
-  }
-
   return (
     <Wrapper>
       <Gallery
         photos={newPhotoSources}
         onClick={openLightbox}
         direction={"row"}
-        margin={2}
+        margin={3}
         limitNodeSearch={3}
       />
       <ModalGateway>
