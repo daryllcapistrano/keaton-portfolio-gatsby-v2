@@ -3,9 +3,13 @@ import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import { Wrapper, ImageWrapper } from "./style"
 import Masonry from "react-masonry-component"
+// NEW COMPONENTS
+import ReactBnbGallery from "react-bnb-gallery"
+import "react-bnb-gallery/dist/style.css"
 
 function PhotoMasonry() {
   const [currentIndex, setCurrentIndex] = useState(0)
+  const [isOpen, setIsOpen] = useState(false)
 
   // * Begin Image Query & Manipulation
   const Photos = useStaticQuery(graphql`
@@ -42,6 +46,7 @@ function PhotoMasonry() {
   const photosArr = []
   const photosWideArr = []
   const Images = []
+  const GalleryImages = []
 
   Photos.photos.edges.forEach(image => {
     let src = image.node.childImageSharp.fluid
@@ -64,16 +69,22 @@ function PhotoMasonry() {
   }
 
   Images.push(...photosArr.slice(l), ...photosWideArr.slice(l))
-  // * End Image Query & Manipulation
 
-  // test below
-  // function handleClick(index) {
-  //   setCurrentIndex(currentIndex === index)
-  // }
+  Images.map(index => {
+    let src = index.src.src
+    GalleryImages.push(src)
+  })
+  // * End Image Query & Manipulation
 
   const childElements = Images.map((src, index) => {
     return (
-      <ImageWrapper key={index} onClick={() => setCurrentIndex(index)}>
+      <ImageWrapper
+        key={index}
+        onClick={() => {
+          setCurrentIndex(index)
+          setIsOpen(true)
+        }}
+      >
         <Img fluid={src.src} alt="masonry image" />
       </ImageWrapper>
     )
@@ -88,6 +99,12 @@ function PhotoMasonry() {
       >
         {childElements}
       </Masonry>
+      <ReactBnbGallery
+        show={isOpen}
+        photos={GalleryImages}
+        activePhotoIndex={currentIndex}
+        onClose={() => setIsOpen(false)}
+      />
     </Wrapper>
   )
 }
