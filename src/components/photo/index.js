@@ -1,10 +1,9 @@
 import React, { useState } from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
-import { Wrapper, ImageWrapper } from "./style"
 import Masonry from "react-masonry-component"
-// NEW COMPONENTS
 import ReactBnbGallery from "react-bnb-gallery"
+import { Wrapper, ImageWrapper } from "./style"
 import "react-bnb-gallery/dist/style.css"
 
 function PhotoMasonry() {
@@ -12,6 +11,8 @@ function PhotoMasonry() {
   const [isOpen, setIsOpen] = useState(false)
 
   // * Begin Image Query & Manipulation
+  //   eventually move this to own file
+  //
   const Photos = useStaticQuery(graphql`
     query {
       photos: allFile(filter: { sourceInstanceName: { eq: "photos" } }) {
@@ -42,7 +43,9 @@ function PhotoMasonry() {
       }
     }
   `)
+  //
   //  Push GraphQL query into seperate arrays
+  //
   const photosArr = []
   const photosWideArr = []
   const Images = []
@@ -60,7 +63,9 @@ function PhotoMasonry() {
     let height = 4
     photosWideArr.push({ src, width, height })
   })
+  //
   //  Merge the two arrays alternatively into new array for use in Gallery
+  //
   let i,
     l = Math.min(photosArr.length, photosWideArr.length)
 
@@ -73,7 +78,10 @@ function PhotoMasonry() {
   Images.map(index => {
     let src = index.src.src
     GalleryImages.push(src)
+    return src
   })
+  //
+  //
   // * End Image Query & Manipulation
 
   const childElements = Images.map((src, index) => {
@@ -90,12 +98,14 @@ function PhotoMasonry() {
     )
   })
 
+  const styleOptions = {}
+
   return (
     <Wrapper>
       <Masonry
         disableImagesLoaded={false} // default false
         updateOnEachImageLoad={false} // default false and works only if disableImagesLoaded is false
-        style={{ margin: `0 auto` }}
+        style={styleOptions}
       >
         {childElements}
       </Masonry>
