@@ -12,3 +12,11 @@ export const Wrapper = styled.div`
     margin: 1.5em 12em;
   }
 `
+
+export const ImageWrapper = styled.div`
+  width: 100%;
+  padding: 0.25em;
+  @media (min-width: 688px) {
+    width: 33%;
+  }
+`
