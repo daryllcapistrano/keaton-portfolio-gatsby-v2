@@ -1,10 +1,12 @@
-import React from "react"
+import React, { useState } from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import { Wrapper, ImageWrapper } from "./style"
 import Masonry from "react-masonry-component"
 
 function PhotoMasonry() {
+  const [currentIndex, setCurrentIndex] = useState(0)
+
   // * Begin Image Query & Manipulation
   const Photos = useStaticQuery(graphql`
     query {
@@ -64,9 +66,14 @@ function PhotoMasonry() {
   Images.push(...photosArr.slice(l), ...photosWideArr.slice(l))
   // * End Image Query & Manipulation
 
+  // test below
+  // function handleClick(index) {
+  //   setCurrentIndex(currentIndex === index)
+  // }
+
   const childElements = Images.map((src, index) => {
     return (
-      <ImageWrapper key={index}>
+      <ImageWrapper key={index} onClick={() => setCurrentIndex(index)}>
         <Img fluid={src.src} alt="masonry image" />
       </ImageWrapper>
     )
