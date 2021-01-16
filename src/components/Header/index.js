@@ -16,7 +16,7 @@ const Header = ({ menuLinks }) => {
             <Link
               to={link.link}
               key={link.name}
-              activeStyle={{ borderBottom: `2px solid black` }}
+              activeStyle={{ borderBottom: `1px solid #010101` }}
             >
               {link.name}
             </Link>

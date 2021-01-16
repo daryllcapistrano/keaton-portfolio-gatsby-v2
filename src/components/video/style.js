@@ -41,8 +41,8 @@ export const TextWrapper = styled.div`
   -moz-transition: opacity 0.3s ease-out;
   -webkit-transition: opacity 0.3s ease-out;
   -o-transition: opacity 0.3s ease-out;
-  text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.4), 0px 2px 3px rgba(0, 0, 0, 0.1),
-    0px 3px 4px rgba(0, 0, 0, 0.1);
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.4), 0px 1px 1px rgba(0, 0, 0, 0.1),
+    0px 1px 1px rgba(0, 0, 0, 0.1);
   ${Item}:hover & {
     opacity: 0;
   }

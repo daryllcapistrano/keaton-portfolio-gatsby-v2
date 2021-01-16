@@ -41,6 +41,10 @@ export const Button = styled.a`
   margin-bottom: 0.5em;
   padding: 10px 10px;
   border-radius: 5px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.6);
+  -o-box-shadow: 0 0 3px rgba(0, 0, 0, 0.6);
   &:hover {
     background-color: #ffffff;
     color: #000000;
