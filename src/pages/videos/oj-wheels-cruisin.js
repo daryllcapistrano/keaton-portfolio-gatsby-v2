@@ -13,11 +13,12 @@ const OJCruising = () => (
   <Layout>
     <SEO title="OJ Wheels Cruisin'" />
     <NavWrapper>
-      <Link to="/videos/bronson-bearings">
+      <Link to="/videos/blm-this-is-a-zine">
         <GrPrevious />
+        prev
       </Link>
-      <Link to="/">Home</Link>
       <Link to="/videos/skatewild">
+        next
         <GrNext />
       </Link>
     </NavWrapper>

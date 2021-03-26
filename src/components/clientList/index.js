@@ -4,7 +4,9 @@ import { Wrapper, InnerWrapper } from "./style"
 const ClientList = () => {
   const clients = [
     "Nike",
+    "Vans",
     "Adidas",
+    "Thrasher Magazine",
     "Prana",
     "Chrome Industries",
     "Poler",

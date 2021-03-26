@@ -3,11 +3,7 @@ import { Link } from "gatsby"
 import Layout from "../../components/common/layout"
 import SEO from "../../components/SEO"
 import { GrPrevious, GrNext } from "react-icons/gr"
-import {
-  NavWrapper,
-  VideoWrapper,
-  InnerWrapper,
-} from "../../components/video/style"
+import { NavWrapper, IframeWrapper } from "../../components/video/style"
 
 const ManifestFarmPage = () => (
   <Layout>
@@ -15,24 +11,27 @@ const ManifestFarmPage = () => (
     <NavWrapper>
       <Link to="/videos/wornpath">
         <GrPrevious />
+        prev
       </Link>
-      <Link to="/">Home</Link>
-      <Link to="/videos/oj-wheels-slimeballs">
+      <Link to="/videos/sid">
+        next
         <GrNext />
       </Link>
     </NavWrapper>
-    <VideoWrapper>
-      <InnerWrapper>
-        <iframe
-          src={`https://www.youtube.com/embed/fXV8AEs1IdQ`}
-          frameBorder="0"
-          allowFullScreen={true}
-          title="Manifest Farm"
-          width="560"
-          height="349"
-        />
-      </InnerWrapper>
-    </VideoWrapper>
+    <IframeWrapper>
+      <iframe
+        src="https://player.vimeo.com/video/524432287"
+        width="640"
+        height="360"
+        frameBorder="0"
+        allow="autoplay; fullscreen; picture-in-picture"
+        title="Manifest Farm"
+      ></iframe>
+    </IframeWrapper>
+    <div>
+      <p>Director/ DoP/ Editor - Keaton Rodgers</p>
+      <p>Starring - Katie Linkous</p>
+    </div>
   </Layout>
 )
 

@@ -3,36 +3,35 @@ import { Link } from "gatsby"
 import Layout from "../../components/common/layout"
 import SEO from "../../components/SEO"
 import { GrPrevious, GrNext } from "react-icons/gr"
-import {
-  NavWrapper,
-  VideoWrapper,
-  InnerWrapper,
-} from "../../components/video/style"
+import { NavWrapper, IframeWrapper } from "../../components/video/style"
 
 const BlackLivesMatter = () => (
   <Layout>
-    <SEO title="Black Lives Matter / This is a Zine" />
+    <SEO title="Vans - The Skate Authentic" />
     <NavWrapper>
-      <Link to="/videos/oj-wheels-slimeballs">
+      <Link to="/videos/bronson-bearings">
         <GrPrevious />
+        prev
       </Link>
-      <Link to="/">Home</Link>
-      <Link to="/videos/bittersland">
+      <Link to="/videos/oj-wheels-cruisin">
+        next
         <GrNext />
       </Link>
     </NavWrapper>
-    <VideoWrapper>
-      <InnerWrapper>
-        <iframe
-          src={`https://www.youtube.com/embed/v0yaPXtcdCw`}
-          frameBorder="0"
-          allowFullScreen={true}
-          title="Black Lives Matter / This is a Zine"
-          width="560"
-          height="349"
-        />
-      </InnerWrapper>
-    </VideoWrapper>
+
+    <IframeWrapper>
+      <iframe
+        src="https://player.vimeo.com/video/526234712"
+        frameBorder="0"
+        allow="autoplay; fullscreen; picture-in-picture"
+        title="Black Lives Matter - This is a Zine"
+      ></iframe>
+    </IframeWrapper>
+
+    <div>
+      <p>Director/ DoP/ Editor - Keaton Rodgers</p>
+      <p>Creative Director - Josh Eberhard</p>
+    </div>
   </Layout>
 )
 

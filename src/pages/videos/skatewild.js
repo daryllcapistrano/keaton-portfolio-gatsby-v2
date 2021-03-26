@@ -15,9 +15,10 @@ const Skatewild = () => (
     <NavWrapper>
       <Link to="/videos/oj-wheels-cruisin">
         <GrPrevious />
+        prev
       </Link>
-      <Link to="/">Home</Link>
       <Link to="/videos/creature-quarantine-sessions">
+        next
         <GrNext />
       </Link>
     </NavWrapper>

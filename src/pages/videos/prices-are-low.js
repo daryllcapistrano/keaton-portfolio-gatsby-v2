@@ -3,11 +3,7 @@ import { Link } from "gatsby"
 import Layout from "../../components/common/layout"
 import SEO from "../../components/SEO"
 import { GrPrevious, GrNext } from "react-icons/gr"
-import {
-  NavWrapper,
-  VideoWrapper,
-  InnerWrapper,
-} from "../../components/video/style"
+import { NavWrapper, IframeWrapper } from "../../components/video/style"
 
 const PricesAreLow = () => (
   <Layout>
@@ -15,24 +11,23 @@ const PricesAreLow = () => (
     <NavWrapper>
       <Link to="/videos/creature-quarantine-sessions">
         <GrPrevious />
+        prev
       </Link>
-      <Link to="/">Home</Link>
-      <Link to="/videos/demo-reel">
+      <Link to="/videos/vans-skate">
+        next
         <GrNext />
       </Link>
     </NavWrapper>
-    <VideoWrapper>
-      <InnerWrapper>
-        <iframe
-          src={`https://www.youtube.com/embed/TVbZff32XIQ`}
-          frameBorder="0"
-          allowFullScreen={true}
-          title="Prices are Low - David Gravette, Tony Ellis, Willis Kimbel, Cody Lockwood, Fern Covarrubias and more"
-          width="560"
-          height="349"
-        />
-      </InnerWrapper>
-    </VideoWrapper>
+    <IframeWrapper>
+      <iframe
+        src={`https://www.youtube.com/embed/TVbZff32XIQ`}
+        frameBorder="0"
+        allowFullScreen={true}
+        title="Prices are Low - David Gravette, Tony Ellis, Willis Kimbel, Cody Lockwood, Fern Covarrubias and more"
+        width="560"
+        height="349"
+      />
+    </IframeWrapper>
   </Layout>
 )
 

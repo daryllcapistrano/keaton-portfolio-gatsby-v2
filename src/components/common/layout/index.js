@@ -27,7 +27,7 @@ const Layout = ({ children }) => {
     <>
       <GlobalStyle />
       <Header menuLinks={data.site.siteMetadata.menuLinks} />
-      <main id="page-wrap">{children}</main>
+      <main>{children}</main>
       <Footer />
     </>
   )

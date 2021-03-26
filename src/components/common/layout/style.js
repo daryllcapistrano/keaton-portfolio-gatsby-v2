@@ -1,7 +1,7 @@
 import { createGlobalStyle } from "styled-components"
 
-import "@fontsource/poppins/400.css" // Weight 400.
-import "@fontsource/poppins/900.css" // Weight 900.
+import "@fontsource/poppins/400.css"
+import "@fontsource/poppins/900.css"
 
 export const GlobalStyle = createGlobalStyle`
   html, body {
@@ -16,5 +16,12 @@ export const GlobalStyle = createGlobalStyle`
   main {
     height: 100%;
     min-height: 100vh;
+    padding: 1.5em 1.5em 12em;
+    @media (min-width: 688px) {
+      padding: 2em 4em 12em;
+    }
+    @media (min-width: 992px) {
+      padding: 2em 12em 12em;
+    }
   }
 `

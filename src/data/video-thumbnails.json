@@ -1,74 +1,62 @@
 [
   {
-    "title": "demo reel",
-    "subtitle": null,
-    "src": "../images/video-thumbnails/Reel_web_thumb.png",
-    "link": "/videos/demo-reel/"
+    "title": "Vans - The Skate Authentic",
+    "src": "../images/video-thumbnails/vans_the_skate_authentic.jpg",
+    "link": "/videos/vans-skate/"
   },
   {
-    "title": "Maple XO",
-    "subtitle": "Farewell 2020",
-    "src": "../images/video-thumbnails/maple_thumbnail2.png",
+    "title": "Maple XO - Farewell 2020",
+    "src": "../images/video-thumbnails/maple_xo_2020.png",
     "link": "/videos/maple-xo/"
   },
   {
-    "title": "wornpath",
-    "subtitle": null,
-    "src": "../images/video-thumbnails/wornpath.jpg",
+    "title": "Worn Path",
+    "src": "../images/video-thumbnails/worn_path.png",
     "link": "/videos/wornpath/"
   },
   {
-    "title": "prana",
-    "subtitle": "manifest farm",
-    "src": "../images/video-thumbnails/pranamanifestfarm.png",
+    "title": "Prana - Manifest Farm",
+    "src": "../images/video-thumbnails/prana_manifest_farm.png",
     "link": "/videos/manifest-farm/"
   },
   {
-    "title": "slimeballs",
-    "subtitle": null,
-    "src": "../images/video-thumbnails/slimeballs.jpg",
+    "title": "SID",
+    "src": "../images/video-thumbnails/sid.jpg",
+    "link": "/videos/sid/"
+  },
+  {
+    "title": "Slimeballs - Social Promos",
+    "src": "../images/video-thumbnails/slime_balls.jpg",
     "link": "/videos/oj-wheels-slimeballs/"
   },
   {
-    "title": "black lives matter",
-    "subtitle": "this is a zine",
-    "src": "../images/video-thumbnails/BLM_website_thumbnail.png",
-    "link": "/videos/blm-this-is-a-zine/"
-  },
-  {
-    "title": "bitters",
-    "subtitle": null,
-    "src": "../images/video-thumbnails/bittersland.png",
-    "link": "/videos/bittersland/"
-  },
-  {
-    "title": "Bronson",
-    "subtitle": "Bearings",
-    "src": "../images/video-thumbnails/bronson_thumbnail.png",
+    "title": "Bronson Bearings",
+    "src": "../images/video-thumbnails/bronson_bearings_dirt.png",
     "link": "/videos/bronson-bearings/"
   },
   {
-    "title": "OJ",
-    "subtitle": "Cruising series",
-    "src": "../images/video-thumbnails/ojcruisingintherain.png",
+    "title": "This Is A Zine - Black Lives Matter",
+    "src": "../images/video-thumbnails/blm_zine.png",
+    "link": "/videos/blm-this-is-a-zine/"
+  },
+  {
+    "title": "OJ Cruising Series",
+    "src": "../images/video-thumbnails/oj_cruisin.jpg",
     "link": "/videos/oj-wheels-cruisin/"
   },
   {
-    "title": "Skatewild with",
-    "subtitle": "David Gravette",
+    "title": "Skatewild with David Gravette",
     "src": "../images/video-thumbnails/skatewild_thumbnail.png",
     "link": "/videos/skatewild/"
   },
   {
-    "title": "creature",
-    "subtitle": "quarantine sessions",
-    "src": "../images/video-thumbnails/creaturequarantinesessions.png",
+    "title": "Creature Quarantine Sessions",
+    "src": "../images/video-thumbnails/creature_quarantine_sessions.png",
     "link": "/videos/creature-quarantine-sessions/"
   },
   {
-    "title": "prices are low",
-    "subtitle": null,
-    "src": "../images/video-thumbnails/pricesthumbnail.png",
+    "title": "Prices Are Low",
+    "src": "../images/video-thumbnails/pricesarelow.png",
     "link": "/videos/prices-are-low/"
   }
 ]

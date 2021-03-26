@@ -1,0 +1,43 @@
+import React from "react"
+import { Link } from "gatsby"
+import Layout from "../../components/common/layout"
+import SEO from "../../components/SEO"
+import { GrPrevious, GrNext } from "react-icons/gr"
+import { NavWrapper, IframeWrapper } from "../../components/video/style"
+
+const SID = () => (
+  <Layout>
+    <SEO title="SID" />
+    <NavWrapper>
+      <Link to="/videos/manifest-farm">
+        <GrPrevious />
+        prev
+      </Link>
+      <Link to="/videos/oj-wheels-slimeballs">
+        next
+        <GrNext />
+      </Link>
+    </NavWrapper>
+    <IframeWrapper>
+      <iframe
+        src="https://player.vimeo.com/video/521963968?color=ffe000"
+        width="640"
+        height="360"
+        frameBorder="0"
+        allow="autoplay; fullscreen; picture-in-picture"
+        title="SID"
+      ></iframe>
+    </IframeWrapper>
+    <div>
+      <p>Starring- Sid Murrell</p>
+      <p>Director- Brenton Salo</p>
+      <p>Cinematographer/ Editor- Keaton Rodgers</p>
+      <p>Producer- Lisa Webster</p>
+      <p>Music- "Angry Waves" by Kid Ferris</p>
+      <p>1st AC- Jesse Tobler</p>
+      <p>Colorist- Ivan Vidovic</p>
+    </div>
+  </Layout>
+)
+
+export default SID

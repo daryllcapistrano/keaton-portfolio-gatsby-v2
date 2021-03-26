@@ -3,11 +3,7 @@ import { Link } from "gatsby"
 import Layout from "../../components/common/layout"
 import SEO from "../../components/SEO"
 import { GrPrevious, GrNext } from "react-icons/gr"
-import {
-  NavWrapper,
-  VideoWrapper,
-  InnerWrapper,
-} from "../../components/video/style"
+import { NavWrapper, IframeWrapper } from "../../components/video/style"
 
 const WornpathPage = () => (
   <Layout>
@@ -15,24 +11,23 @@ const WornpathPage = () => (
     <NavWrapper>
       <Link to="/videos/maple-xo">
         <GrPrevious />
+        prev
       </Link>
-      <Link to="/">Home</Link>
       <Link to="/videos/manifest-farm">
+        next
         <GrNext />
       </Link>
     </NavWrapper>
-    <VideoWrapper>
-      <InnerWrapper>
-        <iframe
-          src={`https://www.youtube.com/embed/cpuSnsD_ZOg`}
-          frameBorder="0"
-          allowFullScreen={true}
-          title="Wornpath"
-          width="560"
-          height="349"
-        />
-      </InnerWrapper>
-    </VideoWrapper>
+    <IframeWrapper>
+      <iframe
+        src="https://player.vimeo.com/video/524366424"
+        width="640"
+        height="360"
+        frameBorder="0"
+        allow="autoplay; fullscreen; picture-in-picture"
+        title="Wornpath"
+      ></iframe>
+    </IframeWrapper>
   </Layout>
 )
 

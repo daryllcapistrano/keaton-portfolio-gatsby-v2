@@ -3,7 +3,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import Masonry from "react-masonry-component"
 import ReactBnbGallery from "react-bnb-gallery"
-import { Wrapper, ImageWrapper } from "./style"
+import { ImageWrapper } from "./style"
 import "react-bnb-gallery/dist/style.css"
 
 function PhotoMasonry() {
@@ -101,7 +101,7 @@ function PhotoMasonry() {
   const styleOptions = {}
 
   return (
-    <Wrapper>
+    <>
       <Masonry
         disableImagesLoaded={false} // default false
         updateOnEachImageLoad={false} // default false and works only if disableImagesLoaded is false
@@ -115,7 +115,7 @@ function PhotoMasonry() {
         activePhotoIndex={currentIndex}
         onClose={() => setIsOpen(false)}
       />
-    </Wrapper>
+    </>
   )
 }
 

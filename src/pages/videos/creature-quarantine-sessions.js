@@ -15,9 +15,10 @@ const CreatureQuarantineSessions = () => (
     <NavWrapper>
       <Link to="/videos/skatewild">
         <GrPrevious />
+        prev
       </Link>
-      <Link to="/">Home</Link>
       <Link to="/videos/prices-are-low">
+        next
         <GrNext />
       </Link>
     </NavWrapper>
