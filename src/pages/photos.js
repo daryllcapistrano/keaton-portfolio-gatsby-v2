@@ -6,7 +6,6 @@ import SEO from "../components/SEO"
 const PhotosPage = () => (
   <Layout>
     <SEO title="Photos" />
-
     <PhotoMasonry />
   </Layout>
 )

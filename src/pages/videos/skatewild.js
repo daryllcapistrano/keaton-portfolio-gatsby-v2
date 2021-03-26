@@ -3,11 +3,7 @@ import { Link } from "gatsby"
 import Layout from "../../components/common/layout"
 import SEO from "../../components/SEO"
 import { GrPrevious, GrNext } from "react-icons/gr"
-import {
-  NavWrapper,
-  VideoWrapper,
-  InnerWrapper,
-} from "../../components/video/style"
+import { NavWrapper, IframeWrapper } from "../../components/video/style"
 
 const Skatewild = () => (
   <Layout>
@@ -22,18 +18,16 @@ const Skatewild = () => (
         <GrNext />
       </Link>
     </NavWrapper>
-    <VideoWrapper>
-      <InnerWrapper>
-        <iframe
-          src={`https://www.youtube.com/embed/qatAkMQQpvI`}
-          frameBorder="0"
-          allowFullScreen={true}
-          title="David Gravette Goes to SKATE WILD Camp!"
-          width="560"
-          height="349"
-        />
-      </InnerWrapper>
-    </VideoWrapper>
+    <IframeWrapper>
+      <iframe
+        src={`https://www.youtube.com/embed/qatAkMQQpvI`}
+        frameBorder="0"
+        allowFullScreen={true}
+        title="David Gravette Goes to SKATE WILD Camp!"
+        width="560"
+        height="349"
+      />
+    </IframeWrapper>
   </Layout>
 )
 

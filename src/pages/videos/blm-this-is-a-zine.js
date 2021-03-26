@@ -18,19 +18,23 @@ const BlackLivesMatter = () => (
         <GrNext />
       </Link>
     </NavWrapper>
-
     <IframeWrapper>
       <iframe
         src="https://player.vimeo.com/video/526234712"
+        width="640"
+        height="360"
         frameBorder="0"
         allow="autoplay; fullscreen; picture-in-picture"
         title="Black Lives Matter - This is a Zine"
       ></iframe>
     </IframeWrapper>
-
     <div>
-      <p>Director/ DoP/ Editor - Keaton Rodgers</p>
-      <p>Creative Director - Josh Eberhard</p>
+      <p>
+        <b>Director / DoP / Editor</b> - Keaton Rodgers
+      </p>
+      <p>
+        <b>Creative Director</b> - Josh Eberhard
+      </p>
     </div>
   </Layout>
 )

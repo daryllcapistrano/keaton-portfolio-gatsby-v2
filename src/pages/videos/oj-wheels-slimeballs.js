@@ -28,6 +28,7 @@ const OJSlimePage = () => (
         title="promo1"
       ></iframe>
     </IframeWrapper>
+    <br />
     <IframeWrapper>
       <iframe
         src="https://player.vimeo.com/video/526276542?color=ffe000"
@@ -38,6 +39,7 @@ const OJSlimePage = () => (
         title="promo2"
       ></iframe>
     </IframeWrapper>
+    <br />
     <IframeWrapper>
       <iframe
         src="https://player.vimeo.com/video/526278190?color=ffe000"
@@ -48,6 +50,7 @@ const OJSlimePage = () => (
         title="promo3"
       ></iframe>
     </IframeWrapper>
+    <br />
     <IframeWrapper>
       <iframe
         src="https://player.vimeo.com/video/526279765?color=ffe000"

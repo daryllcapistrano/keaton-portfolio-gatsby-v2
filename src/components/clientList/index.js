@@ -1,5 +1,5 @@
 import React from "react"
-import { Wrapper, InnerWrapper } from "./style"
+import { Wrapper } from "./style"
 
 const ClientList = () => {
   const clients = [
@@ -29,11 +29,9 @@ const ClientList = () => {
 
   return (
     <Wrapper>
-      <InnerWrapper>
-        {clients.map((client, index) => (
-          <p key={index}>{client}</p>
-        ))}
-      </InnerWrapper>
+      {clients.map((client, index) => (
+        <p key={index}>{client}</p>
+      ))}
     </Wrapper>
   )
 }

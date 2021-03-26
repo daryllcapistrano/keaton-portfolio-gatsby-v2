@@ -23,7 +23,7 @@ const PricesAreLow = () => (
         src={`https://www.youtube.com/embed/TVbZff32XIQ`}
         frameBorder="0"
         allowFullScreen={true}
-        title="Prices are Low - David Gravette, Tony Ellis, Willis Kimbel, Cody Lockwood, Fern Covarrubias and more"
+        title="Prices are Low"
         width="560"
         height="349"
       />

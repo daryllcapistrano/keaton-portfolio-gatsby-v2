@@ -6,7 +6,7 @@ import { FaInstagram } from "react-icons/fa"
 import { BsAt } from "react-icons/bs"
 import { MdPhonelinkRing } from "react-icons/md"
 
-import { Wrapper, ImageWrapper, LinkContainer, Button } from "./style"
+import { Grid, LinkContainer, Button } from "./style"
 
 function Contact() {
   const Photo = useStaticQuery(graphql`
@@ -25,13 +25,8 @@ function Contact() {
   `)
 
   return (
-    <Wrapper>
-      <ImageWrapper>
-        <Img
-          fluid={Photo.allFile.nodes[0].childImageSharp.fluid}
-          style={{ margin: `auto` }}
-        />
-      </ImageWrapper>
+    <Grid>
+      <Img fluid={Photo.allFile.nodes[0].childImageSharp.fluid} />
       <LinkContainer>
         <Button href="tel:971.347.6704">
           <IconContext.Provider value={{ size: `1.5em` }}>
@@ -52,7 +47,7 @@ function Contact() {
           <p>keatonrodgersmedia</p>
         </Button>
       </LinkContainer>
-    </Wrapper>
+    </Grid>
   )
 }
 

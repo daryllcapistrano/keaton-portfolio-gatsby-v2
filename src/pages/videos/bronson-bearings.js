@@ -29,7 +29,9 @@ const BronsonBearings = () => (
       ></iframe>
     </IframeWrapper>
     <div>
-      <p>Cinematographer / Editor - Keaton Rodgers</p>
+      <p>
+        <b>Cinematographer / Editor</b> - Keaton Rodgers
+      </p>
     </div>
   </Layout>
 )

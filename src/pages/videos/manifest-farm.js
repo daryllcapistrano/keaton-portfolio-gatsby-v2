@@ -29,8 +29,12 @@ const ManifestFarmPage = () => (
       ></iframe>
     </IframeWrapper>
     <div>
-      <p>Director/ DoP/ Editor - Keaton Rodgers</p>
-      <p>Starring - Katie Linkous</p>
+      <p>
+        <b>Director / DoP / Editor</b> - Keaton Rodgers
+      </p>
+      <p>
+        <b>Starring</b> - Katie Linkous
+      </p>
     </div>
   </Layout>
 )

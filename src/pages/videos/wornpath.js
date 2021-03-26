@@ -25,7 +25,7 @@ const WornpathPage = () => (
         height="360"
         frameBorder="0"
         allow="autoplay; fullscreen; picture-in-picture"
-        title="Wornpath"
+        title="wornpath"
       ></iframe>
     </IframeWrapper>
   </Layout>

@@ -29,8 +29,12 @@ const Vans = () => (
       ></iframe>
     </IframeWrapper>
     <div>
-      <p>Director/ DoP/ Editor - Keaton Rodgers</p>
-      <p>Starring - Romel Torres</p>
+      <p>
+        <b>Director / DoP / Editor</b> - Keaton Rodgers
+      </p>
+      <p>
+        <b>Starring</b> - Romel Torres
+      </p>
     </div>
   </Layout>
 )

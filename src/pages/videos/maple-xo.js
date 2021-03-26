@@ -29,7 +29,9 @@ const MapleXO = () => (
       ></iframe>
     </IframeWrapper>
     <div>
-      <p>Director/ DoP/ Editor - Keaton Rodgers</p>
+      <p>
+        <b>Director / DoP / Editor</b> - Keaton Rodgers
+      </p>
     </div>
   </Layout>
 )

@@ -3,18 +3,10 @@ import styled from "styled-components"
 export const StyledHeader = styled.header`
   display: flex;
   flex-direction: column;
-  margin-top: 1em;
+  margin: 1em 2em;
   @media (min-width: 1312px) {
     flex-direction: row;
-  }
-`
-
-export const InnerWrapper = styled.div`
-  margin: 0 2em;
-  @media (min-width: 1312px) {
-    width: 100%;
-    display: inline-flex;
-    margin: 0 12em;
+    margin: 1em 12em;
   }
 `
 
@@ -36,14 +28,10 @@ export const LinkWrapper = styled.div`
   @media (min-width: 1312px) {
     justify-content: flex-end;
     margin: auto;
-    font-size: 1.5em;
-  }
-  @media (min-width: 2560px) {
-    font-size: 3em;
   }
   a {
-    font-weight: 900;
-    font-size: 0.75em;
+    font-weight: 600;
+    font-size: 0.8em;
     letter-spacing: 2px;
     color: black;
     text-decoration: none;

@@ -22,12 +22,15 @@ export const Grid = styled.div`
     gap: 1em;
   } */
 `
-export const GridItem = styled.div`
-  position: relative;
+export const ThumbnailText = styled.div`
+  margin: 0.25em 0 0;
+  text-align: center;
+  font-weight: 400;
 `
-export const Item = styled.div`
-  position: relative;
-`
+
+// export const Item = styled.div`
+//   position: relative;
+// `
 
 // Begin Video Page Styles
 export const NavWrapper = styled.div`
