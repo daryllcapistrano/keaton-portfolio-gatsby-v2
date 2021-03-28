@@ -85,6 +85,7 @@ module.exports = {
         path: `./src/data/`,
       },
     },
+    `gatsby-plugin-material-ui`,
     {
       resolve: `gatsby-plugin-styled-components`,
       options: {

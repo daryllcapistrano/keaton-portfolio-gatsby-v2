@@ -29,27 +29,7 @@ const SID = () => (
       ></iframe>
     </IframeWrapper>
     <div>
-      <p>
-        <b>Starring</b> - Sid Murrell
-      </p>
-      <p>
-        <b>Director</b> - Brenton Salo
-      </p>
-      <p>
-        <b>Cinematographer / Editor</b> - Keaton Rodgers
-      </p>
-      <p>
-        <b>Producer</b> - Lisa Webster
-      </p>
-      <p>
-        <b>Music</b> - "Angry Waves" by Kid Ferris
-      </p>
-      <p>
-        <b>1st AC</b> - Jesse Tobler
-      </p>
-      <p>
-        <b>Colorist</b> - Ivan Vidovic
-      </p>
+      <p>Director / DoP / Editor</p>
     </div>
   </Layout>
 )

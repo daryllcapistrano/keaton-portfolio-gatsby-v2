@@ -28,6 +28,9 @@ const PricesAreLow = () => (
         height="349"
       />
     </IframeWrapper>
+    <div>
+      <p>Director / DoP / Editor</p>
+    </div>
   </Layout>
 )
 

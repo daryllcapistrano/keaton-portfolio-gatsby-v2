@@ -6,10 +6,10 @@ import { GrPrevious, GrNext } from "react-icons/gr"
 import { NavWrapper, IframeWrapper } from "../../components/video/style"
 
 const BlackLivesMatter = () => (
-  <>
-    <SEO title="Vans - The Skate Authentic" />
+  <Layout>
+    <SEO title="Black Lives Matter - This is a Zine" />
     <NavWrapper>
-      <Link to="/videos/bronson-bearings">
+      <Link to="/videos/scott-lordofthebox">
         <GrPrevious />
         prev
       </Link>
@@ -29,14 +29,9 @@ const BlackLivesMatter = () => (
       ></iframe>
     </IframeWrapper>
     <div>
-      <p>
-        <b>Director / DoP / Editor</b> - Keaton Rodgers
-      </p>
-      <p>
-        <b>Creative Director</b> - Josh Eberhard
-      </p>
+      <p>Director / DoP / Editor</p>
     </div>
-  </>
+  </Layout>
 )
 
 export default BlackLivesMatter

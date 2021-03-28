@@ -13,7 +13,7 @@ const BronsonBearings = () => (
         <GrPrevious />
         prev
       </Link>
-      <Link to="/videos/blm-this-is-a-zine">
+      <Link to="/videos/scott-lordofthebox">
         next
         <GrNext />
       </Link>
@@ -29,9 +29,7 @@ const BronsonBearings = () => (
       ></iframe>
     </IframeWrapper>
     <div>
-      <p>
-        <b>Cinematographer / Editor</b> - Keaton Rodgers
-      </p>
+      <p>Director / DoP / Editor</p>
     </div>
   </Layout>
 )

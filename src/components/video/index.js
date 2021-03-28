@@ -14,8 +14,8 @@ const VideoThumbnails = () => {
           link
           src {
             childImageSharp {
-              sizes {
-                ...GatsbyImageSharpSizes
+              fluid {
+                ...GatsbyImageSharpFluid_noBase64
               }
             }
           }
@@ -23,6 +23,7 @@ const VideoThumbnails = () => {
       }
     }
   `)
+  console.log(data)
 
   return (
     <Grid>
@@ -32,7 +33,7 @@ const VideoThumbnails = () => {
             <Img
               title={thumbnail.title}
               alt={thumbnail.title}
-              sizes={thumbnail.src.childImageSharp.sizes}
+              fluid={thumbnail.src.childImageSharp.fluid}
             />
           </Link>
           <ThumbnailText>{thumbnail.title}</ThumbnailText>

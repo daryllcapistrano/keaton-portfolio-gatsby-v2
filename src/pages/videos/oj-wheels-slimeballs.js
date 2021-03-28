@@ -20,23 +20,12 @@ const OJSlimePage = () => (
     </NavWrapper>
     <IframeWrapper>
       <iframe
-        src="https://player.vimeo.com/video/526275284?color=ffe000"
+        src="https://player.vimeo.com/video/526279765?color=ffe000"
         width="640"
         height="640"
         frameBorder="0"
         allow="autoplay; fullscreen; picture-in-picture"
-        title="promo1"
-      ></iframe>
-    </IframeWrapper>
-    <br />
-    <IframeWrapper>
-      <iframe
-        src="https://player.vimeo.com/video/526276542?color=ffe000"
-        width="640"
-        height="640"
-        frameBorder="0"
-        allow="autoplay; fullscreen; picture-in-picture"
-        title="promo2"
+        title="promo4"
       ></iframe>
     </IframeWrapper>
     <br />
@@ -53,17 +42,28 @@ const OJSlimePage = () => (
     <br />
     <IframeWrapper>
       <iframe
-        src="https://player.vimeo.com/video/526279765?color=ffe000"
+        src="https://player.vimeo.com/video/526276542?color=ffe000"
         width="640"
         height="640"
         frameBorder="0"
         allow="autoplay; fullscreen; picture-in-picture"
-        title="promo4"
+        title="promo2"
       ></iframe>
     </IframeWrapper>
+    <br />
+    <IframeWrapper>
+      <iframe
+        src="https://player.vimeo.com/video/526275284?color=ffe000"
+        width="640"
+        height="640"
+        frameBorder="0"
+        allow="autoplay; fullscreen; picture-in-picture"
+        title="promo1"
+      ></iframe>
+    </IframeWrapper>
+
     <div>
-      <p>Director/ DoP/ Editor - Keaton Rodgers</p>
-      <p>Producer - Alex Foy</p>
+      <p>Director / DoP / Editor</p>
     </div>
   </Layout>
 )

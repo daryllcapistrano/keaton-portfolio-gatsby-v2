@@ -35,12 +35,17 @@
     "link": "/videos/bronson-bearings/"
   },
   {
+    "title": "Scott Stevens - Lord of the Box",
+    "src": "../images/video-thumbnails/scott_lordofthebox.jpg",
+    "link": "/videos/scott-lordofthebox/"
+  },
+  {
     "title": "This Is A Zine - Black Lives Matter",
     "src": "../images/video-thumbnails/blm_zine.png",
     "link": "/videos/blm-this-is-a-zine/"
   },
   {
-    "title": "OJ Cruising Series",
+    "title": "OJ - Cruisin' Series",
     "src": "../images/video-thumbnails/oj_cruisin.jpg",
     "link": "/videos/oj-wheels-cruisin/"
   },
@@ -50,7 +55,7 @@
     "link": "/videos/skatewild/"
   },
   {
-    "title": "Creature Quarantine Sessions",
+    "title": "Creature - Quarantine Sessions",
     "src": "../images/video-thumbnails/creature_quarantine_sessions.png",
     "link": "/videos/creature-quarantine-sessions/"
   },

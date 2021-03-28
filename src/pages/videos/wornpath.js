@@ -28,6 +28,9 @@ const WornpathPage = () => (
         title="wornpath"
       ></iframe>
     </IframeWrapper>
+    <div>
+      <p>Director / DoP / Editor</p>
+    </div>
   </Layout>
 )
 
