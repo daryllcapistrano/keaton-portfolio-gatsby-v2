@@ -15,7 +15,7 @@ const VideoThumbnails = () => {
           src {
             childImageSharp {
               sizes {
-                ...GatsbyImageSharpSizes_withWebp
+                ...GatsbyImageSharpSizes
               }
             }
           }

@@ -75,7 +75,7 @@ module.exports = {
         short_name: `KRMEDIA`,
         start_url: `/`,
         display: `minimal-ui`,
-        icon: `src/images/contact-images/model1_square.jpg`, // This path is relative to the root of the site.
+        icon: `src/images/favicon/model1_square.jpg`, // This path is relative to the root of the site.
       },
     },
     `gatsby-transformer-json`,

@@ -6,7 +6,7 @@ import { GrPrevious, GrNext } from "react-icons/gr"
 import { NavWrapper, IframeWrapper } from "../../components/video/style"
 
 const BlackLivesMatter = () => (
-  <Layout>
+  <>
     <SEO title="Vans - The Skate Authentic" />
     <NavWrapper>
       <Link to="/videos/bronson-bearings">
@@ -36,7 +36,7 @@ const BlackLivesMatter = () => (
         <b>Creative Director</b> - Josh Eberhard
       </p>
     </div>
-  </Layout>
+  </>
 )
 
 export default BlackLivesMatter
