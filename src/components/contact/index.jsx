@@ -1,5 +1,5 @@
 import React from "react"
-import { FiPhoneCall, FiInstagram, FiAtSign } from "react-icons/fi"
+import { FiPhoneCall, FiInstagram, FiAtSign, FiMail } from "react-icons/fi"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import { Grid, Button } from "@material-ui/core"
@@ -52,8 +52,9 @@ function Contact() {
             <Button
               variant="contained"
               href="mailto:keatonrodgersmedia@gmail.com"
-              startIcon={<FiAtSign />}
+              startIcon={<FiMail />}
             >
+              <FiAtSign />
               keatonrodgersmedia
             </Button>
           </div>
