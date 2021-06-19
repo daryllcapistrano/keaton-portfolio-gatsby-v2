@@ -3,13 +3,13 @@ import { Link } from "gatsby"
 import Layout from "../../components/common/layout"
 import SEO from "../../components/SEO"
 import { GrPrevious, GrNext } from "react-icons/gr"
-import { NavWrapper, IframeWrapper } from "../../components/video/style"
+import { NavWrapper, IframeWrapper } from "../../components/common/video/styles"
 
 const BlackLivesMatter = () => (
   <Layout>
     <SEO title="Black Lives Matter - This is a Zine" />
     <NavWrapper>
-      <Link to="/videos/scott-lordofthebox">
+      <Link to="/videos/tactics-river">
         <GrPrevious />
         prev
       </Link>

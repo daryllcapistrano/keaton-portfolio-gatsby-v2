@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import Layout from "../../components/common/layout"
 import SEO from "../../components/SEO"
 import { GrPrevious, GrNext } from "react-icons/gr"
-import { NavWrapper, IframeWrapper } from "../../components/video/style"
+import { NavWrapper, IframeWrapper } from "../../components/common/video/styles"
 
 const Vans = () => (
   <Layout>
@@ -20,7 +20,7 @@ const Vans = () => (
     </NavWrapper>
     <IframeWrapper>
       <iframe
-        src="https://player.vimeo.com/video/529388655"
+        src="https://player.vimeo.com/video/538830298"
         width="640"
         height="640"
         frameBorder="0"

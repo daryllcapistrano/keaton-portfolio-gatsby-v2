@@ -3,17 +3,17 @@ import { Link } from "gatsby"
 import Layout from "../../components/common/layout"
 import SEO from "../../components/SEO"
 import { GrPrevious, GrNext } from "react-icons/gr"
-import { NavWrapper, IframeWrapper } from "../../components/video/style"
+import { NavWrapper, IframeWrapper } from "../../components/common/video/styles"
 
 const SID = () => (
   <Layout>
     <SEO title="SID" />
     <NavWrapper>
-      <Link to="/videos/manifest-farm">
+      <Link to="/videos/oj-wheels-slimeballs">
         <GrPrevious />
         prev
       </Link>
-      <Link to="/videos/oj-wheels-slimeballs">
+      <Link to="/videos/tactics-artlab">
         next
         <GrNext />
       </Link>
@@ -29,7 +29,7 @@ const SID = () => (
       ></iframe>
     </IframeWrapper>
     <div>
-      <p>Director / DoP / Editor</p>
+      <p>DoP / Editor</p>
     </div>
   </Layout>
 )

@@ -15,14 +15,13 @@ export const GlobalStyle = createGlobalStyle`
     color: #010101;
   }
   main {
-    height: 100%;
     min-height: 100vh;
-    padding: 1.5em 1.5em 12em;
+    padding: 0em 1.5em 12em;
     @media (min-width: 688px) {
-      padding: 2em 4em 12em;
+      padding: 0em 4em 12em;
     }
     @media (min-width: 992px) {
-      padding: 2em 12em 12em;
+      padding: 0em 6em 12em;
     }
   }
 `

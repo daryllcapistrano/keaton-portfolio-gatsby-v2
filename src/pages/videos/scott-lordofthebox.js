@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import Layout from "../../components/common/layout"
 import SEO from "../../components/SEO"
 import { GrPrevious, GrNext } from "react-icons/gr"
-import { NavWrapper, IframeWrapper } from "../../components/video/style"
+import { NavWrapper, IframeWrapper } from "../../components/common/video/styles"
 
 const LordOfTheBox = () => (
   <Layout>
@@ -13,7 +13,7 @@ const LordOfTheBox = () => (
         <GrPrevious />
         prev
       </Link>
-      <Link to="/videos/blm-this-is-a-zine">
+      <Link to="/videos/tactics-river">
         next
         <GrNext />
       </Link>

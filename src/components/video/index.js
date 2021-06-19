@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import Img from "gatsby-image"
 import { useStaticQuery, graphql } from "gatsby"
 
-import { Grid, ThumbnailText } from "./style"
+import { Grid, GridItem, ThumbnailText } from "./styles"
 
 const VideoThumbnails = () => {
   const data = useStaticQuery(graphql`
@@ -23,12 +23,11 @@ const VideoThumbnails = () => {
       }
     }
   `)
-  console.log(data)
 
   return (
     <Grid>
       {data.allVideoThumbnailsJson.nodes.map((thumbnail, index) => (
-        <div key={index}>
+        <GridItem key={index}>
           <Link to={thumbnail.link}>
             <Img
               title={thumbnail.title}
@@ -37,7 +36,7 @@ const VideoThumbnails = () => {
             />
           </Link>
           <ThumbnailText>{thumbnail.title}</ThumbnailText>
-        </div>
+        </GridItem>
       ))}
     </Grid>
   )

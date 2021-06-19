@@ -3,13 +3,13 @@ import { Link } from "gatsby"
 import Layout from "../../components/common/layout"
 import SEO from "../../components/SEO"
 import { GrPrevious, GrNext } from "react-icons/gr"
-import { NavWrapper, IframeWrapper } from "../../components/video/style"
+import { NavWrapper, IframeWrapper } from "../../components/common/video/styles"
 
 const BronsonBearings = () => (
   <Layout>
     <SEO title="Bronson Bearings with David Gravette" />
     <NavWrapper>
-      <Link to="/videos/oj-wheels-slimeballs">
+      <Link to="/videos/tactics-artlab">
         <GrPrevious />
         prev
       </Link>

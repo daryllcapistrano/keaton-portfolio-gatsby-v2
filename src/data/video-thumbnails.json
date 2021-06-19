@@ -20,14 +20,34 @@
     "link": "/videos/manifest-farm/"
   },
   {
-    "title": "SID",
-    "src": "../images/video-thumbnails/sid.jpg",
-    "link": "/videos/sid/"
+    "title": "Sicky Magazine - The Sheer Possibility ",
+    "src": "../images/video-thumbnails/Sicky_Thumbnail.png",
+    "link": "/videos/sicky-mag/"
+  },
+  {
+    "title": "Willis Kimbell Acid Turns - OJ Wheels",
+    "src": "../images/video-thumbnails/acidturns.png",
+    "link": "/videos/oj-wheels-willis-kimbell/"
+  },
+  {
+    "title": "Slime Balls - Retro Commercials",
+    "src": "../images/video-thumbnails/Slimeballs_Retro_thumbnail.jpg",
+    "link": "/videos/oj-wheels-retro/"
   },
   {
     "title": "Slimeballs - Social Promos",
     "src": "../images/video-thumbnails/slime_balls.jpg",
     "link": "/videos/oj-wheels-slimeballs/"
+  },
+  {
+    "title": "SID",
+    "src": "../images/video-thumbnails/sid.jpg",
+    "link": "/videos/sid/"
+  },
+  {
+    "title": "Tactics - Art Lab",
+    "src": "../images/video-thumbnails/tactics_Lobasyuk_thumbnail.jpg",
+    "link": "/videos/tactics-artlab/"
   },
   {
     "title": "Bronson Bearings",
@@ -38,6 +58,11 @@
     "title": "Scott Stevens - Lord of the Box",
     "src": "../images/video-thumbnails/scott_lordofthebox.jpg",
     "link": "/videos/scott-lordofthebox/"
+  },
+  {
+    "title": "Tactics - River Mountain Collection",
+    "src": "../images/video-thumbnails/Tactics_RiverMTN_thumbnail.png",
+    "link": "/videos/tactics-river/"
   },
   {
     "title": "This Is A Zine - Black Lives Matter",
