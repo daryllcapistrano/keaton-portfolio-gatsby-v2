@@ -9,7 +9,7 @@ const LordOfTheBox = () => (
   <Layout>
     <SEO title="Scott Stevens - Lord of the Box" />
     <NavWrapper>
-      <Link to="/videos/bronson-bearings">
+      <Link to="/videos/tactics-artlab">
         <GrPrevious />
         prev
       </Link>

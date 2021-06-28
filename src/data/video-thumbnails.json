@@ -1,5 +1,10 @@
 [
   {
+    "title": "Water's Edge",
+    "src": "../images/video-thumbnails/WatersEdge_Thumbnail.png",
+    "link": "/videos/waters-edge/"
+  },
+  {
     "title": "Vans - Skate Classics",
     "src": "../images/video-thumbnails/vans_skate.jpg",
     "link": "/videos/vans-skate/"
@@ -50,11 +55,6 @@
     "link": "/videos/tactics-artlab/"
   },
   {
-    "title": "Bronson Bearings",
-    "src": "../images/video-thumbnails/bronson_bearings_dirt.png",
-    "link": "/videos/bronson-bearings/"
-  },
-  {
     "title": "Scott Stevens - Lord of the Box",
     "src": "../images/video-thumbnails/scott_lordofthebox.jpg",
     "link": "/videos/scott-lordofthebox/"
@@ -63,6 +63,11 @@
     "title": "Tactics - River Mountain Collection",
     "src": "../images/video-thumbnails/Tactics_RiverMTN_thumbnail.png",
     "link": "/videos/tactics-river/"
+  },
+  {
+    "title": "Bronson Bearings",
+    "src": "../images/video-thumbnails/bronson_bearings_dirt.png",
+    "link": "/videos/bronson-bearings/"
   },
   {
     "title": "This Is A Zine - Black Lives Matter",

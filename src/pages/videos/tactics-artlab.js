@@ -13,7 +13,7 @@ const TacticsArtLab = () => (
         <GrPrevious />
         prev
       </Link>
-      <Link to="/videos/bronson-bearings">
+      <Link to="/videos/scott-lordofthebox">
         next
         <GrNext />
       </Link>

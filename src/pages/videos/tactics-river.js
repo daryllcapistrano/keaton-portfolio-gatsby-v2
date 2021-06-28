@@ -13,7 +13,7 @@ const TacticsRiver = () => (
         <GrPrevious />
         prev
       </Link>
-      <Link to="/videos/blm-this-is-a-zine">
+      <Link to="/videos/bronson-bearings">
         next
         <GrNext />
       </Link>

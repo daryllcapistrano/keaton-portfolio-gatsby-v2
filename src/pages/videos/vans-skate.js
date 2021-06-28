@@ -9,7 +9,7 @@ const Vans = () => (
   <Layout>
     <SEO title="Vans - The Skate Authentic" />
     <NavWrapper>
-      <Link to="/videos/prices-are-low">
+      <Link to="/videos/waters-edge">
         <GrPrevious />
         prev
       </Link>

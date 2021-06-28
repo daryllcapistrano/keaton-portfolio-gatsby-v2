@@ -9,7 +9,7 @@ const BlackLivesMatter = () => (
   <Layout>
     <SEO title="Black Lives Matter - This is a Zine" />
     <NavWrapper>
-      <Link to="/videos/tactics-river">
+      <Link to="/videos/bronson-bearings">
         <GrPrevious />
         prev
       </Link>

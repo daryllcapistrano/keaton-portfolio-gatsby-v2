@@ -9,11 +9,11 @@ const BronsonBearings = () => (
   <Layout>
     <SEO title="Bronson Bearings with David Gravette" />
     <NavWrapper>
-      <Link to="/videos/tactics-artlab">
+      <Link to="/videos/tactics-river">
         <GrPrevious />
         prev
       </Link>
-      <Link to="/videos/scott-lordofthebox">
+      <Link to="/videos/blm-this-is-a-zine">
         next
         <GrNext />
       </Link>
